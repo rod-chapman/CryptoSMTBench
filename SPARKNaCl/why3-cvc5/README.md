@@ -16,7 +16,7 @@ GNATprove (SPARK Pro): 15.1.0-1
 
 Why3: 1.7.1
 
-cvc5: 1.3.3
+cvc5: 1.3.4
 
 GNU parallel: 20250122 (get from Homebrew on macOS or apt-get on Linux)
 
