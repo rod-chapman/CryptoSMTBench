@@ -11,8 +11,11 @@ generates roughly "one SMT file per path per assertion". This generates
 ## Tool Versions for these experiments
 
 GNATprove (SPARK Pro): 15.1.0-1
+
 Why3: 1.7.1
-cvc5: 1.3.3
+
+cvc5: 1.3.4
+
 GNU parallel: 20250122 (get from Homebrew on macOS or apt-get on Linux)
 
 ## Reproducing the files
@@ -58,6 +61,8 @@ where C is the result of running `nproc` command.
 
 Results are in the file `allr.res`
 
+### cvc5 1.3.3 results
+
 With that portfolio, cvc5 1.3.3 reports "unsat" on 619 files, with only 5 timeouts.
 
 The breakdown of results by portfolio member is as follows:
@@ -82,6 +87,36 @@ mlkem.adb_1499_36_loop_invariant_init_1.smt2 timeout(ALL)
 mlkem.adb_1502_44_index_check2_1.smt2 timeout(ALL)
 mlkem.adb_880_13_loop_invariant_preserv_1.smt2 timeout(ALL)
 ```
+
+### cvc5 1.3.4 results
+
+With that portfolio, cvc5 1.3.4 reports "unsat" on 618 files, with 6 timeouts.
+
+The breakdown of results by portfolio member is as follows:
+```
+DEF:     589
+FMFEI:    18
+DI:        5
+MQO:       2
+BVI:       4
+Timeout:   6
+------------
+Total:   624
+```
+
+The 6 timeouts are
+
+```
+$ grep -v unsat allr.res
+mlkem.adb_1318_31_loop_variant_1.smt2 timeout(ALL)
+mlkem.adb_1496_20_predicate_check_1.smt2 timeout(ALL)
+mlkem.adb_1499_36_loop_invariant_init_1.smt2 timeout(ALL)
+mlkem.adb_1572_20_predicate_check_1.smt2 timeout(ALL)
+mlkem.adb_878_25_assert2_1.smt2 timeout(ALL)
+mlkem.adb_880_13_loop_invariant_preserv_1.smt2 timeout(ALL)
+```
+
+This is a concern. cvc5 1.3.4 has regressed in performance on this benchmark.
 
 
 # Conclusions (so far...)
