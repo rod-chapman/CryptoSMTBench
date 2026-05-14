@@ -13,8 +13,11 @@ This directory contains 6098 SMT files arising from this library.
 ## Tool Versions for these experiments
 
 GNATprove (SPARK Pro): 15.1.0-1
+
 Why3: 1.7.1
+
 cvc5: 1.3.3
+
 GNU parallel: 20250122 (get from Homebrew on macOS or apt-get on Linux)
 
 All running on Apple Silicon M1/macOS 26.4.1
@@ -37,9 +40,30 @@ gnatprove -Psparknacl --prover=cvc5 --timeout=5 --steps=0 --report=fail --debug-
 ## Results
 
 See the doall.sh script in this directory. This runs cvc5 with a 5-second
-timeout on all files. Results are in `res.txt`
+timeout on all files. Latest results are in `res.txt`
+
+### cvc5 1.3.3
 
 With default options, cvc5 1.3.3 finds "unsat" on 6039 of these, with 59 timing out.
+Results are in `res1.3.3.txt`
+
+### cvc5 1.3.4
+
+With default options, cvc5 1.3.3 finds "unsat" on 6039 of these, with 59 timing out,
+BUT with one improvement, and one regression. Results are in `res1.3.4.txt`
+
+Specifically:
+```
+% diff res1.3.3.txt res1.3.4.txt
+3036c3036
+< sparknacl-sign.adb_546_16_assert3_1.smt2
+---
+> sparknacl-sign.adb_546_16_assert3_1.smt2 unsat
+3429c3429
+< sparknacl-sign.adb_990_36_overflow_check8_1.smt2 unsat
+---
+> sparknacl-sign.adb_990_36_overflow_check8_1.smt2
+```
 
 # Conclusions (so far...)
 
@@ -52,6 +76,8 @@ all 6098 proofs can be re-generated in 139 seconds real time. Reproduce with
 ```
 time ls *.smt2 | parallel -j10 --bar cvc5 --tlimit=5000 {}
 ```
+
+Using 96 cores on an EC2 r8g.24xlarge-metal instance completes the run in 32 seconds.
 
 # Experiments with Z3 and Portfolio
 
@@ -95,7 +121,7 @@ cvc5 --tlimit=20000 --decision=internal
 cvc5 --tlimit=20000 --miniscope-quant=off
 ```
 
-See the script `cvc5p5.sh` which runs this portfolio (in series) on a given SMT files:
+See the script `cvc5p5.sh` which runs this portfolio (in series) on a given SMT file:
 
 ```
 #!/bin/zsh
@@ -122,22 +148,18 @@ to get `all.p5res` containing the results of all 5 sets of options on all files.
 
 ```
 Pattern (DEF,FMFEI,EII,DI,MQO)               Number occurring
-unsat,   unsat,    unsat,   unsat,   unsat         5822
-unsat,   timeout,  unsat,   unsat,   unsat          199
+unsat,   unsat,    unsat,   unsat,   unsat         5818
+unsat,   timeout,  unsat,   unsat,   unsat          205
 timeout, timeout,  timeout, unsat,   unsat           33
-timeout, unsat,    timeout, timeout, timeout         12
+timeout, unsat,    timeout, timeout, timeout         13
 unsat,   timeout,  unsat,   timeout, unsat            6
 timeout, timeout,  timeout, unsat,   timeout          5
 unsat,   unsat,    timeout, unsat,   unsat            5
+unsat,   timeout,  timeout, unsat,   unsat            5
 timeout, unsat,    unsat,   unsat,   unsat            4
-unsat,   timeout,  timeout, unsat,   unsat            3
-unsat,   unsat,    unsat,   timeout, unsat            2
 timeout, timeout,  timeout, timeout, unsat            2
 timeout, timeout,  unsat,   unsat,   timeout          1
-timeout, timeout,  unsat,   timeout, unsat            1
 timeout, timeout,  unsat,   timeout, timeout          1
-unsat,   unsat,    timeout, timeout, unsat            1
-timeout, unsat,    timeout, unsat,   timeout          1
 
 TOTAL                                              6098
 ```
@@ -145,10 +167,10 @@ TOTAL                                              6098
 Further analysis with Excel shows the number of "unsat"s achieved by each member of the portfolio:
 
 ```
-DEF:   6038 (5 second timeout)
-FMFEI: 5847 (40 second timeout)
-EII:   6036 (20 second timeout)
-DI     6073 (20 second timeout)
+DEF:   6039 (5 second timeout)
+FMFEI: 5840 (40 second timeout)
+EII:   6035 (20 second timeout)
+DI     6076 (20 second timeout)
 MQO    6078 (20 second timeout)
 ```
 
@@ -162,19 +184,19 @@ This is embodied in the `cvc5p5seq.sh` script, which terminates when
 first member of the portfolio returns "unsat", rather than running all
 of them.
 
-Results are in `all.p5res`. That says the number of "unsats" returned by each
+Results are in `allseq.p5res`. That says the number of "unsats" returned by each
 member of the portfolio as:
 
 ```
 DEF:   6037
 MQO:     41
-DI:       7
+DI:       6
 EII:      1
-FMFEI:   12
+FMFEI:   13
 
 TOTAL: 6098
 ```
 
-On an Apple M1 Macbook Pro with 8 CPU cores running, this portfolio completes the proof in 6 minutes real time.
+On an Apple M1 Macbook Pro with 10 CPU cores running, this portfolio completes the proof in 6 minutes real time.
 
-On an EC2 r7g.16xlarge instance using 64 cores, the proof completes in 2 minutes.
+On an EC2 r8g.24xlarge-metal instance using 96 cores, the proof completes in 2 minutes.
