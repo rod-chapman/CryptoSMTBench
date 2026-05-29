@@ -49,7 +49,7 @@ Results are in `res1.3.3.txt`
 
 ### cvc5 1.3.4
 
-With default options, cvc5 1.3.3 finds "unsat" on 6039 of these, with 59 timing out,
+With default options, cvc5 1.3.4  finds "unsat" on 6039 of these, with 59 timing out,
 BUT with one improvement, and one regression. Results are in `res1.3.4.txt`
 
 Specifically:
@@ -200,3 +200,63 @@ TOTAL: 6098
 On an Apple M1 Macbook Pro with 10 CPU cores running, this portfolio completes the proof in 6 minutes real time.
 
 On an EC2 r8g.24xlarge-metal instance using 96 cores, the proof completes in 2 minutes.
+
+# Using Ethos to validate the proofs
+
+To do this, you'll need the version of the `ethos` proof checker that matches the
+version of cvc5. Currently, that's cvc5 1.3.4 and ethos 0.2.3
+
+Get ethos from https://github.com/cvc5/ethos/releases
+
+You'll also need the Ethos rule files, which are part of the cvc5 distribution. You MUST
+get the set of rules files that correspond to the version of cvc5 that you're using, so
+you need to checkout that particular tag of the cvc5 repo, and then set the ETHOSRULES
+environment variable to point at the rules. For example:
+
+```
+cd $HOME
+git clone https://github.com/cvc5/cvc5.git
+cd cvc5
+git checkout cvc5-1.3.4
+export ETHOSRULES=$HOME/cvc5/proofs/eo/cpc
+```
+
+## Generating the proof artefacts
+
+A new Shell script `cvc5portfolio` now runs cvc5 in the portfolio mode as above,
+but also generates the `cpc` format proof output using `--dump-proofs`.
+
+Additionally, simple scripts such as `cvc5def`, `cvc5di`, and so on have been added
+to run cvc5 with the indiciated set of options, also with `--dump-proofs` enabled.
+
+A top-level `Makefile` has a simple target for generated each `*.cpc` file from
+each `*.smt2` file, and then for generating a file `*.proof` (from each `*.cpc` file)
+that contains the result of running the `ethos` proof checker on that file.
+
+Finally, a file `allproofs.txt` contains a list of all the `*.proof` files that we
+expect to be generated. This can be used to drive an instance of `parallel` to generate
+all the proofs in parallel. For example:
+
+```
+cat allproofs.txt | parallel -j8 --bar make {}
+```
+
+## Performance
+
+Using 8 CPU cores on an Apple Silicon M1 MacBook Pro, the command
+above takes 16 minutes.
+
+On a 96 core EC2 r8g.24xlarge-metal (Graviton-4) instance, the same takes 2 minutes.
+
+## Results
+
+With cvc4 1.3.4 and ethos 0.2.3, ethos responds:
+
+`correct`: 6010 proofs
+`incomplete`: 88 proofs
+
+Investigation of the "incomplete" cases is TBD. To see which proofs are incomplete, it's
+
+```
+grep incomplete *.proof
+```
