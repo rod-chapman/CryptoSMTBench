@@ -1,2 +1,2 @@
-(include "/Users/rodchap/Desktop/rod/tools/src/cvc5-1.3.4/proofs/eo/cpc/Cpc.eo")
-(include "/Users/rodchap/Desktop/rod/tools/src/cvc5-1.3.4/proofs/eo/cpc/expert/CpcExpert.eo")
+(include "Cpc.eo")
+(include "CpcExpert.eo")
