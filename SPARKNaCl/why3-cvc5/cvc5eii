@@ -2,7 +2,9 @@
 B=`basename $1 .smt2`
 cvc5 --rlimit-per=1200000 --enum-inst-interleave --dump-proofs $1 >${B}_r1.txt
 tail -n +3 ${B}_r1.txt | head -n -1 >${B}_r2.txt
-cat prelude.txt ${B}_r2.txt >${B}.cpc
+echo "(include \"$ETHOSRULES/Cpc.eo\")" >${B}_prelude.txt
+echo "(include \"$ETHOSRULES/expert/CpcExpert.eo\")" >>${B}_prelude.txt
+cat ${B}_prelude.txt ${B}_r2.txt >${B}.cpc
 R1=`head -n 1 ${B}_r1.txt`
-#rm -f ${B}_r1.txt ${B}_r2.txt
+rm -f ${B}_prelude.txt ${B}_r1.txt ${B}_r2.txt
 echo $R1
