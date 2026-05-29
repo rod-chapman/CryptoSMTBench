@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+B=`basename $1 .smt2`
+cvc5 --rlimit-per=1200000 --miniscope-quant=off --dump-proofs $1 >${B}_r1.txt
+tail -n +3 ${B}_r1.txt | ghead -n -1 >${B}_r2.txt
+cat prelude.txt ${B}_r2.txt >${B}.cpc
+R1=`ghead -n 1 ${B}_r1.txt`
+#rm -f ${B}_r1.txt ${B}_r2.txt
+echo $R1
