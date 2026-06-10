@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+B=`basename $1 .smt2`
+cvc5 --rlimit-per=5000000 --miniscope-quant=off --dump-proofs --safe-mode=safe $1 >${B}_r1.txt
+tail -n +3 ${B}_r1.txt | head -n -1 >${B}_r2.txt
+echo "(include \"$ETHOSRULES/Cpc.eo\")" >${B}_prelude.txt
+echo "(include \"$ETHOSRULES/expert/CpcExpert.eo\")" >>${B}_prelude.txt
+cat ${B}_prelude.txt ${B}_r2.txt >${B}.cpc
+R1=`head -n 1 ${B}_r1.txt`
+rm -f ${B}_prelude.txt ${B}_r1.txt ${B}_r2.txt
+echo $R1
