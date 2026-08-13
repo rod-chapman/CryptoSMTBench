@@ -19,7 +19,6 @@ mlkem.adb_116_56_division_check_1.proof
 mlkem.adb_118_20_range_check_1.proof
 mlkem.adb_1315_15_precondition_1.proof
 mlkem.adb_1315_50_range_check_1.proof
-mlkem.adb_1318_31_loop_variant_1.proof
 mlkem.adb_1327_54_range_check_1.proof
 mlkem.adb_1329_47_range_check_1.proof
 mlkem.adb_1329_69_division_check_1.proof
