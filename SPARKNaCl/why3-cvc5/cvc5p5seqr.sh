@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 B=`basename $1 .smt2`
-R=`./cvc5def --rlimit-per=1200000 $1`
+R=`./cvc5def $1`
 if [ "$R" = "unsat" ]; then
     echo $1 "unsat(DEF)"
     echo $1 "unsat(DEF)" >$B.p5res
