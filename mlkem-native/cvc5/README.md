@@ -6,20 +6,21 @@ performance of cvc5 with z3 on these examples
 
 ## Tool Versions for these experiments
 
-CBMC: 6.8.0
-Z3: 4.15.3
-cvc5: 1.3.3
+CBMC: 6.11.0
+Z3: 5.1.0
+cvc5: 1.3.5 (main @1689f13 on 8th September 2026, "unrestricted" build type)
+
 GNU parallel: 20250122 (get from Homebrew on macOS or apt-get on Linux)
 
-All running on Apple Silicon M1/macOS 26.4.1
+All running on Apple Silicon M5 Pro/macOS 26.6.2
 
 ## Reproducing the files
 
 1. Checkout the [mlkem-native repo](https://github.com/pq-code-package/mlkem-native)
-2. Checkout the "cvc5_benchmarks" branch
+2. Checkout the "cvc5_benchmarks" branch. If this branch is behind "main", then rebase it.
 3. Start the nix shell with `nix develop --experimental-features 'nix-command flakes'`
 4. cd proofs/cbmc
-5. ./run-cbmc-proofs.sh --summarize --no-coverage --cvc5 -j8
+5. ./run-cbmc-proofs.sh --summarize --no-coverage --cvc5 -j15
 
 These commands produce `*/gotos/*.smtcp` below the `proofs/cbmc` directory.
 
@@ -33,7 +34,7 @@ happen when a function is so trivially OK that CBMC find no properties to verify
 ## Results
 
 See the doboth.sh script in this directory. This runs Z3 and cvc5 with a 20-second
-timeout on all 153 files.
+timeout on all the SMT files.
 
 Initial experiments showed that cvc5 needs the `--array-exp` and `--enum-inst` options
 to process these files with any chance of success.  The script actually
@@ -55,15 +56,15 @@ Results are in `resboth.txt`
 With those options, an analysis of those results yields
 
 ```
-z3   unsat cvc5 unsat:   121
-z3   unsat cvc5 timeout:  19
-z3 timeout cvc5 unsat:     4
-z3 timeout cvc5 timeout:   9
+z3   unsat cvc5 unsat:   123
+z3   unsat cvc5 timeout:  23
+z3 timeout cvc5 unsat:     6
+z3 timeout cvc5 timeout:   5
 
 z3   unsat cvc5 unknown:   0
 z3 timeout cvc5 unknown:   0
 
-Total: 153
+Total: 157
 ```
 
 # Conclusions (so far...)
