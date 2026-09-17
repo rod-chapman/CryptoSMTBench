@@ -22,7 +22,7 @@ All running on Apple Silicon M5 Pro/macOS 26.6.2
 2. Checkout the "cvc5_benchmarks" branch. If this branch is behind "main", then rebase it.
 3. Start the nix shell with `nix develop --experimental-features 'nix-command flakes'`
 4. cd proofs/cbmc
-5. ./run-cbmc-proofs.sh --summarize --no-coverage --cvc5 -j15
+5. ./run-cbmc-proofs.py --summarize --no-coverage --cvc5 -j15
 
 These commands produce `*/gotos/*.smtcp` below the `proofs/cbmc` directory.
 
