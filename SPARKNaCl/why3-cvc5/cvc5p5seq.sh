@@ -10,7 +10,7 @@ else
         echo $1 "unsat(MQO)"
         echo $1 "unsat(MQO)" >$B.p5res
     else
-        R=`cvc5 --tlimit=20000 --decision=internal $1`
+        R=`cvc5 --tlimit=20000 --decision=internal --sat-solver=minisat $1`
         if [ "$R" = "unsat" ]; then
             echo $1 "unsat(DI)"
             echo $1 "unsat(DI)" >$B.p5res

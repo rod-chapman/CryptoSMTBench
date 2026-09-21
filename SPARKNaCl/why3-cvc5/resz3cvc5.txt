@@ -1998,11 +1998,11 @@ sparknacl-hashing-sha384.adb_40_17_range_check2_1.smt2 z3 unsat cvc5 unsat
 sparknacl-hashing-sha384.adb_40_17_range_check3_1.smt2 z3 unsat cvc5 unsat
 sparknacl-hashing-sha384.adb_40_17_range_check4_1.smt2 z3 unsat cvc5 unsat
 sparknacl-hkdf.adb_17_10_precondition_1.smt2 z3 unsat cvc5 unsat
-sparknacl-hkdf.adb_17_10_precondition2_1.smt2 z3 timeout cvc5 unsat
+sparknacl-hkdf.adb_17_10_precondition2_1.smt2 z3 unsat cvc5 unsat
 sparknacl-hkdf.adb_17_10_precondition3_1.smt2 z3 unsat cvc5 unsat
 sparknacl-hkdf.adb_17_25_initialization_1.smt2 z3 unsat cvc5 unsat
 sparknacl-hkdf.adb_32_10_precondition_1.smt2 z3 unsat cvc5 unsat
-sparknacl-hkdf.adb_32_10_precondition2_1.smt2 z3 timeout cvc5 unsat
+sparknacl-hkdf.adb_32_10_precondition2_1.smt2 z3 unsat cvc5 unsat
 sparknacl-hkdf.adb_32_10_precondition3_1.smt2 z3 unsat cvc5 unsat
 sparknacl-hkdf.adb_32_25_initialization_1.smt2 z3 unsat cvc5 unsat
 sparknacl-hkdf.adb_32_34_range_check_1.smt2 z3 unsat cvc5 unsat
@@ -2588,8 +2588,8 @@ sparknacl-sign.adb_284_66_range_check2_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_293_66_range_check_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_293_66_range_check2_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_294_22_postcondition_1.smt2 z3 unsat cvc5 unsat
-sparknacl-sign.adb_294_22_postcondition2_1.smt2 z3 unsat cvc5 unsat
-sparknacl-sign.adb_294_22_postcondition3_1.smt2 z3 unsat cvc5 unsat
+sparknacl-sign.adb_294_22_postcondition2_1.smt2 z3 timeout cvc5 unsat
+sparknacl-sign.adb_294_22_postcondition3_1.smt2 z3 timeout cvc5 unsat
 sparknacl-sign.adb_294_22_postcondition4_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_294_22_postcondition5_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_294_22_postcondition6_1.smt2 z3 timeout cvc5 unsat
@@ -2624,11 +2624,11 @@ sparknacl-sign.adb_339_75_index_check4_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_374_45_range_check_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_374_45_range_check2_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_374_45_range_check3_1.smt2 z3 unsat cvc5 unsat
-sparknacl-sign.adb_374_45_range_check4_1.smt2 z3 timeout cvc5
+sparknacl-sign.adb_374_45_range_check4_1.smt2 z3 unsat cvc5
 sparknacl-sign.adb_375_35_range_check_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_375_35_range_check2_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_375_35_range_check3_1.smt2 z3 unsat cvc5 unsat
-sparknacl-sign.adb_375_35_range_check4_1.smt2 z3 timeout cvc5 unsat
+sparknacl-sign.adb_375_35_range_check4_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_376_25_range_check_1.smt2 z3 timeout cvc5 unsat
 sparknacl-sign.adb_376_25_range_check2_1.smt2 z3 timeout cvc5 unsat
 sparknacl-sign.adb_376_25_range_check3_1.smt2 z3 timeout cvc5 unsat
@@ -2697,8 +2697,8 @@ sparknacl-sign.adb_437_22_range_check2_1.smt2 z3 timeout cvc5 unsat
 sparknacl-sign.adb_438_32_range_check_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_438_32_range_check2_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_442_28_assert_1.smt2 z3 timeout cvc5 unsat
-sparknacl-sign.adb_446_13_assert_1.smt2 z3 unsat cvc5 unsat
-sparknacl-sign.adb_446_13_assert2_1.smt2 z3 timeout cvc5
+sparknacl-sign.adb_446_13_assert_1.smt2 z3 timeout cvc5 unsat
+sparknacl-sign.adb_446_13_assert2_1.smt2 z3 timeout cvc5 unsat
 sparknacl-sign.adb_453_29_range_check_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_453_29_range_check2_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_454_25_assert_1.smt2 z3 unsat cvc5 unsat
@@ -2725,8 +2725,8 @@ sparknacl-sign.adb_479_41_overflow_check7_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_479_41_overflow_check8_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_479_54_range_check_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_479_54_range_check2_1.smt2 z3 unsat cvc5 unsat
-sparknacl-sign.adb_479_54_range_check3_1.smt2 z3 timeout cvc5 unsat
-sparknacl-sign.adb_479_54_range_check4_1.smt2 z3 timeout cvc5
+sparknacl-sign.adb_479_54_range_check3_1.smt2 z3 unsat cvc5 unsat
+sparknacl-sign.adb_479_54_range_check4_1.smt2 z3 unsat cvc5
 sparknacl-sign.adb_480_38_range_check_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_480_38_range_check2_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_480_38_range_check3_1.smt2 z3 unsat cvc5 unsat
@@ -2738,7 +2738,7 @@ sparknacl-sign.adb_480_38_range_check8_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_481_28_range_check_1.smt2 z3 timeout cvc5 unsat
 sparknacl-sign.adb_481_28_range_check2_1.smt2 z3 timeout cvc5 unsat
 sparknacl-sign.adb_481_28_range_check3_1.smt2 z3 timeout cvc5 unsat
-sparknacl-sign.adb_481_28_range_check4_1.smt2 z3 timeout cvc5
+sparknacl-sign.adb_481_28_range_check4_1.smt2 z3 timeout cvc5 unsat
 sparknacl-sign.adb_482_30_range_check_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_482_30_range_check2_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_482_30_range_check3_1.smt2 z3 unsat cvc5 unsat
@@ -3033,7 +3033,7 @@ sparknacl-sign.adb_542_40_range_check3_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_542_40_range_check4_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_546_16_assert_1.smt2 z3 timeout cvc5 unsat
 sparknacl-sign.adb_546_16_assert2_1.smt2 z3 timeout cvc5 unsat
-sparknacl-sign.adb_546_16_assert3_1.smt2 z3 timeout cvc5
+sparknacl-sign.adb_546_16_assert3_1.smt2 z3 timeout cvc5 unsat
 sparknacl-sign.adb_546_16_assert4_1.smt2 z3 timeout cvc5 unsat
 sparknacl-sign.adb_546_24_range_check_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_546_24_range_check2_1.smt2 z3 unsat cvc5 unsat
@@ -3087,7 +3087,7 @@ sparknacl-sign.adb_567_28_assert_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_567_28_assert2_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_567_28_assert3_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_567_28_assert4_1.smt2 z3 unsat cvc5 unsat
-sparknacl-sign.adb_573_16_loop_invariant_init_1.smt2 z3 unsat cvc5 unsat
+sparknacl-sign.adb_573_16_loop_invariant_init_1.smt2 z3 timeout cvc5 unsat
 sparknacl-sign.adb_573_16_loop_invariant_preserv_1.smt2 z3 timeout cvc5 unsat
 sparknacl-sign.adb_573_24_range_check_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_573_24_range_check2_1.smt2 z3 unsat cvc5 unsat
@@ -3101,10 +3101,10 @@ sparknacl-sign.adb_574_42_index_check_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_574_42_index_check2_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_574_42_index_check3_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_574_42_index_check4_1.smt2 z3 unsat cvc5 unsat
-sparknacl-sign.adb_577_16_loop_invariant_init_1.smt2 z3 unsat cvc5 unsat
-sparknacl-sign.adb_577_16_loop_invariant_init2_1.smt2 z3 unsat cvc5 unsat
-sparknacl-sign.adb_577_16_loop_invariant_preserv_1.smt2 z3 unsat cvc5 unsat
-sparknacl-sign.adb_577_16_loop_invariant_preserv2_1.smt2 z3 unsat cvc5 unsat
+sparknacl-sign.adb_577_16_loop_invariant_init_1.smt2 z3 timeout cvc5 unsat
+sparknacl-sign.adb_577_16_loop_invariant_init2_1.smt2 z3 timeout cvc5 unsat
+sparknacl-sign.adb_577_16_loop_invariant_preserv_1.smt2 z3 timeout cvc5 unsat
+sparknacl-sign.adb_577_16_loop_invariant_preserv2_1.smt2 z3 timeout cvc5 unsat
 sparknacl-sign.adb_577_24_range_check_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_577_24_range_check2_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_577_24_range_check3_1.smt2 z3 unsat cvc5 unsat
@@ -3132,7 +3132,7 @@ sparknacl-sign.adb_587_16_loop_invariant_init_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_587_16_loop_invariant_preserv_1.smt2 z3 timeout cvc5 unsat
 sparknacl-sign.adb_590_16_loop_invariant_init_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_590_16_loop_invariant_preserv_1.smt2 z3 timeout cvc5 unsat
-sparknacl-sign.adb_594_16_loop_invariant_init_1.smt2 z3 unsat cvc5 unsat
+sparknacl-sign.adb_594_16_loop_invariant_init_1.smt2 z3 timeout cvc5 unsat
 sparknacl-sign.adb_594_16_loop_invariant_preserv_1.smt2 z3 timeout cvc5 unsat
 sparknacl-sign.adb_594_24_range_check_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_594_24_range_check2_1.smt2 z3 unsat cvc5 unsat
@@ -3166,7 +3166,7 @@ sparknacl-sign.adb_624_28_assert4_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_625_30_overflow_check_1.smt2 z3 timeout cvc5
 sparknacl-sign.adb_625_30_range_check_1.smt2 z3 timeout cvc5
 sparknacl-sign.adb_625_39_overflow_check_1.smt2 z3 unsat cvc5 unsat
-sparknacl-sign.adb_625_39_overflow_check2_1.smt2 z3 timeout cvc5
+sparknacl-sign.adb_625_39_overflow_check2_1.smt2 z3 unsat cvc5
 sparknacl-sign.adb_625_57_overflow_check_1.smt2 z3 timeout cvc5
 sparknacl-sign.adb_627_28_assert_1.smt2 z3 timeout cvc5
 sparknacl-sign.adb_628_28_assert_1.smt2 z3 timeout cvc5
@@ -3426,10 +3426,10 @@ sparknacl-sign.adb_990_36_overflow_check4_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_990_36_overflow_check5_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_990_36_overflow_check6_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_990_36_overflow_check7_1.smt2 z3 unsat cvc5 unsat
-sparknacl-sign.adb_990_36_overflow_check8_1.smt2 z3 unsat cvc5
+sparknacl-sign.adb_990_36_overflow_check8_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_996_16_loop_invariant_init_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_996_16_loop_invariant_init10_1.smt2 z3 unsat cvc5 unsat
-sparknacl-sign.adb_996_16_loop_invariant_init11_1.smt2 z3 unsat cvc5 unsat
+sparknacl-sign.adb_996_16_loop_invariant_init11_1.smt2 z3 timeout cvc5 unsat
 sparknacl-sign.adb_996_16_loop_invariant_init12_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_996_16_loop_invariant_init13_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_996_16_loop_invariant_init14_1.smt2 z3 unsat cvc5 unsat
@@ -3440,25 +3440,25 @@ sparknacl-sign.adb_996_16_loop_invariant_init18_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_996_16_loop_invariant_init2_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_996_16_loop_invariant_init3_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_996_16_loop_invariant_init4_1.smt2 z3 unsat cvc5 unsat
-sparknacl-sign.adb_996_16_loop_invariant_init5_1.smt2 z3 unsat cvc5 unsat
+sparknacl-sign.adb_996_16_loop_invariant_init5_1.smt2 z3 timeout cvc5 unsat
 sparknacl-sign.adb_996_16_loop_invariant_init6_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_996_16_loop_invariant_init7_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_996_16_loop_invariant_init8_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_996_16_loop_invariant_init9_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_996_16_loop_invariant_preserv_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_996_16_loop_invariant_preserv10_1.smt2 z3 unsat cvc5 unsat
-sparknacl-sign.adb_996_16_loop_invariant_preserv11_1.smt2 z3 unsat cvc5 unsat
-sparknacl-sign.adb_996_16_loop_invariant_preserv12_1.smt2 z3 unsat cvc5 unsat
+sparknacl-sign.adb_996_16_loop_invariant_preserv11_1.smt2 z3 timeout cvc5 unsat
+sparknacl-sign.adb_996_16_loop_invariant_preserv12_1.smt2 z3 timeout cvc5 unsat
 sparknacl-sign.adb_996_16_loop_invariant_preserv13_1.smt2 z3 unsat cvc5 unsat
-sparknacl-sign.adb_996_16_loop_invariant_preserv14_1.smt2 z3 unsat cvc5 unsat
+sparknacl-sign.adb_996_16_loop_invariant_preserv14_1.smt2 z3 timeout cvc5 unsat
 sparknacl-sign.adb_996_16_loop_invariant_preserv15_1.smt2 z3 unsat cvc5 unsat
-sparknacl-sign.adb_996_16_loop_invariant_preserv16_1.smt2 z3 unsat cvc5 unsat
+sparknacl-sign.adb_996_16_loop_invariant_preserv16_1.smt2 z3 timeout cvc5 unsat
 sparknacl-sign.adb_996_16_loop_invariant_preserv17_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_996_16_loop_invariant_preserv18_1.smt2 z3 unsat cvc5 unsat
-sparknacl-sign.adb_996_16_loop_invariant_preserv2_1.smt2 z3 unsat cvc5 unsat
+sparknacl-sign.adb_996_16_loop_invariant_preserv2_1.smt2 z3 timeout cvc5 unsat
 sparknacl-sign.adb_996_16_loop_invariant_preserv3_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_996_16_loop_invariant_preserv4_1.smt2 z3 unsat cvc5 unsat
-sparknacl-sign.adb_996_16_loop_invariant_preserv5_1.smt2 z3 unsat cvc5 unsat
+sparknacl-sign.adb_996_16_loop_invariant_preserv5_1.smt2 z3 timeout cvc5 unsat
 sparknacl-sign.adb_996_16_loop_invariant_preserv6_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_996_16_loop_invariant_preserv7_1.smt2 z3 unsat cvc5 unsat
 sparknacl-sign.adb_996_16_loop_invariant_preserv8_1.smt2 z3 unsat cvc5 unsat
@@ -6077,17 +6077,14 @@ sparknacl.ads_407_40_predicate_check_2.smt2 z3 unsat cvc5 unsat
 sparknacl.ads_407_40_predicate_check2_1.smt2 z3 unsat cvc5 unsat
 sparknacl.ads_407_40_predicate_check2_2.smt2 z3 unsat cvc5 unsat
 sparknacl.ads_408_41_range_check_1.smt2 z3 unsat cvc5 unsat
-sparknacl.ads_419_19_postcondition_1.smt2 z3 timeout cvc5
 sparknacl.ads_419_55_division_check_1.smt2 z3 unsat cvc5 unsat
 sparknacl.ads_420_57_overflow_check_1.smt2 z3 unsat cvc5 unsat
 sparknacl.ads_420_57_overflow_check2_1.smt2 z3 unsat cvc5 unsat
 sparknacl.ads_420_62_division_check_1.smt2 z3 unsat cvc5 unsat
-sparknacl.ads_427_19_postcondition_1.smt2 z3 timeout cvc5
 sparknacl.ads_427_55_division_check_1.smt2 z3 unsat cvc5 unsat
 sparknacl.ads_428_57_overflow_check_1.smt2 z3 unsat cvc5 unsat
 sparknacl.ads_428_57_overflow_check2_1.smt2 z3 unsat cvc5 unsat
 sparknacl.ads_428_62_division_check_1.smt2 z3 unsat cvc5 unsat
-sparknacl.ads_435_19_postcondition_1.smt2 z3 timeout cvc5
 sparknacl.ads_435_52_division_check_1.smt2 z3 unsat cvc5 unsat
 sparknacl.ads_436_54_overflow_check_1.smt2 z3 unsat cvc5 unsat
 sparknacl.ads_436_54_overflow_check2_1.smt2 z3 unsat cvc5 unsat
