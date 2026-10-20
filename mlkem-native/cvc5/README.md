@@ -8,13 +8,13 @@ performance of cvc5 with z3 on these examples
 
 CBMC: 6.11.0
 
-Z3: 5.1.0
+Z3: 5.3.1 master @ 310a6668c
 
-cvc5: 1.3.5 (main @1689f13 on 8th September 2026, "unrestricted" build type)
+cvc5: 1.4.2 (static shared GPL)
 
 GNU parallel: 20250122 (get from Homebrew on macOS or apt-get on Linux)
 
-All running on Apple Silicon M5 Pro/macOS 26.6.2
+All running on Apple Silicon M5 Pro/macOS 26.7.1
 
 ## Reproducing the files
 
@@ -24,7 +24,7 @@ All running on Apple Silicon M5 Pro/macOS 26.6.2
 4. cd proofs/cbmc
 5. ./run-cbmc-proofs.py --summarize --no-coverage --cvc5 -j15
 
-These commands produce `*/gotos/*.smtcp` below the `proofs/cbmc` directory.
+These commands produce `*/gotos/LP64/*/*.smtcp` below the `proofs/cbmc` directory.
 
 The .smtcp files are those produced by CBMC, but with all `get-value` and `set-option: produce-models`
 lines removed.
@@ -58,21 +58,19 @@ Results are in `resboth.txt`
 With those options, an analysis of those results yields
 
 ```
-z3   unsat cvc5 unsat:   123
-z3   unsat cvc5 timeout:  23
+z3   unsat cvc5 unsat:   125
+z3   unsat cvc5 timeout:  21
 z3 timeout cvc5 unsat:     6
-z3 timeout cvc5 timeout:   5
+z3 timeout cvc5 timeout:   6
 
 z3   unsat cvc5 unknown:   0
 z3 timeout cvc5 unknown:   0
 
-Total: 157
+Total: 158
 ```
 
 # Conclusions (so far...)
 
-1. `--arrays-exp` is mandatory to get reasonable results with cvc5. This needs to be a safe/stable option, or made the default.
-2. `--produce-models` or `(set-option :produce-models true)` in the SMT file degrades cvc5's performance. It might be better for
-CBMC to run cvc5 without those options first, then re-enable them following a "sat" result only.
-3. cvc5 struggles to find quantifier instantiations where z3 succeeds. See [detailed analysis](./polyvec_ntt_analysis.md) produced by
-Clause Opus 4.6 for this problem.
+1. `--arrays-exp` is mandatory to get reasonable results with cvc5.
+2. `--produce-models` or `(set-option :produce-models true)` in the SMT file degrades cvc5's performance. It might be better for CBMC to run cvc5 without those options first, then re-enable them following a "sat" result only.
+3. cvc5 struggles to find quantifier instantiations where z3 succeeds. See [detailed analysis](./polyvec_ntt_analysis.md) produced by Clause Opus 4.6 for this problem.

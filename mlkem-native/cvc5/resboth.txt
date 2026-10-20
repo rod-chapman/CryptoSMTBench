@@ -16,7 +16,7 @@ indcpa_enc_harness.smt2 z timeout c
 indcpa_keypair_derand_harness.smt2 z timeout c
 intt_native_aarch64_harness.smt2 z unsat c unsat
 intt_native_x86_64_harness.smt2 z unsat c unsat
-invntt_layer_harness.smt2 z unsat c
+invntt_layer_harness.smt2 z unsat c unsat
 keccak_absorb_once_harness.smt2 z unsat c unsat
 keccak_absorb_once_x4_harness.smt2 z unsat c unsat
 keccak_f1600_x4_native_aarch64_v8a_scalar_hybrid_harness.smt2 z unsat c unsat
@@ -80,6 +80,7 @@ poly_frombytes_native_x86_64_harness.smt2 z unsat c unsat
 poly_frommsg_harness.smt2 z unsat c unsat
 poly_getnoise_eta1_4x_harness.smt2 z unsat c unsat
 poly_getnoise_eta1_4x_native_harness.smt2 z unsat c unsat
+poly_getnoise_eta1_4x_serial_harness.smt2 z unsat c unsat
 poly_invntt_tomont_c_harness.smt2 z unsat c
 poly_invntt_tomont_harness.smt2 z unsat c unsat
 poly_invntt_tomont_native_harness.smt2 z unsat c unsat
@@ -112,7 +113,7 @@ poly_tomsg_harness.smt2 z unsat c unsat
 polymat_permute_bitrev_to_custom_harness.smt2 z unsat c
 polymat_permute_bitrev_to_custom_native_harness.smt2 z timeout c
 polyvec_add_harness.smt2 z unsat c
-polyvec_basemul_acc_montgomery_cached_c_harness.smt2 z unsat c
+polyvec_basemul_acc_montgomery_cached_c_harness.smt2 z timeout c
 polyvec_basemul_acc_montgomery_cached_harness.smt2 z unsat c unsat
 polyvec_basemul_acc_montgomery_cached_k2_native_aarch64_harness.smt2 z unsat c unsat
 polyvec_basemul_acc_montgomery_cached_k2_native_x86_64_harness.smt2 z unsat c unsat
@@ -134,9 +135,9 @@ rej_uniform_harness.smt2 z unsat c unsat
 rej_uniform_native_aarch64_harness.smt2 z unsat c
 rej_uniform_native_harness.smt2 z unsat c
 rej_uniform_native_x86_64_harness.smt2 z unsat c
-scalar_compress_d1_harness.smt2 z unsat c unsat
 scalar_compress_d10_harness.smt2 z unsat c unsat
 scalar_compress_d11_harness.smt2 z unsat c unsat
+scalar_compress_d1_harness.smt2 z unsat c unsat
 scalar_compress_d4_harness.smt2 z unsat c unsat
 scalar_compress_d5_harness.smt2 z unsat c unsat
 scalar_decompress_d10_harness.smt2 z unsat c unsat
