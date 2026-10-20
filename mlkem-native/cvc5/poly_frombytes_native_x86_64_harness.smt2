@@ -2127,24 +2127,24 @@
 (define-fun B440 () Bool (= |__CPROVER_contracts_write_set_havoc_slice::$tmp::tmp_nondet_contents!0@1#1| |__CPROVER_contracts_write_set_havoc_slice::$tmp::tmp_nondet_contents!0@1#1|))
 
 ; find_symbols
-(declare-fun |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx33!0@1#1| () (_ BitVec 32))
+(declare-fun |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx32!0@1#1| () (_ BitVec 32))
 ; convert
 ; Converting var_no 441 with expr ID of =
-(define-fun B441 () Bool (= |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx33!0@1#1| |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx33!0@1#1|))
+(define-fun B441 () Bool (= |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx32!0@1#1| |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx32!0@1#1|))
 
 ; convert
 ; Converting var_no 442 with expr ID of =
-(define-fun B442 () Bool (= |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx33!0@1#1| |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx33!0@1#1|))
+(define-fun B442 () Bool (= |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx32!0@1#1| |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx32!0@1#1|))
 
 ; find_symbols
-(declare-fun |mlk_poly_frombytes_native::ensures::1::_cbmc_idx16!0@1#1| () (_ BitVec 32))
+(declare-fun |mlk_poly_frombytes_native::ensures::1::_cbmc_idx15!0@1#1| () (_ BitVec 32))
 ; convert
 ; Converting var_no 443 with expr ID of =
-(define-fun B443 () Bool (= |mlk_poly_frombytes_native::ensures::1::_cbmc_idx16!0@1#1| |mlk_poly_frombytes_native::ensures::1::_cbmc_idx16!0@1#1|))
+(define-fun B443 () Bool (= |mlk_poly_frombytes_native::ensures::1::_cbmc_idx15!0@1#1| |mlk_poly_frombytes_native::ensures::1::_cbmc_idx15!0@1#1|))
 
 ; convert
 ; Converting var_no 444 with expr ID of =
-(define-fun B444 () Bool (= |mlk_poly_frombytes_native::ensures::1::_cbmc_idx16!0@1#1| |mlk_poly_frombytes_native::ensures::1::_cbmc_idx16!0@1#1|))
+(define-fun B444 () Bool (= |mlk_poly_frombytes_native::ensures::1::_cbmc_idx15!0@1#1| |mlk_poly_frombytes_native::ensures::1::_cbmc_idx15!0@1#1|))
 
 ; convert
 ; Converting var_no 445 with expr ID of or
@@ -2153,7 +2153,7 @@
 ; convert
 ; Converting var_no 446 with expr ID of =>
 (declare-fun B446 () Bool)
-(assert (= B446 (=> (not |goto_symex::&92;guard#1|) (forall ((|mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx33!0@18#0| (_ BitVec 32))) (or (bvuge |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx33!0@18#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$10#2| ((_ zero_extend 32) |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx33!0@18#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$10#2| ((_ zero_extend 32) |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx33!0@18#0|))) (_ bv4096 32)))))))))
+(assert (= B446 (=> (not |goto_symex::&92;guard#1|) (forall ((|mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx32!0@18#0| (_ BitVec 32))) (or (bvuge |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx32!0@18#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$10#2| ((_ zero_extend 32) |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx32!0@18#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$10#2| ((_ zero_extend 32) |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx32!0@18#0|))) (_ bv4096 32)))))))))
 
 ; convert
 ; Converting var_no 447 with expr ID of not
@@ -3170,37 +3170,37 @@
 
 ; convert
 ; Converting var_no 481 with expr ID of =>
-(define-fun B481 () Bool (=> (and true B445) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx33!0@1#1| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx33!0@1#1|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
+(define-fun B481 () Bool (=> (and true B445) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx32!0@1#1| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx32!0@1#1|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
 
 ; find_symbols
-(declare-fun |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx33!0@3#0| () (_ BitVec 32))
+(declare-fun |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx32!0@3#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 482 with expr ID of =>
-(define-fun B482 () Bool (=> (and true B445) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx33!0@3#0| (_ bv256 32)) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx33!0@3#0|) (_ bv2 64))) (_ bv513 65)))))))
+(define-fun B482 () Bool (=> (and true B445) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx32!0@3#0| (_ bv256 32)) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx32!0@3#0|) (_ bv2 64))) (_ bv513 65)))))))
 
 ; find_symbols
-(declare-fun |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx33!0@7#0| () (_ BitVec 32))
+(declare-fun |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx32!0@7#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 483 with expr ID of =>
-(define-fun B483 () Bool (=> (and true B445) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx33!0@7#0| (_ bv256 32)) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx33!0@7#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65)))))))
+(define-fun B483 () Bool (=> (and true B445) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx32!0@7#0| (_ bv256 32)) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx32!0@7#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65)))))))
 
 ; find_symbols
-(declare-fun |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx33!0@9#0| () (_ BitVec 32))
+(declare-fun |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx32!0@9#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 484 with expr ID of =>
-(define-fun B484 () Bool (=> (and true B445) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx33!0@9#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$10#2| ((_ zero_extend 32) |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx33!0@9#0|))) (_ bv0 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx33!0@9#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
+(define-fun B484 () Bool (=> (and true B445) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx32!0@9#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$10#2| ((_ zero_extend 32) |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx32!0@9#0|))) (_ bv0 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx32!0@9#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
 
 ; find_symbols
-(declare-fun |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx33!0@12#0| () (_ BitVec 32))
+(declare-fun |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx32!0@12#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 485 with expr ID of =>
-(define-fun B485 () Bool (=> (and true B445) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx33!0@12#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$10#2| ((_ zero_extend 32) |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx33!0@12#0|))) (_ bv0 32))) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx33!0@12#0|) (_ bv2 64))) (_ bv513 65)))))))
+(define-fun B485 () Bool (=> (and true B445) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx32!0@12#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$10#2| ((_ zero_extend 32) |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx32!0@12#0|))) (_ bv0 32))) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx32!0@12#0|) (_ bv2 64))) (_ bv513 65)))))))
 
 ; find_symbols
-(declare-fun |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx33!0@16#0| () (_ BitVec 32))
+(declare-fun |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx32!0@16#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 486 with expr ID of =>
-(define-fun B486 () Bool (=> (and true B445) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx33!0@16#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$10#2| ((_ zero_extend 32) |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx33!0@16#0|))) (_ bv0 32))) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx33!0@16#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65)))))))
+(define-fun B486 () Bool (=> (and true B445) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx32!0@16#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$10#2| ((_ zero_extend 32) |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx32!0@16#0|))) (_ bv0 32))) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_nttfrombytes_avx2_asm::ensures::1::_cbmc_idx32!0@16#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65)))))))
 
 ; convert
 ; Converting var_no 487 with expr ID of =>
@@ -3208,43 +3208,43 @@
 
 ; convert
 ; Converting var_no 488 with expr ID of =>
-(define-fun B488 () Bool (=> (and true B445 B446) (or (not (= |mlk_poly_frombytes_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_poly_frombytes_native::ensures::1::_cbmc_idx16!0@1#1| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_frombytes_native::ensures::1::_cbmc_idx16!0@1#1|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
+(define-fun B488 () Bool (=> (and true B445 B446) (or (not (= |mlk_poly_frombytes_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_poly_frombytes_native::ensures::1::_cbmc_idx15!0@1#1| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_frombytes_native::ensures::1::_cbmc_idx15!0@1#1|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_frombytes_native::ensures::1::_cbmc_idx16!0@3#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_frombytes_native::ensures::1::_cbmc_idx15!0@3#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 489 with expr ID of =>
-(define-fun B489 () Bool (=> (and true B445 B446) (or (not (= |mlk_poly_frombytes_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_poly_frombytes_native::ensures::1::_cbmc_idx16!0@3#0| (_ bv256 32)) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_frombytes_native::ensures::1::_cbmc_idx16!0@3#0|) (_ bv2 64))) (_ bv513 65))))))
+(define-fun B489 () Bool (=> (and true B445 B446) (or (not (= |mlk_poly_frombytes_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_poly_frombytes_native::ensures::1::_cbmc_idx15!0@3#0| (_ bv256 32)) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_frombytes_native::ensures::1::_cbmc_idx15!0@3#0|) (_ bv2 64))) (_ bv513 65))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_frombytes_native::ensures::1::_cbmc_idx16!0@7#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_frombytes_native::ensures::1::_cbmc_idx15!0@7#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 490 with expr ID of =>
-(define-fun B490 () Bool (=> (and true B445 B446) (or (not (= |mlk_poly_frombytes_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_poly_frombytes_native::ensures::1::_cbmc_idx16!0@7#0| (_ bv256 32)) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_frombytes_native::ensures::1::_cbmc_idx16!0@7#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65))))))
+(define-fun B490 () Bool (=> (and true B445 B446) (or (not (= |mlk_poly_frombytes_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_poly_frombytes_native::ensures::1::_cbmc_idx15!0@7#0| (_ bv256 32)) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_frombytes_native::ensures::1::_cbmc_idx15!0@7#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_frombytes_native::ensures::1::_cbmc_idx16!0@9#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_frombytes_native::ensures::1::_cbmc_idx15!0@9#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 491 with expr ID of =>
-(define-fun B491 () Bool (=> (and true B445 B446) (or (not (= |mlk_poly_frombytes_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_poly_frombytes_native::ensures::1::_cbmc_idx16!0@9#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$10#3| ((_ zero_extend 32) |mlk_poly_frombytes_native::ensures::1::_cbmc_idx16!0@9#0|))) (_ bv0 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_frombytes_native::ensures::1::_cbmc_idx16!0@9#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
+(define-fun B491 () Bool (=> (and true B445 B446) (or (not (= |mlk_poly_frombytes_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_poly_frombytes_native::ensures::1::_cbmc_idx15!0@9#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$10#3| ((_ zero_extend 32) |mlk_poly_frombytes_native::ensures::1::_cbmc_idx15!0@9#0|))) (_ bv0 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_frombytes_native::ensures::1::_cbmc_idx15!0@9#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_frombytes_native::ensures::1::_cbmc_idx16!0@12#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_frombytes_native::ensures::1::_cbmc_idx15!0@12#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 492 with expr ID of =>
-(define-fun B492 () Bool (=> (and true B445 B446) (or (not (= |mlk_poly_frombytes_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_poly_frombytes_native::ensures::1::_cbmc_idx16!0@12#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$10#3| ((_ zero_extend 32) |mlk_poly_frombytes_native::ensures::1::_cbmc_idx16!0@12#0|))) (_ bv0 32))) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_frombytes_native::ensures::1::_cbmc_idx16!0@12#0|) (_ bv2 64))) (_ bv513 65))))))
+(define-fun B492 () Bool (=> (and true B445 B446) (or (not (= |mlk_poly_frombytes_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_poly_frombytes_native::ensures::1::_cbmc_idx15!0@12#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$10#3| ((_ zero_extend 32) |mlk_poly_frombytes_native::ensures::1::_cbmc_idx15!0@12#0|))) (_ bv0 32))) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_frombytes_native::ensures::1::_cbmc_idx15!0@12#0|) (_ bv2 64))) (_ bv513 65))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_frombytes_native::ensures::1::_cbmc_idx16!0@16#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_frombytes_native::ensures::1::_cbmc_idx15!0@16#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 493 with expr ID of =>
-(define-fun B493 () Bool (=> (and true B445 B446) (or (not (= |mlk_poly_frombytes_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_poly_frombytes_native::ensures::1::_cbmc_idx16!0@16#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$10#3| ((_ zero_extend 32) |mlk_poly_frombytes_native::ensures::1::_cbmc_idx16!0@16#0|))) (_ bv0 32))) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_frombytes_native::ensures::1::_cbmc_idx16!0@16#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65))))))
+(define-fun B493 () Bool (=> (and true B445 B446) (or (not (= |mlk_poly_frombytes_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_poly_frombytes_native::ensures::1::_cbmc_idx15!0@16#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$10#3| ((_ zero_extend 32) |mlk_poly_frombytes_native::ensures::1::_cbmc_idx15!0@16#0|))) (_ bv0 32))) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_frombytes_native::ensures::1::_cbmc_idx15!0@16#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_frombytes_native::ensures::1::_cbmc_idx16!0@18#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_frombytes_native::ensures::1::_cbmc_idx15!0@18#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 494 with expr ID of =>
-(define-fun B494 () Bool (=> (and true B445 B446) (or (not (= |mlk_poly_frombytes_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_poly_frombytes_native::ensures::1::_cbmc_idx16!0@18#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$10#3| ((_ zero_extend 32) |mlk_poly_frombytes_native::ensures::1::_cbmc_idx16!0@18#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$10#3| ((_ zero_extend 32) |mlk_poly_frombytes_native::ensures::1::_cbmc_idx16!0@18#0|))) (_ bv4096 32)))))))
+(define-fun B494 () Bool (=> (and true B445 B446) (or (not (= |mlk_poly_frombytes_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_poly_frombytes_native::ensures::1::_cbmc_idx15!0@18#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$10#3| ((_ zero_extend 32) |mlk_poly_frombytes_native::ensures::1::_cbmc_idx15!0@18#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$10#3| ((_ zero_extend 32) |mlk_poly_frombytes_native::ensures::1::_cbmc_idx15!0@18#0|))) (_ bv4096 32)))))))
 
 ; set_to true
 (assert (or (not B481) (not B482) (not B483) (not B484) (not B485) (not B486) (not B487) (not B488) (not B489) (not B490) (not B491) (not B492) (not B493) (not B494)))

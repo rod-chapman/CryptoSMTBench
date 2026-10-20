@@ -7440,10 +7440,10 @@
 (assert (= (select array.106 (_ bv1 64)) (mk-struct.2 array.104)))
 (assert (= (select array.106 (_ bv2 64)) (mk-struct.2 array.105)))
 ; set_to true (equal)
-(define-fun |mlk_polymat_permute_bitrev_to_custom_wrapped_for_contract_checking::__init_invariant$0!0@1#2| () Bool (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@14#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@14#0| (_ bv3 32)) (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@14#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@14#0| (_ bv3 32)) (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@14#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@14#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@14#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@14#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@14#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@14#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@14#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@14#0|))) (_ bv3329 32)))))))))))
+(define-fun |mlk_polymat_permute_bitrev_to_custom_wrapped_for_contract_checking::__init_invariant$0!0@1#2| () Bool (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@14#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@14#0| (_ bv3 32)) (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@14#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@14#0| (_ bv3 32)) (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@14#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@14#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@14#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@14#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@14#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@14#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@14#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@14#0|))) (_ bv3329 32)))))))))))
 
 ; set_to true (equal)
-(define-fun |mlk_polymat_permute_bitrev_to_custom_wrapped_for_contract_checking::__init_invariant!0@1#2| () Bool (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@14#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@14#0| (_ bv3 32)) (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@14#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@14#0| (_ bv3 32)) (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@14#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@14#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@14#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@14#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@14#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@14#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@14#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@14#0|))) (_ bv3329 32)))))))))))
+(define-fun |mlk_polymat_permute_bitrev_to_custom_wrapped_for_contract_checking::__init_invariant!0@1#2| () Bool (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@14#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@14#0| (_ bv3 32)) (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@14#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@14#0| (_ bv3 32)) (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@14#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@14#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@14#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@14#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@14#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@14#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@14#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@14#0|))) (_ bv3329 32)))))))))))
 
 ; find_symbols
 (declare-fun |__CPROVER_contracts_write_set_havoc_slice::$tmp::tmp_nondet_contents!0@1#1| () (Array (_ BitVec 64) (_ BitVec 8)))
@@ -13203,7 +13203,7 @@
 (assert (= (select array.134 (_ bv1 64)) (mk-struct.2 array.132)))
 (assert (= (select array.134 (_ bv2 64)) (mk-struct.2 array.133)))
 ; set_to true (equal)
-(define-fun |mlk_polymat_permute_bitrev_to_custom_wrapped_for_contract_checking::__init_invariant!0@2#2| () Bool (and (not (bvuge |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4| (_ bv4 32))) (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@57#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@57#0| (_ bv3 32)) (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@57#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@57#0| (_ bv3 32)) (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@57#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@57#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@57#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@57#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@57#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@57#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@57#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@57#0|))) (_ bv3329 32))))))))))))
+(define-fun |mlk_polymat_permute_bitrev_to_custom_wrapped_for_contract_checking::__init_invariant!0@2#2| () Bool (and (not (bvuge |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4| (_ bv4 32))) (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@57#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@57#0| (_ bv3 32)) (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@57#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@57#0| (_ bv3 32)) (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@57#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@57#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@57#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@57#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@57#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@57#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@57#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@57#0|))) (_ bv3329 32))))))))))))
 
 ; set_to true (equal)
 (define-fun |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1| () (_ BitVec 64) (let ((?pointerop (concat (_ bv22 12) (_ bv0 52)))) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) ((_ extract 51 0) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|) (_ bv1536 64)))))))
@@ -16617,14 +16617,14 @@
 (define-fun |mlk_polymat_permute_bitrev_to_custom_wrapped_for_contract_checking::tmp_cc$2!0#1| () (_ BitVec 32) (bvadd (_ bv3 32) (bvneg |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#5|)))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@1#1| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@1#1| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1795 with expr ID of =
-(define-fun B1795 () Bool (= |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@1#1| |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@1#1|))
+(define-fun B1795 () Bool (= |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@1#1| |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@1#1|))
 
 ; convert
 ; Converting var_no 1796 with expr ID of =
-(define-fun B1796 () Bool (= |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@1#1| |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@1#1|))
+(define-fun B1796 () Bool (= |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@1#1| |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@1#1|))
 
 ; convert
 ; Converting var_no 1797 with expr ID of =
@@ -16635,14 +16635,14 @@
 (define-fun B1798 () Bool (= |__CPROVER_contracts_write_set_havoc_slice::$tmp::tmp_nondet_contents!0@1#1| |__CPROVER_contracts_write_set_havoc_slice::$tmp::tmp_nondet_contents!0@1#1|))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@1#1| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@1#1| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1799 with expr ID of =
-(define-fun B1799 () Bool (= |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@1#1| |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@1#1|))
+(define-fun B1799 () Bool (= |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@1#1| |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@1#1|))
 
 ; convert
 ; Converting var_no 1800 with expr ID of =
-(define-fun B1800 () Bool (= |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@1#1| |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@1#1|))
+(define-fun B1800 () Bool (= |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@1#1| |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@1#1|))
 
 ; convert
 ; Converting var_no 1801 with expr ID of =
@@ -16695,7 +16695,7 @@
 ; convert
 ; Converting var_no 1813 with expr ID of forall
 (declare-fun B1813 () Bool)
-(assert (= B1813 (forall ((|mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@14#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@14#0| (_ bv3 32)) (forall ((|mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@14#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@14#0| (_ bv3 32)) (forall ((|mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx65!0@14#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx65!0@14#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@14#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@14#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx65!0@14#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@14#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@14#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx65!0@14#0|))) (_ bv3329 32))))))))))))
+(assert (= B1813 (forall ((|mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@14#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@14#0| (_ bv3 32)) (forall ((|mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@14#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@14#0| (_ bv3 32)) (forall ((|mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx64!0@14#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx64!0@14#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@14#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@14#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx64!0@14#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@14#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@14#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx64!0@14#0|))) (_ bv3329 32))))))))))))
 
 ; the following is a substitute for an array constructor
 (declare-fun array.159 () (Array (_ BitVec 64) struct.0))
@@ -16710,7 +16710,7 @@
 ; convert
 ; Converting var_no 1814 with expr ID of forall
 (declare-fun B1814 () Bool)
-(assert (= B1814 (forall ((|mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@18#0| (_ BitVec 32))) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@18#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.160 (bvsdiv ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@18#0|) (_ bv768 64)))) (bvsdiv (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@18#0|) (_ bv768 64)) (_ bv256 64)))) (bvsrem (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@18#0|) (_ bv768 64)) (_ bv256 64)))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.160 (bvsdiv ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@18#0|) (_ bv768 64)))) (bvsdiv (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@18#0|) (_ bv768 64)) (_ bv256 64)))) (bvsrem (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@18#0|) (_ bv768 64)) (_ bv256 64)))) (_ bv3329 32))))))))
+(assert (= B1814 (forall ((|mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@18#0| (_ BitVec 32))) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@18#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.160 (bvsdiv ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@18#0|) (_ bv768 64)))) (bvsdiv (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@18#0|) (_ bv768 64)) (_ bv256 64)))) (bvsrem (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@18#0|) (_ bv768 64)) (_ bv256 64)))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.160 (bvsdiv ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@18#0|) (_ bv768 64)))) (bvsdiv (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@18#0|) (_ bv768 64)) (_ bv256 64)))) (bvsrem (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@18#0|) (_ bv768 64)) (_ bv256 64)))) (_ bv3329 32))))))))
 
 ; convert
 ; Converting var_no 1815 with expr ID of not
@@ -16719,7 +16719,7 @@
 ; convert
 ; Converting var_no 1816 with expr ID of forall
 (declare-fun B1816 () Bool)
-(assert (= B1816 (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@28#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@28#0| (_ bv3 32)) (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@28#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@28#0| (_ bv3 32)) (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@28#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@28#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.121 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@28#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@28#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@28#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.121 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@28#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@28#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@28#0|))) (_ bv3329 32))))))))))))
+(assert (= B1816 (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@28#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@28#0| (_ bv3 32)) (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@28#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@28#0| (_ bv3 32)) (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@28#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@28#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.121 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@28#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@28#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@28#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.121 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@28#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@28#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@28#0|))) (_ bv3329 32))))))))))))
 
 ; the following is a substitute for an array constructor
 (declare-fun array.162 () (Array (_ BitVec 64) struct.0))
@@ -16744,7 +16744,7 @@
 ; convert
 ; Converting var_no 1817 with expr ID of =>
 (declare-fun B1817 () Bool)
-(assert (= B1817 (=> |goto_symex::&92;guard#1| (forall ((|mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@36#0| (_ BitVec 32))) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@36#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.165 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@36#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.165 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@36#0|))) (_ bv3329 32)))))))))
+(assert (= B1817 (=> |goto_symex::&92;guard#1| (forall ((|mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@36#0| (_ BitVec 32))) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@36#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.165 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@36#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.165 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@36#0|))) (_ bv3329 32)))))))))
 
 ; convert
 ; Converting var_no 1818 with expr ID of not
@@ -16757,7 +16757,7 @@
 ; convert
 ; Converting var_no 1820 with expr ID of forall
 (declare-fun B1820 () Bool)
-(assert (= B1820 (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@28#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@28#0| (_ bv3 32)) (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@28#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@28#0| (_ bv3 32)) (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@28#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@28#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@28#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@28#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@28#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@28#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@28#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@28#0|))) (_ bv3329 32))))))))))))
+(assert (= B1820 (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@28#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@28#0| (_ bv3 32)) (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@28#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@28#0| (_ bv3 32)) (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@28#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@28#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@28#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@28#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@28#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@28#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@28#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@28#0|))) (_ bv3329 32))))))))))))
 
 ; the following is a substitute for an array constructor
 (declare-fun array.168 () (Array (_ BitVec 64) struct.0))
@@ -16782,7 +16782,7 @@
 ; convert
 ; Converting var_no 1821 with expr ID of =>
 (declare-fun B1821 () Bool)
-(assert (= B1821 (=> |goto_symex::&92;guard#9| (forall ((|mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@54#0| (_ BitVec 32))) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@54#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.171 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@54#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.171 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@54#0|))) (_ bv3329 32)))))))))
+(assert (= B1821 (=> |goto_symex::&92;guard#9| (forall ((|mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@54#0| (_ BitVec 32))) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@54#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.171 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@54#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.171 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@54#0|))) (_ bv3329 32)))))))))
 
 ; convert
 ; Converting var_no 1822 with expr ID of =>
@@ -16795,7 +16795,7 @@
 ; convert
 ; Converting var_no 1824 with expr ID of =>
 (declare-fun B1824 () Bool)
-(assert (= B1824 (=> |goto_symex::&92;guard#9| (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@71#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@71#0| (_ bv3 32)) (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@71#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@71#0| (_ bv3 32)) (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@71#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@71#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@71#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@71#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@71#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@71#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@71#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@71#0|))) (_ bv3329 32)))))))))))))
+(assert (= B1824 (=> |goto_symex::&92;guard#9| (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@71#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@71#0| (_ bv3 32)) (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@71#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@71#0| (_ bv3 32)) (forall ((|mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@71#0| (_ BitVec 32))) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@71#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@71#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@71#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@71#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@71#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@71#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@71#0|))) (_ bv3329 32)))))))))))))
 
 ; the following is a substitute for an array constructor
 (declare-fun array.174 () (Array (_ BitVec 64) struct.0))
@@ -16820,7 +16820,7 @@
 ; convert
 ; Converting var_no 1825 with expr ID of =>
 (declare-fun B1825 () Bool)
-(assert (= B1825 (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (forall ((|mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@72#0| (_ BitVec 32))) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@72#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.177 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@72#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.177 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@72#0|))) (_ bv3329 32)))))))))
+(assert (= B1825 (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (forall ((|mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@72#0| (_ BitVec 32))) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@72#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.177 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@72#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.177 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@72#0|))) (_ bv3329 32)))))))))
 
 ; convert
 ; Converting var_no 1826 with expr ID of not
@@ -18533,254 +18533,254 @@
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@4#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx65!0@4#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx64!0@4#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1922 with expr ID of =>
-(define-fun B1922 () Bool (=> true (or (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@4#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@4#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx65!0@4#0| (_ bv256 32)) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@4#0|) (_ bv1536 64)) (_ bv4608 64))))))
+(define-fun B1922 () Bool (=> true (or (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@4#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@4#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx64!0@4#0| (_ bv256 32)) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@4#0|) (_ bv1536 64)) (_ bv4608 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@5#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@5#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx65!0@5#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx64!0@5#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1923 with expr ID of =>
-(define-fun B1923 () Bool (=> true (or (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@5#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@5#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx65!0@5#0| (_ bv256 32)) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@5#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@5#0|) (_ bv512 64))) (_ bv4608 64))))))
+(define-fun B1923 () Bool (=> true (or (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@5#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@5#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx64!0@5#0| (_ bv256 32)) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@5#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@5#0|) (_ bv512 64))) (_ bv4608 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@6#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@6#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx65!0@6#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx64!0@6#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1924 with expr ID of =>
-(define-fun B1924 () Bool (=> true (or (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@6#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@6#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx65!0@6#0| (_ bv256 32)) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@6#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@6#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx65!0@6#0|) (_ bv2 64))) (_ bv4608 64))))))
+(define-fun B1924 () Bool (=> true (or (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@6#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@6#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx64!0@6#0| (_ bv256 32)) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@6#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@6#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx64!0@6#0|) (_ bv2 64))) (_ bv4608 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@11#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@11#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx65!0@11#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx64!0@11#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1925 with expr ID of =>
-(define-fun B1925 () Bool (=> true (or (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@11#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@11#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx65!0@11#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@11#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@11#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx65!0@11#0|))) (_ bv0 32))) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@11#0|) (_ bv1536 64)) (_ bv4608 64))))))
+(define-fun B1925 () Bool (=> true (or (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@11#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@11#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx64!0@11#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@11#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@11#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx64!0@11#0|))) (_ bv0 32))) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@11#0|) (_ bv1536 64)) (_ bv4608 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@12#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@12#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx65!0@12#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx64!0@12#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1926 with expr ID of =>
-(define-fun B1926 () Bool (=> true (or (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@12#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@12#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx65!0@12#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@12#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@12#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx65!0@12#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@12#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@12#0|) (_ bv512 64))) (_ bv4608 64))))))
+(define-fun B1926 () Bool (=> true (or (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@12#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@12#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx64!0@12#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@12#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@12#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx64!0@12#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@12#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@12#0|) (_ bv512 64))) (_ bv4608 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@13#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@13#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx65!0@13#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx64!0@13#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1927 with expr ID of =>
-(define-fun B1927 () Bool (=> true (or (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@13#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@13#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx65!0@13#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@13#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@13#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx65!0@13#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@13#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@13#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx65!0@13#0|) (_ bv2 64))) (_ bv4608 64))))))
+(define-fun B1927 () Bool (=> true (or (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@13#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@13#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx64!0@13#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@13#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@13#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx64!0@13#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::x!0@13#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::1::y!0@13#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::requires::1::1::1::_cbmc_idx64!0@13#0|) (_ bv2 64))) (_ bv4608 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@4#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@4#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@4#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@4#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1928 with expr ID of =>
-(define-fun B1928 () Bool (=> (and true B1813) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@4#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@4#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@4#0| (_ bv256 32)) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@4#0|) (_ bv1536 64)) (_ bv4608 64))))))
+(define-fun B1928 () Bool (=> (and true B1813) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@4#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@4#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@4#0| (_ bv256 32)) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@4#0|) (_ bv1536 64)) (_ bv4608 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@5#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@5#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@5#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@5#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1929 with expr ID of =>
-(define-fun B1929 () Bool (=> (and true B1813) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@5#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@5#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@5#0| (_ bv256 32)) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@5#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@5#0|) (_ bv512 64))) (_ bv4608 64))))))
+(define-fun B1929 () Bool (=> (and true B1813) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@5#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@5#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@5#0| (_ bv256 32)) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@5#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@5#0|) (_ bv512 64))) (_ bv4608 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@6#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@6#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@6#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@6#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1930 with expr ID of =>
-(define-fun B1930 () Bool (=> (and true B1813) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@6#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@6#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@6#0| (_ bv256 32)) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@6#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@6#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@6#0|) (_ bv2 64))) (_ bv4608 64))))))
+(define-fun B1930 () Bool (=> (and true B1813) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@6#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@6#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@6#0| (_ bv256 32)) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@6#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@6#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@6#0|) (_ bv2 64))) (_ bv4608 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@11#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@11#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@11#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@11#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1931 with expr ID of =>
-(define-fun B1931 () Bool (=> (and true B1813) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@11#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@11#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@11#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@11#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@11#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@11#0|))) (_ bv0 32))) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@11#0|) (_ bv1536 64)) (_ bv4608 64))))))
+(define-fun B1931 () Bool (=> (and true B1813) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@11#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@11#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@11#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@11#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@11#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@11#0|))) (_ bv0 32))) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@11#0|) (_ bv1536 64)) (_ bv4608 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@12#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@12#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@12#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@12#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1932 with expr ID of =>
-(define-fun B1932 () Bool (=> (and true B1813) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@12#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@12#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@12#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@12#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@12#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@12#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@12#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@12#0|) (_ bv512 64))) (_ bv4608 64))))))
+(define-fun B1932 () Bool (=> (and true B1813) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@12#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@12#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@12#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@12#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@12#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@12#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@12#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@12#0|) (_ bv512 64))) (_ bv4608 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@13#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@13#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@13#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@13#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1933 with expr ID of =>
-(define-fun B1933 () Bool (=> (and true B1813) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@13#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@13#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@13#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@13#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@13#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@13#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@13#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@13#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@13#0|) (_ bv2 64))) (_ bv4608 64))))))
+(define-fun B1933 () Bool (=> (and true B1813) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@13#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@13#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@13#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@13#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@13#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@13#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@13#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@13#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@13#0|) (_ bv2 64))) (_ bv4608 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@4#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@4#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@4#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@4#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1934 with expr ID of =>
-(define-fun B1934 () Bool (=> (and true B1813) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@4#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@4#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@4#0| (_ bv256 32)) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@4#0|) (_ bv1536 64)) (_ bv4608 64))))))
+(define-fun B1934 () Bool (=> (and true B1813) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@4#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@4#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@4#0| (_ bv256 32)) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@4#0|) (_ bv1536 64)) (_ bv4608 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@5#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@5#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@5#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@5#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1935 with expr ID of =>
-(define-fun B1935 () Bool (=> (and true B1813) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@5#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@5#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@5#0| (_ bv256 32)) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@5#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@5#0|) (_ bv512 64))) (_ bv4608 64))))))
+(define-fun B1935 () Bool (=> (and true B1813) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@5#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@5#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@5#0| (_ bv256 32)) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@5#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@5#0|) (_ bv512 64))) (_ bv4608 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@6#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@6#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@6#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@6#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1936 with expr ID of =>
-(define-fun B1936 () Bool (=> (and true B1813) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@6#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@6#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@6#0| (_ bv256 32)) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@6#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@6#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@6#0|) (_ bv2 64))) (_ bv4608 64))))))
+(define-fun B1936 () Bool (=> (and true B1813) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@6#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@6#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@6#0| (_ bv256 32)) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@6#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@6#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@6#0|) (_ bv2 64))) (_ bv4608 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@11#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@11#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@11#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@11#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1937 with expr ID of =>
-(define-fun B1937 () Bool (=> (and true B1813) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@11#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@11#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@11#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@11#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@11#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@11#0|))) (_ bv0 32))) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@11#0|) (_ bv1536 64)) (_ bv4608 64))))))
+(define-fun B1937 () Bool (=> (and true B1813) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@11#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@11#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@11#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@11#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@11#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@11#0|))) (_ bv0 32))) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@11#0|) (_ bv1536 64)) (_ bv4608 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@12#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@12#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@12#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@12#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1938 with expr ID of =>
-(define-fun B1938 () Bool (=> (and true B1813) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@12#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@12#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@12#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@12#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@12#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@12#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@12#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@12#0|) (_ bv512 64))) (_ bv4608 64))))))
+(define-fun B1938 () Bool (=> (and true B1813) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@12#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@12#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@12#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@12#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@12#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@12#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@12#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@12#0|) (_ bv512 64))) (_ bv4608 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@13#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@13#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@13#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@13#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1939 with expr ID of =>
-(define-fun B1939 () Bool (=> (and true B1813) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@13#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@13#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@13#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@13#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@13#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@13#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@13#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@13#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@13#0|) (_ bv2 64))) (_ bv4608 64))))))
+(define-fun B1939 () Bool (=> (and true B1813) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@13#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@13#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@13#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@13#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@13#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@13#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@13#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@13#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@13#0|) (_ bv2 64))) (_ bv4608 64))))))
 
 ; convert
 ; Converting var_no 1940 with expr ID of =>
-(define-fun B1940 () Bool (=> (and true B1813) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@1#1| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@1#1|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
+(define-fun B1940 () Bool (=> (and true B1813) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@1#1| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@1#1|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@3#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@3#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1941 with expr ID of =>
-(define-fun B1941 () Bool (=> (and true B1813) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@3#0| (_ bv256 32)) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@3#0|) (_ bv2 64))) (_ bv4609 65))))))
+(define-fun B1941 () Bool (=> (and true B1813) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@3#0| (_ bv256 32)) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@3#0|) (_ bv2 64))) (_ bv4609 65))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@7#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@7#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1942 with expr ID of =>
-(define-fun B1942 () Bool (=> (and true B1813) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@7#0| (_ bv256 32)) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@7#0|) (_ bv2 64))) (_ bv2 65)) (_ bv4609 65))))))
+(define-fun B1942 () Bool (=> (and true B1813) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@7#0| (_ bv256 32)) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@7#0|) (_ bv2 64))) (_ bv2 65)) (_ bv4609 65))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@9#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@9#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1943 with expr ID of =>
-(define-fun B1943 () Bool (=> (and true B1813) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@9#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 (bvsdiv ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@9#0|) (_ bv768 64)))) (bvsdiv (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@9#0|) (_ bv768 64)) (_ bv256 64)))) (bvsrem (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@9#0|) (_ bv768 64)) (_ bv256 64)))) (_ bv0 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@9#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
+(define-fun B1943 () Bool (=> (and true B1813) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@9#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 (bvsdiv ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@9#0|) (_ bv768 64)))) (bvsdiv (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@9#0|) (_ bv768 64)) (_ bv256 64)))) (bvsrem (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@9#0|) (_ bv768 64)) (_ bv256 64)))) (_ bv0 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@9#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@12#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@12#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1944 with expr ID of =>
-(define-fun B1944 () Bool (=> (and true B1813) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@12#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 (bvsdiv ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@12#0|) (_ bv768 64)))) (bvsdiv (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@12#0|) (_ bv768 64)) (_ bv256 64)))) (bvsrem (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@12#0|) (_ bv768 64)) (_ bv256 64)))) (_ bv0 32))) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@12#0|) (_ bv2 64))) (_ bv4609 65))))))
+(define-fun B1944 () Bool (=> (and true B1813) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@12#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 (bvsdiv ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@12#0|) (_ bv768 64)))) (bvsdiv (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@12#0|) (_ bv768 64)) (_ bv256 64)))) (bvsrem (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@12#0|) (_ bv768 64)) (_ bv256 64)))) (_ bv0 32))) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@12#0|) (_ bv2 64))) (_ bv4609 65))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@16#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@16#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1945 with expr ID of =>
-(define-fun B1945 () Bool (=> (and true B1813) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@16#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 (bvsdiv ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@16#0|) (_ bv768 64)))) (bvsdiv (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@16#0|) (_ bv768 64)) (_ bv256 64)))) (bvsrem (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@16#0|) (_ bv768 64)) (_ bv256 64)))) (_ bv0 32))) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@16#0|) (_ bv2 64))) (_ bv2 65)) (_ bv4609 65))))))
+(define-fun B1945 () Bool (=> (and true B1813) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@16#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 (bvsdiv ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@16#0|) (_ bv768 64)))) (bvsdiv (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@16#0|) (_ bv768 64)) (_ bv256 64)))) (bvsrem (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@16#0|) (_ bv768 64)) (_ bv256 64)))) (_ bv0 32))) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@16#0|) (_ bv2 64))) (_ bv2 65)) (_ bv4609 65))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@18#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@18#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1946 with expr ID of =>
-(define-fun B1946 () Bool (=> (and true B1813) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@18#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 (bvsdiv ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@18#0|) (_ bv768 64)))) (bvsdiv (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@18#0|) (_ bv768 64)) (_ bv256 64)))) (bvsrem (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@18#0|) (_ bv768 64)) (_ bv256 64)))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 (bvsdiv ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@18#0|) (_ bv768 64)))) (bvsdiv (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@18#0|) (_ bv768 64)) (_ bv256 64)))) (bvsrem (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@18#0|) (_ bv768 64)) (_ bv256 64)))) (_ bv3329 32)))))))
+(define-fun B1946 () Bool (=> (and true B1813) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@18#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 (bvsdiv ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@18#0|) (_ bv768 64)))) (bvsdiv (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@18#0|) (_ bv768 64)) (_ bv256 64)))) (bvsrem (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@18#0|) (_ bv768 64)) (_ bv256 64)))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.106 (bvsdiv ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@18#0|) (_ bv768 64)))) (bvsdiv (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@18#0|) (_ bv768 64)) (_ bv256 64)))) (bvsrem (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@18#0|) (_ bv768 64)) (_ bv256 64)))) (_ bv3329 32)))))))
 
 ; convert
 ; Converting var_no 1947 with expr ID of =>
-(define-fun B1947 () Bool (=> (and true B1813) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@1#1| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@1#1|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
+(define-fun B1947 () Bool (=> (and true B1813) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@1#1| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@1#1|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@3#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@3#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1948 with expr ID of =>
-(define-fun B1948 () Bool (=> (and true B1813) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@3#0| (_ bv256 32)) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@3#0|) (_ bv2 64))) (_ bv4609 65))))))
+(define-fun B1948 () Bool (=> (and true B1813) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@3#0| (_ bv256 32)) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@3#0|) (_ bv2 64))) (_ bv4609 65))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@7#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@7#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1949 with expr ID of =>
-(define-fun B1949 () Bool (=> (and true B1813) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@7#0| (_ bv256 32)) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@7#0|) (_ bv2 64))) (_ bv2 65)) (_ bv4609 65))))))
+(define-fun B1949 () Bool (=> (and true B1813) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@7#0| (_ bv256 32)) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@7#0|) (_ bv2 64))) (_ bv2 65)) (_ bv4609 65))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@9#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@9#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1950 with expr ID of =>
-(define-fun B1950 () Bool (=> (and true B1813) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@9#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.160 (bvsdiv ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@9#0|) (_ bv768 64)))) (bvsdiv (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@9#0|) (_ bv768 64)) (_ bv256 64)))) (bvsrem (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@9#0|) (_ bv768 64)) (_ bv256 64)))) (_ bv0 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@9#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
+(define-fun B1950 () Bool (=> (and true B1813) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@9#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.160 (bvsdiv ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@9#0|) (_ bv768 64)))) (bvsdiv (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@9#0|) (_ bv768 64)) (_ bv256 64)))) (bvsrem (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@9#0|) (_ bv768 64)) (_ bv256 64)))) (_ bv0 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@9#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@12#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@12#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1951 with expr ID of =>
-(define-fun B1951 () Bool (=> (and true B1813) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@12#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.160 (bvsdiv ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@12#0|) (_ bv768 64)))) (bvsdiv (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@12#0|) (_ bv768 64)) (_ bv256 64)))) (bvsrem (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@12#0|) (_ bv768 64)) (_ bv256 64)))) (_ bv0 32))) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@12#0|) (_ bv2 64))) (_ bv4609 65))))))
+(define-fun B1951 () Bool (=> (and true B1813) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@12#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.160 (bvsdiv ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@12#0|) (_ bv768 64)))) (bvsdiv (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@12#0|) (_ bv768 64)) (_ bv256 64)))) (bvsrem (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@12#0|) (_ bv768 64)) (_ bv256 64)))) (_ bv0 32))) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@12#0|) (_ bv2 64))) (_ bv4609 65))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@16#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@16#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1952 with expr ID of =>
-(define-fun B1952 () Bool (=> (and true B1813) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@16#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.160 (bvsdiv ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@16#0|) (_ bv768 64)))) (bvsdiv (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@16#0|) (_ bv768 64)) (_ bv256 64)))) (bvsrem (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@16#0|) (_ bv768 64)) (_ bv256 64)))) (_ bv0 32))) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@16#0|) (_ bv2 64))) (_ bv2 65)) (_ bv4609 65))))))
+(define-fun B1952 () Bool (=> (and true B1813) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@16#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.160 (bvsdiv ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@16#0|) (_ bv768 64)))) (bvsdiv (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@16#0|) (_ bv768 64)) (_ bv256 64)))) (bvsrem (bvsrem ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@16#0|) (_ bv768 64)) (_ bv256 64)))) (_ bv0 32))) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@16#0|) (_ bv2 64))) (_ bv2 65)) (_ bv4609 65))))))
 
 ; convert
 ; Converting var_no 1953 with expr ID of =>
@@ -18791,60 +18791,60 @@
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@18#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@18#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@18#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1954 with expr ID of =>
-(define-fun B1954 () Bool (=> (and true B1813 B1814 B1815) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@18#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@18#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@18#0| (_ bv256 32)) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@18#0|) (_ bv1536 64)) (_ bv4608 64))))))
+(define-fun B1954 () Bool (=> (and true B1813 B1814 B1815) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@18#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@18#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@18#0| (_ bv256 32)) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@18#0|) (_ bv1536 64)) (_ bv4608 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@19#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@19#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@19#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@19#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1955 with expr ID of =>
-(define-fun B1955 () Bool (=> (and true B1813 B1814 B1815) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@19#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@19#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@19#0| (_ bv256 32)) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@19#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@19#0|) (_ bv512 64))) (_ bv4608 64))))))
+(define-fun B1955 () Bool (=> (and true B1813 B1814 B1815) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@19#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@19#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@19#0| (_ bv256 32)) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@19#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@19#0|) (_ bv512 64))) (_ bv4608 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@20#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@20#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@20#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@20#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1956 with expr ID of =>
-(define-fun B1956 () Bool (=> (and true B1813 B1814 B1815) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@20#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@20#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@20#0| (_ bv256 32)) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@20#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@20#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@20#0|) (_ bv2 64))) (_ bv4608 64))))))
+(define-fun B1956 () Bool (=> (and true B1813 B1814 B1815) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@20#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@20#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@20#0| (_ bv256 32)) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@20#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@20#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@20#0|) (_ bv2 64))) (_ bv4608 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@25#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@25#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@25#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@25#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1957 with expr ID of =>
-(define-fun B1957 () Bool (=> (and true B1813 B1814 B1815) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@25#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@25#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@25#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.121 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@25#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@25#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@25#0|))) (_ bv0 32))) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@25#0|) (_ bv1536 64)) (_ bv4608 64))))))
+(define-fun B1957 () Bool (=> (and true B1813 B1814 B1815) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@25#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@25#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@25#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.121 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@25#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@25#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@25#0|))) (_ bv0 32))) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@25#0|) (_ bv1536 64)) (_ bv4608 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@26#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@26#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@26#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@26#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1958 with expr ID of =>
-(define-fun B1958 () Bool (=> (and true B1813 B1814 B1815) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@26#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@26#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@26#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.121 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@26#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@26#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@26#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@26#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@26#0|) (_ bv512 64))) (_ bv4608 64))))))
+(define-fun B1958 () Bool (=> (and true B1813 B1814 B1815) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@26#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@26#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@26#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.121 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@26#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@26#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@26#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@26#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@26#0|) (_ bv512 64))) (_ bv4608 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@27#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@27#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@27#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@27#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1959 with expr ID of =>
-(define-fun B1959 () Bool (=> (and true B1813 B1814 B1815) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@27#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@27#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@27#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.121 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@27#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@27#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@27#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@27#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@27#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@27#0|) (_ bv2 64))) (_ bv4608 64))))))
+(define-fun B1959 () Bool (=> (and true B1813 B1814 B1815) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@27#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@27#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@27#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.121 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@27#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@27#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@27#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@27#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@27#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@27#0|) (_ bv2 64))) (_ bv4608 64))))))
 
 ; convert
 ; Converting var_no 1960 with expr ID of =>
@@ -18864,119 +18864,119 @@
 (define-fun B1963 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| |mlk_poly_permute_bitrev_to_custom::$tmp::return_value___CPROVER_is_fresh!0@2#2|)))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@1#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@1#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1964 with expr ID of =>
-(define-fun B1964 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@1#0| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@1#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
+(define-fun B1964 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@1#0| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@1#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@20#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@20#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1965 with expr ID of =>
-(define-fun B1965 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@20#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|))))))))
+(define-fun B1965 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@20#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@21#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@21#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1966 with expr ID of =>
-(define-fun B1966 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@21#0| (_ bv256 32)) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|) (_ bv1 12)))))))
+(define-fun B1966 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@21#0| (_ bv256 32)) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|) (_ bv1 12)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@22#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@22#0| () (_ BitVec 32))
 (declare-fun object_size.4 () (_ BitVec 64))
 ; convert
 ; Converting var_no 1967 with expr ID of =>
-(define-fun B1967 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@22#0| (_ bv256 32)) (bvuge ((_ zero_extend 1) object_size.4) ((_ zero_extend 1) (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv512 64)) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@22#0|) (_ bv2 64)))))))))
+(define-fun B1967 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@22#0| (_ bv256 32)) (bvuge ((_ zero_extend 1) object_size.4) ((_ zero_extend 1) (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv512 64)) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@22#0|) (_ bv2 64)))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@23#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@23#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1968 with expr ID of =>
-(define-fun B1968 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@23#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@23#0|)) (_ bv2 52))))) (_ bv0 64))))))
+(define-fun B1968 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@23#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@23#0|)) (_ bv2 52))))) (_ bv0 64))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@24#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@24#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1969 with expr ID of =>
-(define-fun B1969 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@24#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|))))))))
+(define-fun B1969 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@24#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@25#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@25#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1970 with expr ID of =>
-(define-fun B1970 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@25#0| (_ bv256 32)) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|) (_ bv1 12)))))))
+(define-fun B1970 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@25#0| (_ bv256 32)) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|) (_ bv1 12)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@26#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@26#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1971 with expr ID of =>
-(define-fun B1971 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@26#0| (_ bv256 32)) (bvuge ((_ zero_extend 1) object_size.4) (bvadd ((_ zero_extend 1) (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv512 64)) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@26#0|) (_ bv2 64)))) (_ bv2 65)))))))
+(define-fun B1971 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@26#0| (_ bv256 32)) (bvuge ((_ zero_extend 1) object_size.4) (bvadd ((_ zero_extend 1) (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv512 64)) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@26#0|) (_ bv2 64)))) (_ bv2 65)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@27#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@27#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1972 with expr ID of =>
-(define-fun B1972 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@27#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@27#0|)) (_ bv2 52))))) (_ bv0 64))))))
+(define-fun B1972 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@27#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@27#0|)) (_ bv2 52))))) (_ bv0 64))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@28#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@28#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1973 with expr ID of =>
-(define-fun B1973 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@28#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.121 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@28#0|))) (_ bv0 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@28#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
+(define-fun B1973 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@28#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.121 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@28#0|))) (_ bv0 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@28#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@29#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@29#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1974 with expr ID of =>
-(define-fun B1974 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@29#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.121 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@29#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|))))))))
+(define-fun B1974 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@29#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.121 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@29#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@30#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@30#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1975 with expr ID of =>
-(define-fun B1975 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@30#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.121 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@30#0|))) (_ bv0 32))) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|) (_ bv1 12)))))))
+(define-fun B1975 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@30#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.121 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@30#0|))) (_ bv0 32))) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|) (_ bv1 12)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@31#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@31#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1976 with expr ID of =>
-(define-fun B1976 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@31#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.121 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@31#0|))) (_ bv0 32))) (bvuge ((_ zero_extend 1) object_size.4) ((_ zero_extend 1) (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv512 64)) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@31#0|) (_ bv2 64)))))))))
+(define-fun B1976 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@31#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.121 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@31#0|))) (_ bv0 32))) (bvuge ((_ zero_extend 1) object_size.4) ((_ zero_extend 1) (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv512 64)) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@31#0|) (_ bv2 64)))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@32#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@32#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1977 with expr ID of =>
-(define-fun B1977 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@32#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.121 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@32#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@32#0|)) (_ bv2 52))))) (_ bv0 64))))))
+(define-fun B1977 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@32#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.121 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@32#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@32#0|)) (_ bv2 52))))) (_ bv0 64))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@33#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@33#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1978 with expr ID of =>
-(define-fun B1978 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@33#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.121 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@33#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|))))))))
+(define-fun B1978 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@33#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.121 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@33#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@34#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@34#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1979 with expr ID of =>
-(define-fun B1979 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@34#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.121 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@34#0|))) (_ bv0 32))) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|) (_ bv1 12)))))))
+(define-fun B1979 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@34#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.121 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@34#0|))) (_ bv0 32))) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|) (_ bv1 12)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@35#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@35#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1980 with expr ID of =>
-(define-fun B1980 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@35#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.121 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@35#0|))) (_ bv0 32))) (bvuge ((_ zero_extend 1) object_size.4) (bvadd ((_ zero_extend 1) (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv512 64)) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@35#0|) (_ bv2 64)))) (_ bv2 65)))))))
+(define-fun B1980 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@35#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.121 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@35#0|))) (_ bv0 32))) (bvuge ((_ zero_extend 1) object_size.4) (bvadd ((_ zero_extend 1) (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv512 64)) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@35#0|) (_ bv2 64)))) (_ bv2 65)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@36#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@36#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1981 with expr ID of =>
-(define-fun B1981 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@36#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.121 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@36#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@36#0|)) (_ bv2 52))))) (_ bv0 64))))))
+(define-fun B1981 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@36#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.121 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@36#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@36#0|)) (_ bv2 52))))) (_ bv0 64))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@37#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@37#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1982 with expr ID of =>
-(define-fun B1982 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@37#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.121 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@37#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.121 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@37#0|))) (_ bv3329 32))))))))
+(define-fun B1982 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@37#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.121 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@37#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.121 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@37#0|))) (_ bv3329 32))))))))
 
 (declare-fun object_size.5 () (_ BitVec 64))
 ; convert
@@ -19006,112 +19006,112 @@
 (define-fun B1988 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> (and |goto_symex::&92;guard#1| |goto_symex::&92;guard#5|) (and (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |__CPROVER_contracts_write_set_havoc_slice::1::car!0@3#2..lb|)))) (not (= ((_ extract 63 52) |__CPROVER_contracts_write_set_havoc_slice::1::car!0@3#2..lb|) (_ bv1 12))) (not (= ((_ zero_extend 52) ((_ extract 63 52) |__CPROVER_contracts_write_set_havoc_slice::1::car!0@3#2..lb|)) ((_ zero_extend 52) ((_ extract 63 52) |__CPROVER_deallocated#31|)))) (not (= ((_ zero_extend 52) ((_ extract 63 52) |__CPROVER_contracts_write_set_havoc_slice::1::car!0@3#2..lb|)) ((_ zero_extend 52) ((_ extract 63 52) |__CPROVER_dead_object#4|)))) (bvuge ((_ zero_extend 1) object_size.7) (bvadd ((_ zero_extend 1) ((_ zero_extend 12) ((_ extract 51 0) |__CPROVER_contracts_write_set_havoc_slice::1::car!0@3#2..lb|))) (_ bv512 65)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@1#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@1#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1989 with expr ID of =>
-(define-fun B1989 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@1#0| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@1#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
+(define-fun B1989 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@1#0| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@1#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@19#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@19#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1990 with expr ID of =>
-(define-fun B1990 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@19#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|))))))))
+(define-fun B1990 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@19#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@20#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@20#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1991 with expr ID of =>
-(define-fun B1991 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@20#0| (_ bv256 32)) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|) (_ bv1 12)))))))
+(define-fun B1991 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@20#0| (_ bv256 32)) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|) (_ bv1 12)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@21#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@21#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1992 with expr ID of =>
-(define-fun B1992 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@21#0| (_ bv256 32)) (bvuge ((_ zero_extend 1) object_size.4) ((_ zero_extend 1) (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv512 64)) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@21#0|) (_ bv2 64)))))))))
+(define-fun B1992 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@21#0| (_ bv256 32)) (bvuge ((_ zero_extend 1) object_size.4) ((_ zero_extend 1) (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv512 64)) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@21#0|) (_ bv2 64)))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@22#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@22#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1993 with expr ID of =>
-(define-fun B1993 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@22#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@22#0|)) (_ bv2 52))))) (_ bv0 64))))))
+(define-fun B1993 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@22#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@22#0|)) (_ bv2 52))))) (_ bv0 64))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@23#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@23#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1994 with expr ID of =>
-(define-fun B1994 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@23#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|))))))))
+(define-fun B1994 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@23#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@24#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@24#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1995 with expr ID of =>
-(define-fun B1995 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@24#0| (_ bv256 32)) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|) (_ bv1 12)))))))
+(define-fun B1995 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@24#0| (_ bv256 32)) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|) (_ bv1 12)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@25#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@25#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1996 with expr ID of =>
-(define-fun B1996 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@25#0| (_ bv256 32)) (bvuge ((_ zero_extend 1) object_size.4) (bvadd ((_ zero_extend 1) (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv512 64)) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@25#0|) (_ bv2 64)))) (_ bv2 65)))))))
+(define-fun B1996 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@25#0| (_ bv256 32)) (bvuge ((_ zero_extend 1) object_size.4) (bvadd ((_ zero_extend 1) (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv512 64)) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@25#0|) (_ bv2 64)))) (_ bv2 65)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@26#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@26#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1997 with expr ID of =>
-(define-fun B1997 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@26#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@26#0|)) (_ bv2 52))))) (_ bv0 64))))))
+(define-fun B1997 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@26#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@26#0|)) (_ bv2 52))))) (_ bv0 64))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@27#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@27#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1998 with expr ID of =>
-(define-fun B1998 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@27#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.165 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@27#0|))) (_ bv0 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@27#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
+(define-fun B1998 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@27#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.165 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@27#0|))) (_ bv0 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@27#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@28#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@28#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 1999 with expr ID of =>
-(define-fun B1999 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@28#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.165 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@28#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|))))))))
+(define-fun B1999 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@28#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.165 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@28#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@29#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@29#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2000 with expr ID of =>
-(define-fun B2000 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@29#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.165 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@29#0|))) (_ bv0 32))) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|) (_ bv1 12)))))))
+(define-fun B2000 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@29#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.165 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@29#0|))) (_ bv0 32))) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|) (_ bv1 12)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@30#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@30#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2001 with expr ID of =>
-(define-fun B2001 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@30#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.165 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@30#0|))) (_ bv0 32))) (bvuge ((_ zero_extend 1) object_size.4) ((_ zero_extend 1) (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv512 64)) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@30#0|) (_ bv2 64)))))))))
+(define-fun B2001 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@30#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.165 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@30#0|))) (_ bv0 32))) (bvuge ((_ zero_extend 1) object_size.4) ((_ zero_extend 1) (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv512 64)) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@30#0|) (_ bv2 64)))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@31#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@31#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2002 with expr ID of =>
-(define-fun B2002 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@31#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.165 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@31#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@31#0|)) (_ bv2 52))))) (_ bv0 64))))))
+(define-fun B2002 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@31#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.165 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@31#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@31#0|)) (_ bv2 52))))) (_ bv0 64))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@32#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@32#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2003 with expr ID of =>
-(define-fun B2003 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@32#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.165 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@32#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|))))))))
+(define-fun B2003 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@32#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.165 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@32#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@33#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@33#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2004 with expr ID of =>
-(define-fun B2004 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@33#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.165 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@33#0|))) (_ bv0 32))) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|) (_ bv1 12)))))))
+(define-fun B2004 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@33#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.165 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@33#0|))) (_ bv0 32))) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|) (_ bv1 12)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@34#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@34#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2005 with expr ID of =>
-(define-fun B2005 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@34#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.165 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@34#0|))) (_ bv0 32))) (bvuge ((_ zero_extend 1) object_size.4) (bvadd ((_ zero_extend 1) (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv512 64)) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@34#0|) (_ bv2 64)))) (_ bv2 65)))))))
+(define-fun B2005 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@34#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.165 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@34#0|))) (_ bv0 32))) (bvuge ((_ zero_extend 1) object_size.4) (bvadd ((_ zero_extend 1) (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv512 64)) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@34#0|) (_ bv2 64)))) (_ bv2 65)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@35#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@35#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2006 with expr ID of =>
-(define-fun B2006 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@35#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.165 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@35#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@35#0|)) (_ bv2 52))))) (_ bv0 64))))))
+(define-fun B2006 () Bool (=> (and true B1813 B1814 B1815 B1816) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@35#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.165 (bvsdiv ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) (bvsrem ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#4|) (_ bv3 64)))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@35#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@2#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@35#0|)) (_ bv2 52))))) (_ bv0 64))))))
 
 ; convert
 ; Converting var_no 2007 with expr ID of =>
@@ -19126,70 +19126,70 @@
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@32#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@32#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@32#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2009 with expr ID of =>
-(define-fun B2009 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@32#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@32#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@32#0| (_ bv256 32)) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@32#0|) (_ bv1536 64)) (_ bv4608 64)))))))
+(define-fun B2009 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@32#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@32#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@32#0| (_ bv256 32)) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@32#0|) (_ bv1536 64)) (_ bv4608 64)))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@33#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@33#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@33#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@33#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2010 with expr ID of =>
-(define-fun B2010 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@33#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@33#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@33#0| (_ bv256 32)) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@33#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@33#0|) (_ bv512 64))) (_ bv4608 64)))))))
+(define-fun B2010 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@33#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@33#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@33#0| (_ bv256 32)) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@33#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@33#0|) (_ bv512 64))) (_ bv4608 64)))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@34#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@34#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@34#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@34#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2011 with expr ID of =>
-(define-fun B2011 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@34#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@34#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@34#0| (_ bv256 32)) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@34#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@34#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@34#0|) (_ bv2 64))) (_ bv4608 64)))))))
+(define-fun B2011 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@34#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@34#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@34#0| (_ bv256 32)) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@34#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@34#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@34#0|) (_ bv2 64))) (_ bv4608 64)))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@39#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@39#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@39#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@39#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2012 with expr ID of =>
-(define-fun B2012 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@39#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@39#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@39#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.165 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@39#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@39#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@39#0|))) (_ bv0 32))) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@39#0|) (_ bv1536 64)) (_ bv4608 64)))))))
+(define-fun B2012 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@39#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@39#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@39#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.165 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@39#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@39#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@39#0|))) (_ bv0 32))) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@39#0|) (_ bv1536 64)) (_ bv4608 64)))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@40#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@40#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@40#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@40#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2013 with expr ID of =>
-(define-fun B2013 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@40#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@40#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@40#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.165 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@40#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@40#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@40#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@40#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@40#0|) (_ bv512 64))) (_ bv4608 64)))))))
+(define-fun B2013 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@40#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@40#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@40#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.165 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@40#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@40#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@40#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@40#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@40#0|) (_ bv512 64))) (_ bv4608 64)))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@41#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@41#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@41#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@41#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2014 with expr ID of =>
-(define-fun B2014 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@41#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@41#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@41#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.165 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@41#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@41#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@41#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@41#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@41#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@41#0|) (_ bv2 64))) (_ bv4608 64)))))))
+(define-fun B2014 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@41#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@41#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@41#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.165 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@41#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@41#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@41#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@41#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@41#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@41#0|) (_ bv2 64))) (_ bv4608 64)))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@42#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@42#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@42#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@42#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2015 with expr ID of =>
-(define-fun B2015 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@42#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@42#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@42#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.165 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@42#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@42#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@42#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.165 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@42#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@42#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@42#0|))) (_ bv3329 32))))))))
+(define-fun B2015 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817) (=> |goto_symex::&92;guard#1| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@42#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@42#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@42#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.165 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@42#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@42#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@42#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.165 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@42#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@42#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@42#0|))) (_ bv3329 32))))))))
 
 ; convert
 ; Converting var_no 2016 with expr ID of =>
@@ -19212,60 +19212,60 @@
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@18#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@18#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@18#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2020 with expr ID of =>
-(define-fun B2020 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@18#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@18#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@18#0| (_ bv256 32)) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@18#0|) (_ bv1536 64)) (_ bv4608 64))))))
+(define-fun B2020 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@18#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@18#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@18#0| (_ bv256 32)) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@18#0|) (_ bv1536 64)) (_ bv4608 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@19#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@19#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@19#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@19#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2021 with expr ID of =>
-(define-fun B2021 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@19#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@19#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@19#0| (_ bv256 32)) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@19#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@19#0|) (_ bv512 64))) (_ bv4608 64))))))
+(define-fun B2021 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@19#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@19#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@19#0| (_ bv256 32)) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@19#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@19#0|) (_ bv512 64))) (_ bv4608 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@20#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@20#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@20#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@20#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2022 with expr ID of =>
-(define-fun B2022 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@20#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@20#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@20#0| (_ bv256 32)) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@20#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@20#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@20#0|) (_ bv2 64))) (_ bv4608 64))))))
+(define-fun B2022 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@20#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@20#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@20#0| (_ bv256 32)) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@20#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@20#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@20#0|) (_ bv2 64))) (_ bv4608 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@25#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@25#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@25#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@25#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2023 with expr ID of =>
-(define-fun B2023 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@25#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@25#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@25#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@25#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@25#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@25#0|))) (_ bv0 32))) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@25#0|) (_ bv1536 64)) (_ bv4608 64))))))
+(define-fun B2023 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@25#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@25#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@25#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@25#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@25#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@25#0|))) (_ bv0 32))) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@25#0|) (_ bv1536 64)) (_ bv4608 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@26#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@26#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@26#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@26#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2024 with expr ID of =>
-(define-fun B2024 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@26#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@26#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@26#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@26#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@26#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@26#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@26#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@26#0|) (_ bv512 64))) (_ bv4608 64))))))
+(define-fun B2024 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@26#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@26#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@26#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@26#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@26#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@26#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@26#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@26#0|) (_ bv512 64))) (_ bv4608 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@27#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@27#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@27#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@27#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2025 with expr ID of =>
-(define-fun B2025 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@27#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@27#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@27#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@27#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@27#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@27#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@27#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@27#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@27#0|) (_ bv2 64))) (_ bv4608 64))))))
+(define-fun B2025 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@27#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@27#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@27#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@27#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@27#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@27#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@27#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@27#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@27#0|) (_ bv2 64))) (_ bv4608 64))))))
 
 ; convert
 ; Converting var_no 2026 with expr ID of =>
@@ -19276,60 +19276,60 @@
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@47#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@47#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@47#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2027 with expr ID of =>
-(define-fun B2027 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4| (_ bv4 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@47#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@47#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@47#0| (_ bv256 32)) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@47#0|) (_ bv1536 64)) (_ bv4608 64)))))))
+(define-fun B2027 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4| (_ bv4 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@47#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@47#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@47#0| (_ bv256 32)) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@47#0|) (_ bv1536 64)) (_ bv4608 64)))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@48#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@48#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@48#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@48#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2028 with expr ID of =>
-(define-fun B2028 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4| (_ bv4 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@48#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@48#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@48#0| (_ bv256 32)) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@48#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@48#0|) (_ bv512 64))) (_ bv4608 64)))))))
+(define-fun B2028 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4| (_ bv4 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@48#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@48#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@48#0| (_ bv256 32)) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@48#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@48#0|) (_ bv512 64))) (_ bv4608 64)))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@49#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@49#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@49#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@49#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2029 with expr ID of =>
-(define-fun B2029 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4| (_ bv4 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@49#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@49#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@49#0| (_ bv256 32)) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@49#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@49#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@49#0|) (_ bv2 64))) (_ bv4608 64)))))))
+(define-fun B2029 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4| (_ bv4 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@49#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@49#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@49#0| (_ bv256 32)) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@49#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@49#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@49#0|) (_ bv2 64))) (_ bv4608 64)))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@54#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@54#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@54#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@54#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2030 with expr ID of =>
-(define-fun B2030 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4| (_ bv4 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@54#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@54#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@54#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@54#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@54#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@54#0|))) (_ bv0 32))) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@54#0|) (_ bv1536 64)) (_ bv4608 64)))))))
+(define-fun B2030 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4| (_ bv4 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@54#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@54#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@54#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@54#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@54#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@54#0|))) (_ bv0 32))) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@54#0|) (_ bv1536 64)) (_ bv4608 64)))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@55#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@55#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@55#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@55#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2031 with expr ID of =>
-(define-fun B2031 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4| (_ bv4 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@55#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@55#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@55#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@55#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@55#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@55#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@55#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@55#0|) (_ bv512 64))) (_ bv4608 64)))))))
+(define-fun B2031 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4| (_ bv4 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@55#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@55#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@55#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@55#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@55#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@55#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@55#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@55#0|) (_ bv512 64))) (_ bv4608 64)))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@56#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@56#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@56#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@56#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2032 with expr ID of =>
-(define-fun B2032 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4| (_ bv4 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@56#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@56#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@56#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@56#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@56#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@56#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@56#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@56#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@56#0|) (_ bv2 64))) (_ bv4608 64)))))))
+(define-fun B2032 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4| (_ bv4 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@56#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@56#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@56#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@56#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@56#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@56#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@56#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@56#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@56#0|) (_ bv2 64))) (_ bv4608 64)))))))
 
 (declare-fun object_size.8 () (_ BitVec 64))
 ; convert
@@ -19346,116 +19346,116 @@
 
 ; convert
 ; Converting var_no 2036 with expr ID of =>
-(define-fun B2036 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@1#0| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@1#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
+(define-fun B2036 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@1#0| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@1#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@39#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@39#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2037 with expr ID of =>
-(define-fun B2037 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@39#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|))))))))
+(define-fun B2037 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@39#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@40#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@40#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2038 with expr ID of =>
-(define-fun B2038 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@40#0| (_ bv256 32)) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|) (_ bv1 12)))))))
+(define-fun B2038 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@40#0| (_ bv256 32)) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|) (_ bv1 12)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@41#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@41#0| () (_ BitVec 32))
 (declare-fun object_size.9 () (_ BitVec 64))
 ; convert
 ; Converting var_no 2039 with expr ID of =>
-(define-fun B2039 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@41#0| (_ bv256 32)) (bvuge ((_ zero_extend 1) object_size.9) ((_ zero_extend 1) (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@41#0|) (_ bv2 64)))))))))
+(define-fun B2039 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@41#0| (_ bv256 32)) (bvuge ((_ zero_extend 1) object_size.9) ((_ zero_extend 1) (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@41#0|) (_ bv2 64)))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@42#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@42#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2040 with expr ID of =>
-(define-fun B2040 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@42#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@42#0|)) (_ bv2 52))))) (_ bv0 64))))))
+(define-fun B2040 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@42#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@42#0|)) (_ bv2 52))))) (_ bv0 64))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@43#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@43#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2041 with expr ID of =>
-(define-fun B2041 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@43#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|))))))))
+(define-fun B2041 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@43#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@44#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@44#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2042 with expr ID of =>
-(define-fun B2042 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@44#0| (_ bv256 32)) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|) (_ bv1 12)))))))
+(define-fun B2042 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@44#0| (_ bv256 32)) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|) (_ bv1 12)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@45#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@45#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2043 with expr ID of =>
-(define-fun B2043 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@45#0| (_ bv256 32)) (bvuge ((_ zero_extend 1) object_size.9) (bvadd ((_ zero_extend 1) (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@45#0|) (_ bv2 64)))) (_ bv2 65)))))))
+(define-fun B2043 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@45#0| (_ bv256 32)) (bvuge ((_ zero_extend 1) object_size.9) (bvadd ((_ zero_extend 1) (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@45#0|) (_ bv2 64)))) (_ bv2 65)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@46#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@46#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2044 with expr ID of =>
-(define-fun B2044 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@46#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@46#0|)) (_ bv2 52))))) (_ bv0 64))))))
+(define-fun B2044 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@46#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@46#0|)) (_ bv2 52))))) (_ bv0 64))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@47#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@47#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2045 with expr ID of =>
-(define-fun B2045 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@47#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@47#0|))) (_ bv0 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@47#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
+(define-fun B2045 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@47#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@47#0|))) (_ bv0 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@47#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@48#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@48#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2046 with expr ID of =>
-(define-fun B2046 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@48#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@48#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|))))))))
+(define-fun B2046 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@48#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@48#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@49#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@49#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2047 with expr ID of =>
-(define-fun B2047 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@49#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@49#0|))) (_ bv0 32))) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|) (_ bv1 12)))))))
+(define-fun B2047 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@49#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@49#0|))) (_ bv0 32))) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|) (_ bv1 12)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@50#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@50#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2048 with expr ID of =>
-(define-fun B2048 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@50#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@50#0|))) (_ bv0 32))) (bvuge ((_ zero_extend 1) object_size.9) ((_ zero_extend 1) (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@50#0|) (_ bv2 64)))))))))
+(define-fun B2048 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@50#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@50#0|))) (_ bv0 32))) (bvuge ((_ zero_extend 1) object_size.9) ((_ zero_extend 1) (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@50#0|) (_ bv2 64)))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@51#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@51#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2049 with expr ID of =>
-(define-fun B2049 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@51#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@51#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@51#0|)) (_ bv2 52))))) (_ bv0 64))))))
+(define-fun B2049 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@51#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@51#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@51#0|)) (_ bv2 52))))) (_ bv0 64))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@52#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@52#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2050 with expr ID of =>
-(define-fun B2050 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@52#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@52#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|))))))))
+(define-fun B2050 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@52#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@52#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@53#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@53#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2051 with expr ID of =>
-(define-fun B2051 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@53#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@53#0|))) (_ bv0 32))) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|) (_ bv1 12)))))))
+(define-fun B2051 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@53#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@53#0|))) (_ bv0 32))) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|) (_ bv1 12)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@54#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@54#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2052 with expr ID of =>
-(define-fun B2052 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@54#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@54#0|))) (_ bv0 32))) (bvuge ((_ zero_extend 1) object_size.9) (bvadd ((_ zero_extend 1) (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@54#0|) (_ bv2 64)))) (_ bv2 65)))))))
+(define-fun B2052 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@54#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@54#0|))) (_ bv0 32))) (bvuge ((_ zero_extend 1) object_size.9) (bvadd ((_ zero_extend 1) (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@54#0|) (_ bv2 64)))) (_ bv2 65)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@55#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@55#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2053 with expr ID of =>
-(define-fun B2053 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@55#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@55#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@55#0|)) (_ bv2 52))))) (_ bv0 64))))))
+(define-fun B2053 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@55#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@55#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@55#0|)) (_ bv2 52))))) (_ bv0 64))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@56#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@56#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2054 with expr ID of =>
-(define-fun B2054 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@56#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@56#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@56#0|))) (_ bv3329 32))))))))
+(define-fun B2054 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@56#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@56#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@56#0|))) (_ bv3329 32))))))))
 
 (declare-fun object_size.10 () (_ BitVec 64))
 ; convert
@@ -19486,109 +19486,109 @@
 
 ; convert
 ; Converting var_no 2061 with expr ID of =>
-(define-fun B2061 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@1#0| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@1#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
+(define-fun B2061 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@1#0| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@1#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@37#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@37#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2062 with expr ID of =>
-(define-fun B2062 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@37#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|))))))))
+(define-fun B2062 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@37#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@38#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@38#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2063 with expr ID of =>
-(define-fun B2063 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@38#0| (_ bv256 32)) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|) (_ bv1 12)))))))
+(define-fun B2063 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@38#0| (_ bv256 32)) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|) (_ bv1 12)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@39#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@39#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2064 with expr ID of =>
-(define-fun B2064 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@39#0| (_ bv256 32)) (bvuge ((_ zero_extend 1) object_size.9) ((_ zero_extend 1) (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@39#0|) (_ bv2 64)))))))))
+(define-fun B2064 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@39#0| (_ bv256 32)) (bvuge ((_ zero_extend 1) object_size.9) ((_ zero_extend 1) (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@39#0|) (_ bv2 64)))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@40#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@40#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2065 with expr ID of =>
-(define-fun B2065 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@40#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@40#0|)) (_ bv2 52))))) (_ bv0 64))))))
+(define-fun B2065 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@40#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@40#0|)) (_ bv2 52))))) (_ bv0 64))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@41#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@41#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2066 with expr ID of =>
-(define-fun B2066 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@41#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|))))))))
+(define-fun B2066 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@41#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@42#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@42#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2067 with expr ID of =>
-(define-fun B2067 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@42#0| (_ bv256 32)) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|) (_ bv1 12)))))))
+(define-fun B2067 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@42#0| (_ bv256 32)) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|) (_ bv1 12)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@43#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@43#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2068 with expr ID of =>
-(define-fun B2068 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@43#0| (_ bv256 32)) (bvuge ((_ zero_extend 1) object_size.9) (bvadd ((_ zero_extend 1) (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@43#0|) (_ bv2 64)))) (_ bv2 65)))))))
+(define-fun B2068 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@43#0| (_ bv256 32)) (bvuge ((_ zero_extend 1) object_size.9) (bvadd ((_ zero_extend 1) (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@43#0|) (_ bv2 64)))) (_ bv2 65)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@44#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@44#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2069 with expr ID of =>
-(define-fun B2069 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@44#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@44#0|)) (_ bv2 52))))) (_ bv0 64))))))
+(define-fun B2069 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@44#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@44#0|)) (_ bv2 52))))) (_ bv0 64))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@45#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@45#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2070 with expr ID of =>
-(define-fun B2070 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@45#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.171 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@45#0|))) (_ bv0 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@45#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
+(define-fun B2070 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@45#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.171 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@45#0|))) (_ bv0 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@45#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@46#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@46#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2071 with expr ID of =>
-(define-fun B2071 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@46#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.171 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@46#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|))))))))
+(define-fun B2071 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@46#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.171 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@46#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@47#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@47#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2072 with expr ID of =>
-(define-fun B2072 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@47#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.171 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@47#0|))) (_ bv0 32))) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|) (_ bv1 12)))))))
+(define-fun B2072 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@47#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.171 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@47#0|))) (_ bv0 32))) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|) (_ bv1 12)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@48#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@48#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2073 with expr ID of =>
-(define-fun B2073 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@48#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.171 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@48#0|))) (_ bv0 32))) (bvuge ((_ zero_extend 1) object_size.9) ((_ zero_extend 1) (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@48#0|) (_ bv2 64)))))))))
+(define-fun B2073 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@48#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.171 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@48#0|))) (_ bv0 32))) (bvuge ((_ zero_extend 1) object_size.9) ((_ zero_extend 1) (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@48#0|) (_ bv2 64)))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@49#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@49#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2074 with expr ID of =>
-(define-fun B2074 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@49#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.171 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@49#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@49#0|)) (_ bv2 52))))) (_ bv0 64))))))
+(define-fun B2074 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@49#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.171 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@49#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@49#0|)) (_ bv2 52))))) (_ bv0 64))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@50#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@50#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2075 with expr ID of =>
-(define-fun B2075 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@50#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.171 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@50#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|))))))))
+(define-fun B2075 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@50#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.171 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@50#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@51#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@51#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2076 with expr ID of =>
-(define-fun B2076 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@51#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.171 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@51#0|))) (_ bv0 32))) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|) (_ bv1 12)))))))
+(define-fun B2076 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@51#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.171 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@51#0|))) (_ bv0 32))) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|) (_ bv1 12)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@52#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@52#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2077 with expr ID of =>
-(define-fun B2077 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@52#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.171 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@52#0|))) (_ bv0 32))) (bvuge ((_ zero_extend 1) object_size.9) (bvadd ((_ zero_extend 1) (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@52#0|) (_ bv2 64)))) (_ bv2 65)))))))
+(define-fun B2077 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@52#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.171 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@52#0|))) (_ bv0 32))) (bvuge ((_ zero_extend 1) object_size.9) (bvadd ((_ zero_extend 1) (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@52#0|) (_ bv2 64)))) (_ bv2 65)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@53#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@53#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2078 with expr ID of =>
-(define-fun B2078 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@53#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.171 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@53#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@53#0|)) (_ bv2 52))))) (_ bv0 64))))))
+(define-fun B2078 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@53#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.171 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) (_ bv0 64))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@53#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@3#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@53#0|)) (_ bv2 52))))) (_ bv0 64))))))
 
 ; convert
 ; Converting var_no 2079 with expr ID of =>
@@ -19599,60 +19599,60 @@
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@61#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@61#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@61#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2080 with expr ID of =>
-(define-fun B2080 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@61#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@61#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@61#0| (_ bv256 32)) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@61#0|) (_ bv1536 64)) (_ bv4608 64)))))))
+(define-fun B2080 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@61#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@61#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@61#0| (_ bv256 32)) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@61#0|) (_ bv1536 64)) (_ bv4608 64)))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@62#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@62#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@62#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@62#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2081 with expr ID of =>
-(define-fun B2081 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@62#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@62#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@62#0| (_ bv256 32)) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@62#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@62#0|) (_ bv512 64))) (_ bv4608 64)))))))
+(define-fun B2081 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@62#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@62#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@62#0| (_ bv256 32)) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@62#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@62#0|) (_ bv512 64))) (_ bv4608 64)))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@63#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@63#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@63#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@63#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2082 with expr ID of =>
-(define-fun B2082 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@63#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@63#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@63#0| (_ bv256 32)) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@63#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@63#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@63#0|) (_ bv2 64))) (_ bv4608 64)))))))
+(define-fun B2082 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@63#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@63#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@63#0| (_ bv256 32)) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@63#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@63#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@63#0|) (_ bv2 64))) (_ bv4608 64)))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@68#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@68#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@68#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@68#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2083 with expr ID of =>
-(define-fun B2083 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@68#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@68#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@68#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@68#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@68#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@68#0|))) (_ bv0 32))) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@68#0|) (_ bv1536 64)) (_ bv4608 64)))))))
+(define-fun B2083 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@68#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@68#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@68#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@68#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@68#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@68#0|))) (_ bv0 32))) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@68#0|) (_ bv1536 64)) (_ bv4608 64)))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@69#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@69#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@69#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@69#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2084 with expr ID of =>
-(define-fun B2084 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@69#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@69#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@69#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@69#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@69#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@69#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@69#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@69#0|) (_ bv512 64))) (_ bv4608 64)))))))
+(define-fun B2084 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@69#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@69#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@69#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@69#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@69#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@69#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@69#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@69#0|) (_ bv512 64))) (_ bv4608 64)))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@70#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@70#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@70#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@70#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2085 with expr ID of =>
-(define-fun B2085 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@70#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@70#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@70#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@70#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@70#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@70#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@70#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@70#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@70#0|) (_ bv2 64))) (_ bv4608 64)))))))
+(define-fun B2085 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@70#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@70#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@70#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@70#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@70#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@70#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@70#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@70#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@70#0|) (_ bv2 64))) (_ bv4608 64)))))))
 
 ; convert
 ; Converting var_no 2086 with expr ID of =>
@@ -19673,116 +19673,116 @@
 
 ; convert
 ; Converting var_no 2090 with expr ID of =>
-(define-fun B2090 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@1#0| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@1#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
+(define-fun B2090 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@1#0| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@1#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@58#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@58#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2091 with expr ID of =>
-(define-fun B2091 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@58#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|))))))))
+(define-fun B2091 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@58#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@59#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@59#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2092 with expr ID of =>
-(define-fun B2092 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@59#0| (_ bv256 32)) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|) (_ bv1 12)))))))
+(define-fun B2092 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@59#0| (_ bv256 32)) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|) (_ bv1 12)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@60#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@60#0| () (_ BitVec 32))
 (declare-fun object_size.14 () (_ BitVec 64))
 ; convert
 ; Converting var_no 2093 with expr ID of =>
-(define-fun B2093 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@60#0| (_ bv256 32)) (bvuge ((_ zero_extend 1) object_size.14) ((_ zero_extend 1) (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@60#0|) (_ bv2 64)))))))))
+(define-fun B2093 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@60#0| (_ bv256 32)) (bvuge ((_ zero_extend 1) object_size.14) ((_ zero_extend 1) (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@60#0|) (_ bv2 64)))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@61#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@61#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2094 with expr ID of =>
-(define-fun B2094 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@61#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@61#0|)) (_ bv2 52))))) (_ bv0 64))))))
+(define-fun B2094 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@61#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@61#0|)) (_ bv2 52))))) (_ bv0 64))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@62#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@62#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2095 with expr ID of =>
-(define-fun B2095 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@62#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|))))))))
+(define-fun B2095 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@62#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@63#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@63#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2096 with expr ID of =>
-(define-fun B2096 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@63#0| (_ bv256 32)) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|) (_ bv1 12)))))))
+(define-fun B2096 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@63#0| (_ bv256 32)) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|) (_ bv1 12)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@64#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@64#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2097 with expr ID of =>
-(define-fun B2097 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@64#0| (_ bv256 32)) (bvuge ((_ zero_extend 1) object_size.14) (bvadd ((_ zero_extend 1) (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@64#0|) (_ bv2 64)))) (_ bv2 65)))))))
+(define-fun B2097 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@64#0| (_ bv256 32)) (bvuge ((_ zero_extend 1) object_size.14) (bvadd ((_ zero_extend 1) (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@64#0|) (_ bv2 64)))) (_ bv2 65)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@65#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@65#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2098 with expr ID of =>
-(define-fun B2098 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@65#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@65#0|)) (_ bv2 52))))) (_ bv0 64))))))
+(define-fun B2098 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@65#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@65#0|)) (_ bv2 52))))) (_ bv0 64))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@66#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@66#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2099 with expr ID of =>
-(define-fun B2099 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@66#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@66#0|))) (_ bv0 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@66#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
+(define-fun B2099 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@66#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@66#0|))) (_ bv0 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@66#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@67#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@67#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2100 with expr ID of =>
-(define-fun B2100 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@67#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@67#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|))))))))
+(define-fun B2100 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@67#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@67#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@68#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@68#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2101 with expr ID of =>
-(define-fun B2101 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@68#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@68#0|))) (_ bv0 32))) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|) (_ bv1 12)))))))
+(define-fun B2101 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@68#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@68#0|))) (_ bv0 32))) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|) (_ bv1 12)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@69#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@69#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2102 with expr ID of =>
-(define-fun B2102 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@69#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@69#0|))) (_ bv0 32))) (bvuge ((_ zero_extend 1) object_size.14) ((_ zero_extend 1) (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@69#0|) (_ bv2 64)))))))))
+(define-fun B2102 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@69#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@69#0|))) (_ bv0 32))) (bvuge ((_ zero_extend 1) object_size.14) ((_ zero_extend 1) (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@69#0|) (_ bv2 64)))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@70#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@70#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2103 with expr ID of =>
-(define-fun B2103 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@70#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@70#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@70#0|)) (_ bv2 52))))) (_ bv0 64))))))
+(define-fun B2103 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@70#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@70#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@70#0|)) (_ bv2 52))))) (_ bv0 64))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@71#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@71#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2104 with expr ID of =>
-(define-fun B2104 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@71#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@71#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|))))))))
+(define-fun B2104 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@71#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@71#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@72#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@72#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2105 with expr ID of =>
-(define-fun B2105 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@72#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@72#0|))) (_ bv0 32))) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|) (_ bv1 12)))))))
+(define-fun B2105 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@72#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@72#0|))) (_ bv0 32))) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|) (_ bv1 12)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@73#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@73#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2106 with expr ID of =>
-(define-fun B2106 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@73#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@73#0|))) (_ bv0 32))) (bvuge ((_ zero_extend 1) object_size.14) (bvadd ((_ zero_extend 1) (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@73#0|) (_ bv2 64)))) (_ bv2 65)))))))
+(define-fun B2106 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@73#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@73#0|))) (_ bv0 32))) (bvuge ((_ zero_extend 1) object_size.14) (bvadd ((_ zero_extend 1) (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@73#0|) (_ bv2 64)))) (_ bv2 65)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@74#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@74#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2107 with expr ID of =>
-(define-fun B2107 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@74#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@74#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@74#0|)) (_ bv2 52))))) (_ bv0 64))))))
+(define-fun B2107 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@74#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@74#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@74#0|)) (_ bv2 52))))) (_ bv0 64))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@75#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@75#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2108 with expr ID of =>
-(define-fun B2108 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@75#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@75#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx5!0@75#0|))) (_ bv3329 32))))))))
+(define-fun B2108 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@75#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@75#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::requires::1::_cbmc_idx4!0@75#0|))) (_ bv3329 32))))))))
 
 (declare-fun object_size.15 () (_ BitVec 64))
 ; convert
@@ -19813,109 +19813,109 @@
 
 ; convert
 ; Converting var_no 2115 with expr ID of =>
-(define-fun B2115 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@1#0| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@1#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
+(define-fun B2115 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@1#0| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@1#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@55#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@55#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2116 with expr ID of =>
-(define-fun B2116 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@55#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|))))))))
+(define-fun B2116 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@55#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@56#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@56#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2117 with expr ID of =>
-(define-fun B2117 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@56#0| (_ bv256 32)) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|) (_ bv1 12)))))))
+(define-fun B2117 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@56#0| (_ bv256 32)) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|) (_ bv1 12)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@57#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@57#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2118 with expr ID of =>
-(define-fun B2118 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@57#0| (_ bv256 32)) (bvuge ((_ zero_extend 1) object_size.14) ((_ zero_extend 1) (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@57#0|) (_ bv2 64)))))))))
+(define-fun B2118 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@57#0| (_ bv256 32)) (bvuge ((_ zero_extend 1) object_size.14) ((_ zero_extend 1) (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@57#0|) (_ bv2 64)))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@58#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@58#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2119 with expr ID of =>
-(define-fun B2119 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@58#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@58#0|)) (_ bv2 52))))) (_ bv0 64))))))
+(define-fun B2119 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@58#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@58#0|)) (_ bv2 52))))) (_ bv0 64))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@59#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@59#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2120 with expr ID of =>
-(define-fun B2120 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@59#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|))))))))
+(define-fun B2120 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@59#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@60#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@60#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2121 with expr ID of =>
-(define-fun B2121 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@60#0| (_ bv256 32)) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|) (_ bv1 12)))))))
+(define-fun B2121 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@60#0| (_ bv256 32)) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|) (_ bv1 12)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@61#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@61#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2122 with expr ID of =>
-(define-fun B2122 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@61#0| (_ bv256 32)) (bvuge ((_ zero_extend 1) object_size.14) (bvadd ((_ zero_extend 1) (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@61#0|) (_ bv2 64)))) (_ bv2 65)))))))
+(define-fun B2122 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@61#0| (_ bv256 32)) (bvuge ((_ zero_extend 1) object_size.14) (bvadd ((_ zero_extend 1) (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@61#0|) (_ bv2 64)))) (_ bv2 65)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@62#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@62#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2123 with expr ID of =>
-(define-fun B2123 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@62#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@62#0|)) (_ bv2 52))))) (_ bv0 64))))))
+(define-fun B2123 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@62#0| (_ bv256 32)) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@62#0|)) (_ bv2 52))))) (_ bv0 64))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@63#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@63#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2124 with expr ID of =>
-(define-fun B2124 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@63#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.177 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@63#0|))) (_ bv0 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@63#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
+(define-fun B2124 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@63#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.177 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@63#0|))) (_ bv0 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@63#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@64#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@64#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2125 with expr ID of =>
-(define-fun B2125 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@64#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.177 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@64#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|))))))))
+(define-fun B2125 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@64#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.177 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@64#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@65#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@65#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2126 with expr ID of =>
-(define-fun B2126 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@65#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.177 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@65#0|))) (_ bv0 32))) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|) (_ bv1 12)))))))
+(define-fun B2126 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@65#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.177 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@65#0|))) (_ bv0 32))) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|) (_ bv1 12)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@66#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@66#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2127 with expr ID of =>
-(define-fun B2127 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@66#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.177 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@66#0|))) (_ bv0 32))) (bvuge ((_ zero_extend 1) object_size.14) ((_ zero_extend 1) (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@66#0|) (_ bv2 64)))))))))
+(define-fun B2127 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@66#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.177 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@66#0|))) (_ bv0 32))) (bvuge ((_ zero_extend 1) object_size.14) ((_ zero_extend 1) (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@66#0|) (_ bv2 64)))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@67#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@67#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2128 with expr ID of =>
-(define-fun B2128 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@67#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.177 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@67#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@67#0|)) (_ bv2 52))))) (_ bv0 64))))))
+(define-fun B2128 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@67#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.177 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@67#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@67#0|)) (_ bv2 52))))) (_ bv0 64))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@68#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@68#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2129 with expr ID of =>
-(define-fun B2129 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@68#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.177 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@68#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|))))))))
+(define-fun B2129 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@68#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.177 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@68#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@69#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@69#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2130 with expr ID of =>
-(define-fun B2130 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@69#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.177 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@69#0|))) (_ bv0 32))) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|) (_ bv1 12)))))))
+(define-fun B2130 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@69#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.177 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@69#0|))) (_ bv0 32))) (not (= ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|) (_ bv1 12)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@70#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@70#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2131 with expr ID of =>
-(define-fun B2131 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@70#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.177 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@70#0|))) (_ bv0 32))) (bvuge ((_ zero_extend 1) object_size.14) (bvadd ((_ zero_extend 1) (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@70#0|) (_ bv2 64)))) (_ bv2 65)))))))
+(define-fun B2131 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@70#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.177 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@70#0|))) (_ bv0 32))) (bvuge ((_ zero_extend 1) object_size.14) (bvadd ((_ zero_extend 1) (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@70#0|) (_ bv2 64)))) (_ bv2 65)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@71#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@71#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2132 with expr ID of =>
-(define-fun B2132 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@71#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.177 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@71#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx6!0@71#0|)) (_ bv2 52))))) (_ bv0 64))))))
+(define-fun B2132 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@71#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.177 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::i!0@1#4|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::j!0@1#9|))) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@71#0|))) (_ bv0 32))) (not (= ((_ zero_extend 52) ((_ extract 63 52) (_ bv0 64))) ((_ zero_extend 52) ((_ extract 63 52) |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|)))) (= (let ((?pointerop |mlk_poly_permute_bitrev_to_custom::p_wrapper!0@4#1|)) (concat ((_ extract 63 52) ?pointerop) (bvadd ((_ extract 51 0) ?pointerop) (bvmul ((_ extract 51 0) ((_ zero_extend 32) |mlk_poly_permute_bitrev_to_custom::ensures::1::_cbmc_idx5!0@71#0|)) (_ bv2 52))))) (_ bv0 64))))))
 
 ; convert
 ; Converting var_no 2133 with expr ID of =>
@@ -19934,70 +19934,70 @@
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@75#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@75#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@75#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2136 with expr ID of =>
-(define-fun B2136 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@75#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@75#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@75#0| (_ bv256 32)) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@75#0|) (_ bv1536 64)) (_ bv4608 64)))))))
+(define-fun B2136 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@75#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@75#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@75#0| (_ bv256 32)) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@75#0|) (_ bv1536 64)) (_ bv4608 64)))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@76#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@76#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@76#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@76#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2137 with expr ID of =>
-(define-fun B2137 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@76#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@76#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@76#0| (_ bv256 32)) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@76#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@76#0|) (_ bv512 64))) (_ bv4608 64)))))))
+(define-fun B2137 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@76#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@76#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@76#0| (_ bv256 32)) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@76#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@76#0|) (_ bv512 64))) (_ bv4608 64)))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@77#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@77#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@77#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@77#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2138 with expr ID of =>
-(define-fun B2138 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@77#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@77#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@77#0| (_ bv256 32)) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@77#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@77#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@77#0|) (_ bv2 64))) (_ bv4608 64)))))))
+(define-fun B2138 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@77#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@77#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@77#0| (_ bv256 32)) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@77#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@77#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@77#0|) (_ bv2 64))) (_ bv4608 64)))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@82#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@82#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@82#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@82#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2139 with expr ID of =>
-(define-fun B2139 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@82#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@82#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@82#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.177 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@82#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@82#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@82#0|))) (_ bv0 32))) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@82#0|) (_ bv1536 64)) (_ bv4608 64)))))))
+(define-fun B2139 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@82#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@82#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@82#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.177 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@82#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@82#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@82#0|))) (_ bv0 32))) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@82#0|) (_ bv1536 64)) (_ bv4608 64)))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@83#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@83#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@83#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@83#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2140 with expr ID of =>
-(define-fun B2140 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@83#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@83#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@83#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.177 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@83#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@83#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@83#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@83#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@83#0|) (_ bv512 64))) (_ bv4608 64)))))))
+(define-fun B2140 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@83#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@83#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@83#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.177 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@83#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@83#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@83#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@83#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@83#0|) (_ bv512 64))) (_ bv4608 64)))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@84#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@84#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@84#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@84#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2141 with expr ID of =>
-(define-fun B2141 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@84#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@84#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@84#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.177 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@84#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@84#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@84#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@84#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@84#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@84#0|) (_ bv2 64))) (_ bv4608 64)))))))
+(define-fun B2141 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@84#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@84#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@84#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.177 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@84#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@84#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@84#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@84#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@84#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@84#0|) (_ bv2 64))) (_ bv4608 64)))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@85#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@85#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@85#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@85#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2142 with expr ID of =>
-(define-fun B2142 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@85#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@85#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@85#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.177 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@85#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@85#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@85#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.177 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@85#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@85#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx68!0@85#0|))) (_ bv3329 32))))))))
+(define-fun B2142 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825) (=> (and |goto_symex::&92;guard#9| |goto_symex::&92;guard#14|) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@85#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@85#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@85#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.177 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@85#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@85#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@85#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.177 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::x3!0@85#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::y3!0@85#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::2::1::1::1::1::_cbmc_idx67!0@85#0|))) (_ bv3329 32))))))))
 
 ; convert
 ; Converting var_no 2143 with expr ID of =>
@@ -20020,70 +20020,70 @@
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@32#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@32#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@32#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2147 with expr ID of =>
-(define-fun B2147 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825 B1826) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@32#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@32#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@32#0| (_ bv256 32)) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@32#0|) (_ bv1536 64)) (_ bv4608 64)))))))
+(define-fun B2147 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825 B1826) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@32#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@32#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@32#0| (_ bv256 32)) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@32#0|) (_ bv1536 64)) (_ bv4608 64)))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@33#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@33#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@33#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@33#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2148 with expr ID of =>
-(define-fun B2148 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825 B1826) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@33#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@33#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@33#0| (_ bv256 32)) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@33#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@33#0|) (_ bv512 64))) (_ bv4608 64)))))))
+(define-fun B2148 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825 B1826) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@33#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@33#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@33#0| (_ bv256 32)) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@33#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@33#0|) (_ bv512 64))) (_ bv4608 64)))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@34#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@34#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@34#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@34#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2149 with expr ID of =>
-(define-fun B2149 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825 B1826) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@34#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@34#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@34#0| (_ bv256 32)) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@34#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@34#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@34#0|) (_ bv2 64))) (_ bv4608 64)))))))
+(define-fun B2149 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825 B1826) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@34#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@34#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@34#0| (_ bv256 32)) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@34#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@34#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@34#0|) (_ bv2 64))) (_ bv4608 64)))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@39#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@39#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@39#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@39#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2150 with expr ID of =>
-(define-fun B2150 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825 B1826) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@39#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@39#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@39#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@39#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@39#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@39#0|))) (_ bv0 32))) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@39#0|) (_ bv1536 64)) (_ bv4608 64)))))))
+(define-fun B2150 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825 B1826) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@39#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@39#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@39#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@39#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@39#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@39#0|))) (_ bv0 32))) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@39#0|) (_ bv1536 64)) (_ bv4608 64)))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@40#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@40#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@40#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@40#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2151 with expr ID of =>
-(define-fun B2151 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825 B1826) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@40#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@40#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@40#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@40#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@40#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@40#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@40#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@40#0|) (_ bv512 64))) (_ bv4608 64)))))))
+(define-fun B2151 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825 B1826) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@40#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@40#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@40#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@40#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@40#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@40#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@40#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@40#0|) (_ bv512 64))) (_ bv4608 64)))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@41#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@41#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@41#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@41#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2152 with expr ID of =>
-(define-fun B2152 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825 B1826) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@41#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@41#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@41#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@41#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@41#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@41#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@41#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@41#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@41#0|) (_ bv2 64))) (_ bv4608 64)))))))
+(define-fun B2152 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825 B1826) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@41#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@41#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@41#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@41#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@41#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@41#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@41#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@41#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@41#0|) (_ bv2 64))) (_ bv4608 64)))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@42#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@42#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@42#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@42#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2153 with expr ID of =>
-(define-fun B2153 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825 B1826) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@42#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@42#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@42#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@42#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@42#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@42#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@42#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@42#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx67!0@42#0|))) (_ bv3329 32))))))))
+(define-fun B2153 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825 B1826) (=> |goto_symex::&92;guard#9| (or (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@42#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@42#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@42#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@42#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@42#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@42#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.149 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::x2!0@42#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::y2!0@42#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::1::1::1::1::1::_cbmc_idx66!0@42#0|))) (_ bv3329 32))))))))
 
 ; convert
 ; Converting var_no 2154 with expr ID of =>
@@ -20098,70 +20098,70 @@
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@4#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx66!0@4#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx65!0@4#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2156 with expr ID of =>
-(define-fun B2156 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825 B1826 B1827) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@4#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@4#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx66!0@4#0| (_ bv256 32)) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@4#0|) (_ bv1536 64)) (_ bv4608 64))))))
+(define-fun B2156 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825 B1826 B1827) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@4#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@4#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx65!0@4#0| (_ bv256 32)) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@4#0|) (_ bv1536 64)) (_ bv4608 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@5#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@5#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx66!0@5#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx65!0@5#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2157 with expr ID of =>
-(define-fun B2157 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825 B1826 B1827) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@5#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@5#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx66!0@5#0| (_ bv256 32)) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@5#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@5#0|) (_ bv512 64))) (_ bv4608 64))))))
+(define-fun B2157 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825 B1826 B1827) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@5#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@5#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx65!0@5#0| (_ bv256 32)) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@5#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@5#0|) (_ bv512 64))) (_ bv4608 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@6#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@6#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx66!0@6#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx65!0@6#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2158 with expr ID of =>
-(define-fun B2158 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825 B1826 B1827) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@6#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@6#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx66!0@6#0| (_ bv256 32)) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@6#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@6#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx66!0@6#0|) (_ bv2 64))) (_ bv4608 64))))))
+(define-fun B2158 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825 B1826 B1827) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@6#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@6#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx65!0@6#0| (_ bv256 32)) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@6#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@6#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx65!0@6#0|) (_ bv2 64))) (_ bv4608 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@11#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@11#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx66!0@11#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx65!0@11#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2159 with expr ID of =>
-(define-fun B2159 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825 B1826 B1827) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@11#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@11#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx66!0@11#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@11#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@11#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx66!0@11#0|))) (_ bv0 32))) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@11#0|) (_ bv1536 64)) (_ bv4608 64))))))
+(define-fun B2159 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825 B1826 B1827) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@11#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@11#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx65!0@11#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@11#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@11#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx65!0@11#0|))) (_ bv0 32))) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@11#0|) (_ bv1536 64)) (_ bv4608 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@12#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@12#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx66!0@12#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx65!0@12#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2160 with expr ID of =>
-(define-fun B2160 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825 B1826 B1827) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@12#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@12#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx66!0@12#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@12#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@12#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx66!0@12#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@12#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@12#0|) (_ bv512 64))) (_ bv4608 64))))))
+(define-fun B2160 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825 B1826 B1827) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@12#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@12#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx65!0@12#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@12#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@12#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx65!0@12#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@12#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@12#0|) (_ bv512 64))) (_ bv4608 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@13#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@13#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx66!0@13#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx65!0@13#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2161 with expr ID of =>
-(define-fun B2161 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825 B1826 B1827) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@13#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@13#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx66!0@13#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@13#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@13#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx66!0@13#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@13#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@13#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx66!0@13#0|) (_ bv2 64))) (_ bv4608 64))))))
+(define-fun B2161 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825 B1826 B1827) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@13#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@13#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx65!0@13#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@13#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@13#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx65!0@13#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvadd (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@13#0|) (_ bv1536 64)) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@13#0|) (_ bv512 64))) (bvmul ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx65!0@13#0|) (_ bv2 64))) (_ bv4608 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@14#0| () (_ BitVec 32))
 ; find_symbols
 (declare-fun |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@14#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx66!0@14#0| () (_ BitVec 32))
+(declare-fun |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx65!0@14#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 2162 with expr ID of =>
-(define-fun B2162 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825 B1826 B1827) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@14#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@14#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx66!0@14#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@14#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@14#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx66!0@14#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@14#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@14#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx66!0@14#0|))) (_ bv3329 32)))))))
+(define-fun B2162 () Bool (=> (and true B1813 B1814 B1815 B1816 B1817 B1818 B1819 B1820 B1821 B1822 B1823 B1824 B1825 B1826 B1827) (or (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@14#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@14#0| (_ bv3 32)) (bvuge |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx65!0@14#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@14#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@14#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx65!0@14#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select (struct.2.vec (select array.134 ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::x!0@14#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::y!0@14#0|))) ((_ zero_extend 32) |mlk_polymat_permute_bitrev_to_custom::ensures::1::1::1::_cbmc_idx65!0@14#0|))) (_ bv3329 32)))))))
 
 ; set_to true
 (assert (or (not B1922) (not B1923) (not B1924) (not B1925) (not B1926) (not B1927) (not B1928) (not B1929) (not B1930) (not B1931) (not B1932) (not B1933) (not B1934) (not B1935) (not B1936) (not B1937) (not B1938) (not B1939) (not B1940) (not B1941) (not B1942) (not B1943) (not B1944) (not B1945) (not B1946) (not B1947) (not B1948) (not B1949) (not B1950) (not B1951) (not B1952) (not B1953) (not B1954) (not B1955) (not B1956) (not B1957) (not B1958) (not B1959) (not B1960) (not B1961) (not B1962) (not B1963) (not B1964) (not B1965) (not B1966) (not B1967) (not B1968) (not B1969) (not B1970) (not B1971) (not B1972) (not B1973) (not B1974) (not B1975) (not B1976) (not B1977) (not B1978) (not B1979) (not B1980) (not B1981) (not B1982) (not B1983) (not B1984) (not B1985) (not B1986) (not B1987) (not B1988) (not B1989) (not B1990) (not B1991) (not B1992) (not B1993) (not B1994) (not B1995) (not B1996) (not B1997) (not B1998) (not B1999) (not B2000) (not B2001) (not B2002) (not B2003) (not B2004) (not B2005) (not B2006) (not B2007) (not B2008) (not B2009) (not B2010) (not B2011) (not B2012) (not B2013) (not B2014) (not B2015) (not B2016) (not B2017) (not B2018) (not B2019) (not B2020) (not B2021) (not B2022) (not B2023) (not B2024) (not B2025) (not B2026) (not B2027) (not B2028) (not B2029) (not B2030) (not B2031) (not B2032) (not B2033) (not B2034) (not B2035) (not B2036) (not B2037) (not B2038) (not B2039) (not B2040) (not B2041) (not B2042) (not B2043) (not B2044) (not B2045) (not B2046) (not B2047) (not B2048) (not B2049) (not B2050) (not B2051) (not B2052) (not B2053) (not B2054) (not B2055) (not B2056) (not B2057) (not B2058) (not B2059) (not B2060) (not B2061) (not B2062) (not B2063) (not B2064) (not B2065) (not B2066) (not B2067) (not B2068) (not B2069) (not B2070) (not B2071) (not B2072) (not B2073) (not B2074) (not B2075) (not B2076) (not B2077) (not B2078) (not B2079) (not B2080) (not B2081) (not B2082) (not B2083) (not B2084) (not B2085) (not B2086) (not B2087) (not B2088) (not B2089) (not B2090) (not B2091) (not B2092) (not B2093) (not B2094) (not B2095) (not B2096) (not B2097) (not B2098) (not B2099) (not B2100) (not B2101) (not B2102) (not B2103) (not B2104) (not B2105) (not B2106) (not B2107) (not B2108) (not B2109) (not B2110) (not B2111) (not B2112) (not B2113) (not B2114) (not B2115) (not B2116) (not B2117) (not B2118) (not B2119) (not B2120) (not B2121) (not B2122) (not B2123) (not B2124) (not B2125) (not B2126) (not B2127) (not B2128) (not B2129) (not B2130) (not B2131) (not B2132) (not B2133) (not B2134) (not B2135) (not B2136) (not B2137) (not B2138) (not B2139) (not B2140) (not B2141) (not B2142) (not B2143) (not B2144) (not B2145) (not B2146) (not B2147) (not B2148) (not B2149) (not B2150) (not B2151) (not B2152) (not B2153) (not B2154) (not B2155) (not B2156) (not B2157) (not B2158) (not B2159) (not B2160) (not B2161) (not B2162)))

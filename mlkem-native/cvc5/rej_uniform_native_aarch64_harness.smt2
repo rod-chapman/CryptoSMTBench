@@ -2244,10 +2244,10 @@
 (assert (= |goto_symex::&92;guard#1| (not (and (not (= |mlk_rej_uniform_native::$tmp::return_value_mlk_sys_check_capability!0@1#2| (_ bv0 32))) (= |mlk_rej_uniform_native::len!0@1#1| (_ bv256 32)) (= (bvurem |mlk_rej_uniform_native::buflen!0@1#1| (_ bv24 32)) (_ bv0 32))))))
 
 ; set_to true (equal)
-(define-fun |mlk_rej_uniform_aarch64_asm::buflen_wrapper!0@1#1| () (_ BitVec 32) |mlk_rej_uniform_native::buflen!0@1#1|)
+(define-fun |mlk_rej_uniform_aarch64_asm::buflen_wrapper!0@1#1| () (_ BitVec 64) ((_ zero_extend 32) |mlk_rej_uniform_native::buflen!0@1#1|))
 
 ; set_to true (equal)
-(define-fun |__CPROVER_contracts_is_fresh::size!0@3#1| () (_ BitVec 64) ((_ zero_extend 32) |mlk_rej_uniform_aarch64_asm::buflen_wrapper!0@1#1|))
+(define-fun |__CPROVER_contracts_is_fresh::size!0@3#1| () (_ BitVec 64) |mlk_rej_uniform_aarch64_asm::buflen_wrapper!0@1#1|)
 
 ; set_to true (equal)
 (define-fun |__CPROVER_contracts_car_create::size!0@3#1| () (_ BitVec 64) |__CPROVER_contracts_is_fresh::size!0@3#1|)
@@ -2625,7 +2625,7 @@
 ; convert
 ; Converting var_no 485 with expr ID of =>
 (declare-fun B485 () Bool)
-(assert (= B485 (=> (not |goto_symex::&92;guard#1|) (forall ((|mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx25!0@19#0| (_ BitVec 32))) (or (bvuge |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx25!0@19#0| ((_ extract 31 0) |mlk_rej_uniform_aarch64_asm::__contract_return_value!0@1#2|)) (and (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2| ((_ zero_extend 32) |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx25!0@19#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2| ((_ zero_extend 32) |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx25!0@19#0|))) (_ bv3329 32)))))))))
+(assert (= B485 (=> (not |goto_symex::&92;guard#1|) (forall ((|mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx24!0@19#0| (_ BitVec 32))) (or (bvuge |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx24!0@19#0| ((_ extract 31 0) |mlk_rej_uniform_aarch64_asm::__contract_return_value!0@1#2|)) (and (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2| ((_ zero_extend 32) |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx24!0@19#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2| ((_ zero_extend 32) |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx24!0@19#0|))) (_ bv3329 32)))))))))
 
 ; convert
 ; Converting var_no 486 with expr ID of not
@@ -3156,9 +3156,9 @@
 (assert (= (concat (_ bv20 8) (_ bv0 56)) |symex::args::73|))
 
 ; find_symbols
-(declare-fun |symex::args::74| () (_ BitVec 32))
+(declare-fun |symex::args::74| () (_ BitVec 64))
 ; set_to true
-(assert (= |mlk_rej_uniform_native::buflen!0@1#1| |symex::args::74|))
+(assert (= ((_ zero_extend 32) |mlk_rej_uniform_native::buflen!0@1#1|) |symex::args::74|))
 
 ; find_symbols
 (declare-fun mlk_rej_uniform_table () (Array (_ BitVec 64) (_ BitVec 8)))
@@ -3223,7 +3223,7 @@
 ; find_symbols
 (declare-fun |symex::args::85| () (_ BitVec 64))
 ; set_to true
-(assert (= ((_ zero_extend 32) |mlk_rej_uniform_aarch64_asm::buflen_wrapper!0@1#1|) |symex::args::85|))
+(assert (= |mlk_rej_uniform_aarch64_asm::buflen_wrapper!0@1#1| |symex::args::85|))
 
 ; find_symbols
 (declare-fun |symex::args::86| () (_ BitVec 64))
@@ -3275,7 +3275,7 @@
 (assert (= (concat (_ bv20 8) (_ bv0 56)) |symex::args::94|))
 
 ; find_symbols
-(declare-fun |symex::args::95| () (_ BitVec 32))
+(declare-fun |symex::args::95| () (_ BitVec 64))
 ; set_to true
 (assert (= |mlk_rej_uniform_aarch64_asm::buflen_wrapper!0@1#1| |symex::args::95|))
 
@@ -3315,7 +3315,7 @@
 (assert (= (concat (_ bv20 8) (_ bv0 56)) |symex::args::102|))
 
 ; find_symbols
-(declare-fun |symex::args::103| () (_ BitVec 32))
+(declare-fun |symex::args::103| () (_ BitVec 64))
 ; set_to true
 (assert (= |mlk_rej_uniform_aarch64_asm::buflen_wrapper!0@1#1| |symex::args::103|))
 
@@ -3490,7 +3490,7 @@
 
 ; convert
 ; Converting var_no 533 with expr ID of =>
-(define-fun B533 () Bool (=> (and true B480 B481 B482 B483) (=> (not |goto_symex::&92;guard#1|) (= (bvurem |mlk_rej_uniform_aarch64_asm::buflen_wrapper!0@1#1| (_ bv24 32)) (_ bv0 32)))))
+(define-fun B533 () Bool (=> (and true B480 B481 B482 B483) (=> (not |goto_symex::&92;guard#1|) (= (bvurem |mlk_rej_uniform_aarch64_asm::buflen_wrapper!0@1#1| (_ bv24 64)) (_ bv0 64)))))
 
 ; convert
 ; Converting var_no 534 with expr ID of =>
@@ -3537,40 +3537,40 @@
 (define-fun B544 () Bool (=> (and true B480 B481 B482 B483 B484) (=> (not |goto_symex::&92;guard#1|) (not (bvuge |mlk_rej_uniform_aarch64_asm::__contract_return_value!0@1#2| (_ bv4294967296 64))))))
 
 ; find_symbols
-(declare-fun |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx25!0@1#0| () (_ BitVec 32))
+(declare-fun |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx24!0@1#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 545 with expr ID of =>
-(define-fun B545 () Bool (=> (and true B480 B481 B482 B483 B484) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx25!0@1#0| ((_ extract 31 0) |mlk_rej_uniform_aarch64_asm::__contract_return_value!0@1#2|)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx25!0@1#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
+(define-fun B545 () Bool (=> (and true B480 B481 B482 B483 B484) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx24!0@1#0| ((_ extract 31 0) |mlk_rej_uniform_aarch64_asm::__contract_return_value!0@1#2|)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx24!0@1#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
 
 ; find_symbols
-(declare-fun |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx25!0@4#0| () (_ BitVec 32))
+(declare-fun |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx24!0@4#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 546 with expr ID of =>
-(define-fun B546 () Bool (=> (and true B480 B481 B482 B483 B484) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx25!0@4#0| ((_ extract 31 0) |mlk_rej_uniform_aarch64_asm::__contract_return_value!0@1#2|)) (bvuge ((_ zero_extend 1) (bvmul |symex_dynamic::dynamic_object_size!0#1| (_ bv2 64))) ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx25!0@4#0|) (_ bv2 64))))))))
+(define-fun B546 () Bool (=> (and true B480 B481 B482 B483 B484) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx24!0@4#0| ((_ extract 31 0) |mlk_rej_uniform_aarch64_asm::__contract_return_value!0@1#2|)) (bvuge ((_ zero_extend 1) (bvmul |symex_dynamic::dynamic_object_size!0#1| (_ bv2 64))) ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx24!0@4#0|) (_ bv2 64))))))))
 
 ; find_symbols
-(declare-fun |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx25!0@8#0| () (_ BitVec 32))
+(declare-fun |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx24!0@8#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 547 with expr ID of =>
-(define-fun B547 () Bool (=> (and true B480 B481 B482 B483 B484) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx25!0@8#0| ((_ extract 31 0) |mlk_rej_uniform_aarch64_asm::__contract_return_value!0@1#2|)) (bvuge ((_ zero_extend 1) (bvmul |symex_dynamic::dynamic_object_size!0#1| (_ bv2 64))) (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx25!0@8#0|) (_ bv2 64))) (_ bv2 65)))))))
+(define-fun B547 () Bool (=> (and true B480 B481 B482 B483 B484) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx24!0@8#0| ((_ extract 31 0) |mlk_rej_uniform_aarch64_asm::__contract_return_value!0@1#2|)) (bvuge ((_ zero_extend 1) (bvmul |symex_dynamic::dynamic_object_size!0#1| (_ bv2 64))) (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx24!0@8#0|) (_ bv2 64))) (_ bv2 65)))))))
 
 ; find_symbols
-(declare-fun |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx25!0@10#0| () (_ BitVec 32))
+(declare-fun |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx24!0@10#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 548 with expr ID of =>
-(define-fun B548 () Bool (=> (and true B480 B481 B482 B483 B484) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx25!0@10#0| ((_ extract 31 0) |mlk_rej_uniform_aarch64_asm::__contract_return_value!0@1#2|)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2| ((_ zero_extend 32) |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx25!0@10#0|))) (_ bv0 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx25!0@10#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
+(define-fun B548 () Bool (=> (and true B480 B481 B482 B483 B484) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx24!0@10#0| ((_ extract 31 0) |mlk_rej_uniform_aarch64_asm::__contract_return_value!0@1#2|)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2| ((_ zero_extend 32) |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx24!0@10#0|))) (_ bv0 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx24!0@10#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
 
 ; find_symbols
-(declare-fun |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx25!0@13#0| () (_ BitVec 32))
+(declare-fun |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx24!0@13#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 549 with expr ID of =>
-(define-fun B549 () Bool (=> (and true B480 B481 B482 B483 B484) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx25!0@13#0| ((_ extract 31 0) |mlk_rej_uniform_aarch64_asm::__contract_return_value!0@1#2|)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2| ((_ zero_extend 32) |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx25!0@13#0|))) (_ bv0 32))) (bvuge ((_ zero_extend 1) (bvmul |symex_dynamic::dynamic_object_size!0#1| (_ bv2 64))) ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx25!0@13#0|) (_ bv2 64))))))))
+(define-fun B549 () Bool (=> (and true B480 B481 B482 B483 B484) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx24!0@13#0| ((_ extract 31 0) |mlk_rej_uniform_aarch64_asm::__contract_return_value!0@1#2|)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2| ((_ zero_extend 32) |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx24!0@13#0|))) (_ bv0 32))) (bvuge ((_ zero_extend 1) (bvmul |symex_dynamic::dynamic_object_size!0#1| (_ bv2 64))) ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx24!0@13#0|) (_ bv2 64))))))))
 
 ; find_symbols
-(declare-fun |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx25!0@17#0| () (_ BitVec 32))
+(declare-fun |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx24!0@17#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 550 with expr ID of =>
-(define-fun B550 () Bool (=> (and true B480 B481 B482 B483 B484) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx25!0@17#0| ((_ extract 31 0) |mlk_rej_uniform_aarch64_asm::__contract_return_value!0@1#2|)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2| ((_ zero_extend 32) |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx25!0@17#0|))) (_ bv0 32))) (bvuge ((_ zero_extend 1) (bvmul |symex_dynamic::dynamic_object_size!0#1| (_ bv2 64))) (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx25!0@17#0|) (_ bv2 64))) (_ bv2 65)))))))
+(define-fun B550 () Bool (=> (and true B480 B481 B482 B483 B484) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx24!0@17#0| ((_ extract 31 0) |mlk_rej_uniform_aarch64_asm::__contract_return_value!0@1#2|)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2| ((_ zero_extend 32) |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx24!0@17#0|))) (_ bv0 32))) (bvuge ((_ zero_extend 1) (bvmul |symex_dynamic::dynamic_object_size!0#1| (_ bv2 64))) (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_rej_uniform_aarch64_asm::ensures::1::_cbmc_idx24!0@17#0|) (_ bv2 64))) (_ bv2 65)))))))
 
 ; convert
 ; Converting var_no 551 with expr ID of =>
@@ -3585,46 +3585,46 @@
 (define-fun B553 () Bool (=> (and true B480 B481 B482 B483 B484 B485) (or (= |mlk_rej_uniform_native::__contract_return_value!0@1#2| (_ bv4294967295 32)) (bvsge |mlk_rej_uniform_native::__contract_return_value!0@1#2| (_ bv0 32)))))
 
 ; find_symbols
-(declare-fun |mlk_rej_uniform_native::ensures::1::_cbmc_idx14!0@1#0| () (_ BitVec 32))
+(declare-fun |mlk_rej_uniform_native::ensures::1::_cbmc_idx13!0@1#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 554 with expr ID of =>
-(define-fun B554 () Bool (=> (and true B480 B481 B482 B483 B484 B485) (or (= |mlk_rej_uniform_native::__contract_return_value!0@1#2| (_ bv4294967295 32)) (bvuge |mlk_rej_uniform_native::ensures::1::_cbmc_idx14!0@1#0| |mlk_rej_uniform_native::__contract_return_value!0@1#2|) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_rej_uniform_native::ensures::1::_cbmc_idx14!0@1#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
+(define-fun B554 () Bool (=> (and true B480 B481 B482 B483 B484 B485) (or (= |mlk_rej_uniform_native::__contract_return_value!0@1#2| (_ bv4294967295 32)) (bvuge |mlk_rej_uniform_native::ensures::1::_cbmc_idx13!0@1#0| |mlk_rej_uniform_native::__contract_return_value!0@1#2|) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_rej_uniform_native::ensures::1::_cbmc_idx13!0@1#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
 
 ; find_symbols
-(declare-fun |mlk_rej_uniform_native::ensures::1::_cbmc_idx14!0@4#0| () (_ BitVec 32))
+(declare-fun |mlk_rej_uniform_native::ensures::1::_cbmc_idx13!0@4#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 555 with expr ID of =>
-(define-fun B555 () Bool (=> (and true B480 B481 B482 B483 B484 B485) (or (= |mlk_rej_uniform_native::__contract_return_value!0@1#2| (_ bv4294967295 32)) (bvuge |mlk_rej_uniform_native::ensures::1::_cbmc_idx14!0@4#0| |mlk_rej_uniform_native::__contract_return_value!0@1#2|) (bvuge ((_ zero_extend 1) (bvmul |symex_dynamic::dynamic_object_size!0#1| (_ bv2 64))) ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_rej_uniform_native::ensures::1::_cbmc_idx14!0@4#0|) (_ bv2 64)))))))
+(define-fun B555 () Bool (=> (and true B480 B481 B482 B483 B484 B485) (or (= |mlk_rej_uniform_native::__contract_return_value!0@1#2| (_ bv4294967295 32)) (bvuge |mlk_rej_uniform_native::ensures::1::_cbmc_idx13!0@4#0| |mlk_rej_uniform_native::__contract_return_value!0@1#2|) (bvuge ((_ zero_extend 1) (bvmul |symex_dynamic::dynamic_object_size!0#1| (_ bv2 64))) ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_rej_uniform_native::ensures::1::_cbmc_idx13!0@4#0|) (_ bv2 64)))))))
 
 ; find_symbols
-(declare-fun |mlk_rej_uniform_native::ensures::1::_cbmc_idx14!0@8#0| () (_ BitVec 32))
+(declare-fun |mlk_rej_uniform_native::ensures::1::_cbmc_idx13!0@8#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 556 with expr ID of =>
-(define-fun B556 () Bool (=> (and true B480 B481 B482 B483 B484 B485) (or (= |mlk_rej_uniform_native::__contract_return_value!0@1#2| (_ bv4294967295 32)) (bvuge |mlk_rej_uniform_native::ensures::1::_cbmc_idx14!0@8#0| |mlk_rej_uniform_native::__contract_return_value!0@1#2|) (bvuge ((_ zero_extend 1) (bvmul |symex_dynamic::dynamic_object_size!0#1| (_ bv2 64))) (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_rej_uniform_native::ensures::1::_cbmc_idx14!0@8#0|) (_ bv2 64))) (_ bv2 65))))))
+(define-fun B556 () Bool (=> (and true B480 B481 B482 B483 B484 B485) (or (= |mlk_rej_uniform_native::__contract_return_value!0@1#2| (_ bv4294967295 32)) (bvuge |mlk_rej_uniform_native::ensures::1::_cbmc_idx13!0@8#0| |mlk_rej_uniform_native::__contract_return_value!0@1#2|) (bvuge ((_ zero_extend 1) (bvmul |symex_dynamic::dynamic_object_size!0#1| (_ bv2 64))) (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_rej_uniform_native::ensures::1::_cbmc_idx13!0@8#0|) (_ bv2 64))) (_ bv2 65))))))
 
 ; find_symbols
-(declare-fun |mlk_rej_uniform_native::ensures::1::_cbmc_idx14!0@10#0| () (_ BitVec 32))
+(declare-fun |mlk_rej_uniform_native::ensures::1::_cbmc_idx13!0@10#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 557 with expr ID of =>
-(define-fun B557 () Bool (=> (and true B480 B481 B482 B483 B484 B485) (or (= |mlk_rej_uniform_native::__contract_return_value!0@1#2| (_ bv4294967295 32)) (bvuge |mlk_rej_uniform_native::ensures::1::_cbmc_idx14!0@10#0| |mlk_rej_uniform_native::__contract_return_value!0@1#2|) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#3| ((_ zero_extend 32) |mlk_rej_uniform_native::ensures::1::_cbmc_idx14!0@10#0|))) (_ bv0 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_rej_uniform_native::ensures::1::_cbmc_idx14!0@10#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
+(define-fun B557 () Bool (=> (and true B480 B481 B482 B483 B484 B485) (or (= |mlk_rej_uniform_native::__contract_return_value!0@1#2| (_ bv4294967295 32)) (bvuge |mlk_rej_uniform_native::ensures::1::_cbmc_idx13!0@10#0| |mlk_rej_uniform_native::__contract_return_value!0@1#2|) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#3| ((_ zero_extend 32) |mlk_rej_uniform_native::ensures::1::_cbmc_idx13!0@10#0|))) (_ bv0 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_rej_uniform_native::ensures::1::_cbmc_idx13!0@10#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
 
 ; find_symbols
-(declare-fun |mlk_rej_uniform_native::ensures::1::_cbmc_idx14!0@13#0| () (_ BitVec 32))
+(declare-fun |mlk_rej_uniform_native::ensures::1::_cbmc_idx13!0@13#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 558 with expr ID of =>
-(define-fun B558 () Bool (=> (and true B480 B481 B482 B483 B484 B485) (or (= |mlk_rej_uniform_native::__contract_return_value!0@1#2| (_ bv4294967295 32)) (bvuge |mlk_rej_uniform_native::ensures::1::_cbmc_idx14!0@13#0| |mlk_rej_uniform_native::__contract_return_value!0@1#2|) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#3| ((_ zero_extend 32) |mlk_rej_uniform_native::ensures::1::_cbmc_idx14!0@13#0|))) (_ bv0 32))) (bvuge ((_ zero_extend 1) (bvmul |symex_dynamic::dynamic_object_size!0#1| (_ bv2 64))) ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_rej_uniform_native::ensures::1::_cbmc_idx14!0@13#0|) (_ bv2 64)))))))
+(define-fun B558 () Bool (=> (and true B480 B481 B482 B483 B484 B485) (or (= |mlk_rej_uniform_native::__contract_return_value!0@1#2| (_ bv4294967295 32)) (bvuge |mlk_rej_uniform_native::ensures::1::_cbmc_idx13!0@13#0| |mlk_rej_uniform_native::__contract_return_value!0@1#2|) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#3| ((_ zero_extend 32) |mlk_rej_uniform_native::ensures::1::_cbmc_idx13!0@13#0|))) (_ bv0 32))) (bvuge ((_ zero_extend 1) (bvmul |symex_dynamic::dynamic_object_size!0#1| (_ bv2 64))) ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_rej_uniform_native::ensures::1::_cbmc_idx13!0@13#0|) (_ bv2 64)))))))
 
 ; find_symbols
-(declare-fun |mlk_rej_uniform_native::ensures::1::_cbmc_idx14!0@17#0| () (_ BitVec 32))
+(declare-fun |mlk_rej_uniform_native::ensures::1::_cbmc_idx13!0@17#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 559 with expr ID of =>
-(define-fun B559 () Bool (=> (and true B480 B481 B482 B483 B484 B485) (or (= |mlk_rej_uniform_native::__contract_return_value!0@1#2| (_ bv4294967295 32)) (bvuge |mlk_rej_uniform_native::ensures::1::_cbmc_idx14!0@17#0| |mlk_rej_uniform_native::__contract_return_value!0@1#2|) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#3| ((_ zero_extend 32) |mlk_rej_uniform_native::ensures::1::_cbmc_idx14!0@17#0|))) (_ bv0 32))) (bvuge ((_ zero_extend 1) (bvmul |symex_dynamic::dynamic_object_size!0#1| (_ bv2 64))) (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_rej_uniform_native::ensures::1::_cbmc_idx14!0@17#0|) (_ bv2 64))) (_ bv2 65))))))
+(define-fun B559 () Bool (=> (and true B480 B481 B482 B483 B484 B485) (or (= |mlk_rej_uniform_native::__contract_return_value!0@1#2| (_ bv4294967295 32)) (bvuge |mlk_rej_uniform_native::ensures::1::_cbmc_idx13!0@17#0| |mlk_rej_uniform_native::__contract_return_value!0@1#2|) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#3| ((_ zero_extend 32) |mlk_rej_uniform_native::ensures::1::_cbmc_idx13!0@17#0|))) (_ bv0 32))) (bvuge ((_ zero_extend 1) (bvmul |symex_dynamic::dynamic_object_size!0#1| (_ bv2 64))) (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_rej_uniform_native::ensures::1::_cbmc_idx13!0@17#0|) (_ bv2 64))) (_ bv2 65))))))
 
 ; find_symbols
-(declare-fun |mlk_rej_uniform_native::ensures::1::_cbmc_idx14!0@19#0| () (_ BitVec 32))
+(declare-fun |mlk_rej_uniform_native::ensures::1::_cbmc_idx13!0@19#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 560 with expr ID of =>
-(define-fun B560 () Bool (=> (and true B480 B481 B482 B483 B484 B485) (or (= |mlk_rej_uniform_native::__contract_return_value!0@1#2| (_ bv4294967295 32)) (bvuge |mlk_rej_uniform_native::ensures::1::_cbmc_idx14!0@19#0| |mlk_rej_uniform_native::__contract_return_value!0@1#2|) (and (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#3| ((_ zero_extend 32) |mlk_rej_uniform_native::ensures::1::_cbmc_idx14!0@19#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#3| ((_ zero_extend 32) |mlk_rej_uniform_native::ensures::1::_cbmc_idx14!0@19#0|))) (_ bv3329 32)))))))
+(define-fun B560 () Bool (=> (and true B480 B481 B482 B483 B484 B485) (or (= |mlk_rej_uniform_native::__contract_return_value!0@1#2| (_ bv4294967295 32)) (bvuge |mlk_rej_uniform_native::ensures::1::_cbmc_idx13!0@19#0| |mlk_rej_uniform_native::__contract_return_value!0@1#2|) (and (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#3| ((_ zero_extend 32) |mlk_rej_uniform_native::ensures::1::_cbmc_idx13!0@19#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#3| ((_ zero_extend 32) |mlk_rej_uniform_native::ensures::1::_cbmc_idx13!0@19#0|))) (_ bv3329 32)))))))
 
 ; set_to true
 (assert (or (not B522) (not B523) (not B524) (not B525) (not B526) (not B527) (not B528) (not B529) (not B530) (not B531) (not B532) (not B533) (not B534) (not B535) (not B536) (not B537) (not B538) (not B539) (not B540) (not B541) (not B542) (not B543) (not B544) (not B545) (not B546) (not B547) (not B548) (not B549) (not B550) (not B551) (not B552) (not B553) (not B554) (not B555) (not B556) (not B557) (not B558) (not B559) (not B560)))

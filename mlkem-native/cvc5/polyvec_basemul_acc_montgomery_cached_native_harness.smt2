@@ -1131,24 +1131,24 @@
 (define-fun B262 () Bool (= |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@1#1| |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@1#1|))
 
 ; find_symbols
-(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@1#1| () (_ BitVec 32))
+(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@1#1| () (_ BitVec 32))
 ; convert
 ; Converting var_no 263 with expr ID of =
-(define-fun B263 () Bool (= |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@1#1| |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@1#1|))
+(define-fun B263 () Bool (= |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@1#1| |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@1#1|))
 
 ; convert
 ; Converting var_no 264 with expr ID of =
-(define-fun B264 () Bool (= |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@1#1| |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@1#1|))
+(define-fun B264 () Bool (= |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@1#1| |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@1#1|))
 
 ; find_symbols
-(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx14!0@1#1| () (_ BitVec 32))
+(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx13!0@1#1| () (_ BitVec 32))
 ; convert
 ; Converting var_no 265 with expr ID of =
-(define-fun B265 () Bool (= |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx14!0@1#1| |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx14!0@1#1|))
+(define-fun B265 () Bool (= |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx13!0@1#1| |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx13!0@1#1|))
 
 ; convert
 ; Converting var_no 266 with expr ID of =
-(define-fun B266 () Bool (= |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx14!0@1#1| |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx14!0@1#1|))
+(define-fun B266 () Bool (= |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx13!0@1#1| |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx13!0@1#1|))
 
 ; the following is a substitute for an array constructor
 (declare-fun array.26 () (Array (_ BitVec 64) struct.0))
@@ -1158,7 +1158,7 @@
 ; convert
 ; Converting var_no 267 with expr ID of forall
 (declare-fun B267 () Bool)
-(assert (= B267 (forall ((|mlk_polyvec_basemul_acc_montgomery_cached::requires::1::k1!0@12#0| (_ BitVec 32))) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::k1!0@12#0| (_ bv3 32)) (forall ((|mlk_polyvec_basemul_acc_montgomery_cached::requires::1::1::_cbmc_idx42!0@12#0| (_ BitVec 32))) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::1::_cbmc_idx42!0@12#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::k1!0@12#0|))) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::1::_cbmc_idx42!0@12#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::k1!0@12#0|))) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::1::_cbmc_idx42!0@12#0|))) (_ bv4096 32))))))))))
+(assert (= B267 (forall ((|mlk_polyvec_basemul_acc_montgomery_cached::requires::1::k1!0@12#0| (_ BitVec 32))) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::k1!0@12#0| (_ bv3 32)) (forall ((|mlk_polyvec_basemul_acc_montgomery_cached::requires::1::1::_cbmc_idx41!0@12#0| (_ BitVec 32))) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::1::_cbmc_idx41!0@12#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::k1!0@12#0|))) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::1::_cbmc_idx41!0@12#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::k1!0@12#0|))) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::1::_cbmc_idx41!0@12#0|))) (_ bv4096 32))))))))))
 
 ; convert
 ; Converting var_no 268 with expr ID of or
@@ -2491,198 +2491,198 @@
 ; find_symbols
 (declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::k1!0@4#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::1::_cbmc_idx42!0@4#0| () (_ BitVec 32))
+(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::1::_cbmc_idx41!0@4#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 290 with expr ID of =>
-(define-fun B290 () Bool (=> true (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::k1!0@4#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::1::_cbmc_idx42!0@4#0| (_ bv256 32)) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::k1!0@4#0|) (_ bv512 64)) (_ bv1536 64))))))
+(define-fun B290 () Bool (=> true (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::k1!0@4#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::1::_cbmc_idx41!0@4#0| (_ bv256 32)) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::k1!0@4#0|) (_ bv512 64)) (_ bv1536 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::k1!0@5#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::1::_cbmc_idx42!0@5#0| () (_ BitVec 32))
+(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::1::_cbmc_idx41!0@5#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 291 with expr ID of =>
-(define-fun B291 () Bool (=> true (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::k1!0@5#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::1::_cbmc_idx42!0@5#0| (_ bv256 32)) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::k1!0@5#0|) (_ bv512 64)) (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::1::_cbmc_idx42!0@5#0|) (_ bv2 64))) (_ bv1536 64))))))
+(define-fun B291 () Bool (=> true (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::k1!0@5#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::1::_cbmc_idx41!0@5#0| (_ bv256 32)) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::k1!0@5#0|) (_ bv512 64)) (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::1::_cbmc_idx41!0@5#0|) (_ bv2 64))) (_ bv1536 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::k1!0@10#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::1::_cbmc_idx42!0@10#0| () (_ BitVec 32))
+(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::1::_cbmc_idx41!0@10#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 292 with expr ID of =>
-(define-fun B292 () Bool (=> true (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::k1!0@10#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::1::_cbmc_idx42!0@10#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::k1!0@10#0|))) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::1::_cbmc_idx42!0@10#0|))) (_ bv0 32))) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::k1!0@10#0|) (_ bv512 64)) (_ bv1536 64))))))
+(define-fun B292 () Bool (=> true (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::k1!0@10#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::1::_cbmc_idx41!0@10#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::k1!0@10#0|))) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::1::_cbmc_idx41!0@10#0|))) (_ bv0 32))) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::k1!0@10#0|) (_ bv512 64)) (_ bv1536 64))))))
 
 ; find_symbols
 (declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::k1!0@11#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::1::_cbmc_idx42!0@11#0| () (_ BitVec 32))
+(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::1::_cbmc_idx41!0@11#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 293 with expr ID of =>
-(define-fun B293 () Bool (=> true (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::k1!0@11#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::1::_cbmc_idx42!0@11#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::k1!0@11#0|))) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::1::_cbmc_idx42!0@11#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::k1!0@11#0|) (_ bv512 64)) (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::1::_cbmc_idx42!0@11#0|) (_ bv2 64))) (_ bv1536 64))))))
+(define-fun B293 () Bool (=> true (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::k1!0@11#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::1::_cbmc_idx41!0@11#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::k1!0@11#0|))) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::1::_cbmc_idx41!0@11#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::k1!0@11#0|) (_ bv512 64)) (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::requires::1::1::_cbmc_idx41!0@11#0|) (_ bv2 64))) (_ bv1536 64))))))
 
 ; convert
 ; Converting var_no 294 with expr ID of =>
-(define-fun B294 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@1#1| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@1#1| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@1#1|)) ((_ sign_extend 64) (_ bv512 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
+(define-fun B294 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@1#1| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@1#1| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@1#1|)) ((_ sign_extend 64) (_ bv512 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
 
 ; find_symbols
 (declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@2#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@2#0| () (_ BitVec 32))
+(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@2#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 295 with expr ID of =>
-(define-fun B295 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@2#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@2#0| (_ bv256 32)) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@2#0|) (_ bv512 64))) (_ bv1537 65))))))
+(define-fun B295 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@2#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@2#0| (_ bv256 32)) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@2#0|) (_ bv512 64))) (_ bv1537 65))))))
 
 ; find_symbols
 (declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@4#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@4#0| () (_ BitVec 32))
+(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@4#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 296 with expr ID of =>
-(define-fun B296 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@4#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@4#0| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@4#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
+(define-fun B296 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@4#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@4#0| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@4#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
 
 ; find_symbols
 (declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@6#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@6#0| () (_ BitVec 32))
+(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@6#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 297 with expr ID of =>
-(define-fun B297 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@6#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@6#0| (_ bv256 32)) (not (bvuge ((_ zero_extend 1) (bvadd (bvmul (_ bv512 64) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@6#0|)) (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@6#0|) (_ bv2 64)))) (_ bv1537 65))))))
+(define-fun B297 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@6#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@6#0| (_ bv256 32)) (not (bvuge ((_ zero_extend 1) (bvadd (bvmul (_ bv512 64) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@6#0|)) (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@6#0|) (_ bv2 64)))) (_ bv1537 65))))))
 
 ; find_symbols
 (declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@9#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@9#0| () (_ BitVec 32))
+(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@9#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 298 with expr ID of =>
-(define-fun B298 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@9#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@9#0| (_ bv256 32)) (not (bvuge (bvadd ((_ zero_extend 1) (bvadd (bvmul (_ bv512 64) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@9#0|)) (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@9#0|) (_ bv2 64)))) (_ bv2 65)) (_ bv1537 65))))))
+(define-fun B298 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@9#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@9#0| (_ bv256 32)) (not (bvuge (bvadd ((_ zero_extend 1) (bvadd (bvmul (_ bv512 64) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@9#0|)) (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@9#0|) (_ bv2 64)))) (_ bv2 65)) (_ bv1537 65))))))
 
 ; find_symbols
 (declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@11#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@11#0| () (_ BitVec 32))
+(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@11#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 299 with expr ID of =>
-(define-fun B299 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@11#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@11#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@11#0|))) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@11#0|))) (_ bv0 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@11#0|)) ((_ sign_extend 64) (_ bv512 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
+(define-fun B299 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@11#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@11#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@11#0|))) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@11#0|))) (_ bv0 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@11#0|)) ((_ sign_extend 64) (_ bv512 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
 
 ; find_symbols
 (declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@13#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@13#0| () (_ BitVec 32))
+(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@13#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 300 with expr ID of =>
-(define-fun B300 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@13#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@13#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@13#0|))) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@13#0|))) (_ bv0 32))) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@13#0|) (_ bv512 64))) (_ bv1537 65))))))
+(define-fun B300 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@13#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@13#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@13#0|))) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@13#0|))) (_ bv0 32))) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@13#0|) (_ bv512 64))) (_ bv1537 65))))))
 
 ; find_symbols
 (declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@15#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@15#0| () (_ BitVec 32))
+(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@15#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 301 with expr ID of =>
-(define-fun B301 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@15#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@15#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@15#0|))) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@15#0|))) (_ bv0 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@15#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
+(define-fun B301 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@15#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@15#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@15#0|))) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@15#0|))) (_ bv0 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@15#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
 
 ; find_symbols
 (declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@17#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@17#0| () (_ BitVec 32))
+(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@17#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 302 with expr ID of =>
-(define-fun B302 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@17#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@17#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@17#0|))) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@17#0|))) (_ bv0 32))) (not (bvuge ((_ zero_extend 1) (bvadd (bvmul (_ bv512 64) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@17#0|)) (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@17#0|) (_ bv2 64)))) (_ bv1537 65))))))
+(define-fun B302 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@17#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@17#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@17#0|))) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@17#0|))) (_ bv0 32))) (not (bvuge ((_ zero_extend 1) (bvadd (bvmul (_ bv512 64) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@17#0|)) (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@17#0|) (_ bv2 64)))) (_ bv1537 65))))))
 
 ; find_symbols
 (declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@20#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@20#0| () (_ BitVec 32))
+(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@20#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 303 with expr ID of =>
-(define-fun B303 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@20#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@20#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@20#0|))) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@20#0|))) (_ bv0 32))) (not (bvuge (bvadd ((_ zero_extend 1) (bvadd (bvmul (_ bv512 64) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@20#0|)) (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@20#0|) (_ bv2 64)))) (_ bv2 65)) (_ bv1537 65))))))
+(define-fun B303 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@20#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@20#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@20#0|))) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@20#0|))) (_ bv0 32))) (not (bvuge (bvadd ((_ zero_extend 1) (bvadd (bvmul (_ bv512 64) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@20#0|)) (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@20#0|) (_ bv2 64)))) (_ bv2 65)) (_ bv1537 65))))))
 
 ; find_symbols
 (declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@22#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@22#0| () (_ BitVec 32))
+(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@22#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 304 with expr ID of =>
-(define-fun B304 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@22#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@22#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@22#0|))) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@22#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@22#0|))) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx62!0@22#0|))) (_ bv4096 32)))))))
+(define-fun B304 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@22#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@22#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@22#0|))) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@22#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::kN!0@22#0|))) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached::1::1::1::1::_cbmc_idx61!0@22#0|))) (_ bv4096 32)))))))
 
 ; convert
 ; Converting var_no 305 with expr ID of =>
-(define-fun B305 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx14!0@1#1| (_ bv768 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx14!0@1#1|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
+(define-fun B305 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx13!0@1#1| (_ bv768 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx13!0@1#1|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
 
 ; find_symbols
-(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx14!0@3#0| () (_ BitVec 32))
+(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx13!0@3#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 306 with expr ID of =>
-(define-fun B306 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx14!0@3#0| (_ bv768 32)) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx14!0@3#0|) (_ bv2 64))) (_ bv1537 65))))))
+(define-fun B306 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx13!0@3#0| (_ bv768 32)) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx13!0@3#0|) (_ bv2 64))) (_ bv1537 65))))))
 
 ; find_symbols
-(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx14!0@7#0| () (_ BitVec 32))
+(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx13!0@7#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 307 with expr ID of =>
-(define-fun B307 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx14!0@7#0| (_ bv768 32)) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx14!0@7#0|) (_ bv2 64))) (_ bv2 65)) (_ bv1537 65))))))
+(define-fun B307 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx13!0@7#0| (_ bv768 32)) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx13!0@7#0|) (_ bv2 64))) (_ bv2 65)) (_ bv1537 65))))))
 
 ; find_symbols
-(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx14!0@9#0| () (_ BitVec 32))
+(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx13!0@9#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 308 with expr ID of =>
-(define-fun B308 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx14!0@9#0| (_ bv768 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 (bvsdiv ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx14!0@9#0|) (_ bv256 64)))) (bvsrem ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx14!0@9#0|) (_ bv256 64)))) (_ bv0 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx14!0@9#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
+(define-fun B308 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx13!0@9#0| (_ bv768 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 (bvsdiv ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx13!0@9#0|) (_ bv256 64)))) (bvsrem ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx13!0@9#0|) (_ bv256 64)))) (_ bv0 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx13!0@9#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
 
 ; find_symbols
-(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx14!0@12#0| () (_ BitVec 32))
+(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx13!0@12#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 309 with expr ID of =>
-(define-fun B309 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx14!0@12#0| (_ bv768 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 (bvsdiv ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx14!0@12#0|) (_ bv256 64)))) (bvsrem ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx14!0@12#0|) (_ bv256 64)))) (_ bv0 32))) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx14!0@12#0|) (_ bv2 64))) (_ bv1537 65))))))
+(define-fun B309 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx13!0@12#0| (_ bv768 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 (bvsdiv ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx13!0@12#0|) (_ bv256 64)))) (bvsrem ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx13!0@12#0|) (_ bv256 64)))) (_ bv0 32))) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx13!0@12#0|) (_ bv2 64))) (_ bv1537 65))))))
 
 ; find_symbols
-(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx14!0@16#0| () (_ BitVec 32))
+(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx13!0@16#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 310 with expr ID of =>
-(define-fun B310 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx14!0@16#0| (_ bv768 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 (bvsdiv ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx14!0@16#0|) (_ bv256 64)))) (bvsrem ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx14!0@16#0|) (_ bv256 64)))) (_ bv0 32))) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx14!0@16#0|) (_ bv2 64))) (_ bv2 65)) (_ bv1537 65))))))
+(define-fun B310 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx13!0@16#0| (_ bv768 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 (bvsdiv ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx13!0@16#0|) (_ bv256 64)))) (bvsrem ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx13!0@16#0|) (_ bv256 64)))) (_ bv0 32))) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx13!0@16#0|) (_ bv2 64))) (_ bv2 65)) (_ bv1537 65))))))
 
 ; find_symbols
-(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx14!0@18#0| () (_ BitVec 32))
+(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx13!0@18#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 311 with expr ID of =>
-(define-fun B311 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx14!0@18#0| (_ bv768 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 (bvsdiv ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx14!0@18#0|) (_ bv256 64)))) (bvsrem ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx14!0@18#0|) (_ bv256 64)))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 (bvsdiv ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx14!0@18#0|) (_ bv256 64)))) (bvsrem ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx14!0@18#0|) (_ bv256 64)))) (_ bv4096 32)))))))
+(define-fun B311 () Bool (=> (and true B267) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx13!0@18#0| (_ bv768 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 (bvsdiv ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx13!0@18#0|) (_ bv256 64)))) (bvsrem ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx13!0@18#0|) (_ bv256 64)))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 (bvsdiv ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx13!0@18#0|) (_ bv256 64)))) (bvsrem ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_k3_native::requires::1::_cbmc_idx13!0@18#0|) (_ bv256 64)))) (_ bv4096 32)))))))
 
 ; find_symbols
 (declare-fun |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::k1!0@4#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::1::_cbmc_idx60!0@4#0| () (_ BitVec 32))
+(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::1::_cbmc_idx59!0@4#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 312 with expr ID of =>
-(define-fun B312 () Bool (=> (and true B267 B268) (=> (not |goto_symex::&92;guard#2|) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::k1!0@4#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::1::_cbmc_idx60!0@4#0| (_ bv256 32)) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::k1!0@4#0|) (_ bv512 64)) (_ bv1536 64)))))))
+(define-fun B312 () Bool (=> (and true B267 B268) (=> (not |goto_symex::&92;guard#2|) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::k1!0@4#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::1::_cbmc_idx59!0@4#0| (_ bv256 32)) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::k1!0@4#0|) (_ bv512 64)) (_ bv1536 64)))))))
 
 ; find_symbols
 (declare-fun |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::k1!0@5#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::1::_cbmc_idx60!0@5#0| () (_ BitVec 32))
+(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::1::_cbmc_idx59!0@5#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 313 with expr ID of =>
-(define-fun B313 () Bool (=> (and true B267 B268) (=> (not |goto_symex::&92;guard#2|) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::k1!0@5#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::1::_cbmc_idx60!0@5#0| (_ bv256 32)) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::k1!0@5#0|) (_ bv512 64)) (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::1::_cbmc_idx60!0@5#0|) (_ bv2 64))) (_ bv1536 64)))))))
+(define-fun B313 () Bool (=> (and true B267 B268) (=> (not |goto_symex::&92;guard#2|) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::k1!0@5#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::1::_cbmc_idx59!0@5#0| (_ bv256 32)) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::k1!0@5#0|) (_ bv512 64)) (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::1::_cbmc_idx59!0@5#0|) (_ bv2 64))) (_ bv1536 64)))))))
 
 ; find_symbols
 (declare-fun |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::k1!0@10#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::1::_cbmc_idx60!0@10#0| () (_ BitVec 32))
+(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::1::_cbmc_idx59!0@10#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 314 with expr ID of =>
-(define-fun B314 () Bool (=> (and true B267 B268) (=> (not |goto_symex::&92;guard#2|) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::k1!0@10#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::1::_cbmc_idx60!0@10#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::k1!0@10#0|))) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::1::_cbmc_idx60!0@10#0|))) (_ bv0 32))) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::k1!0@10#0|) (_ bv512 64)) (_ bv1536 64)))))))
+(define-fun B314 () Bool (=> (and true B267 B268) (=> (not |goto_symex::&92;guard#2|) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::k1!0@10#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::1::_cbmc_idx59!0@10#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::k1!0@10#0|))) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::1::_cbmc_idx59!0@10#0|))) (_ bv0 32))) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::k1!0@10#0|) (_ bv512 64)) (_ bv1536 64)))))))
 
 ; find_symbols
 (declare-fun |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::k1!0@11#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::1::_cbmc_idx60!0@11#0| () (_ BitVec 32))
+(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::1::_cbmc_idx59!0@11#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 315 with expr ID of =>
-(define-fun B315 () Bool (=> (and true B267 B268) (=> (not |goto_symex::&92;guard#2|) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::k1!0@11#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::1::_cbmc_idx60!0@11#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::k1!0@11#0|))) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::1::_cbmc_idx60!0@11#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::k1!0@11#0|) (_ bv512 64)) (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::1::_cbmc_idx60!0@11#0|) (_ bv2 64))) (_ bv1536 64)))))))
+(define-fun B315 () Bool (=> (and true B267 B268) (=> (not |goto_symex::&92;guard#2|) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::k1!0@11#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::1::_cbmc_idx59!0@11#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::k1!0@11#0|))) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::1::_cbmc_idx59!0@11#0|))) (_ bv0 32))) (not (bvsge (bvadd (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::k1!0@11#0|) (_ bv512 64)) (bvmul ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::1::_cbmc_idx59!0@11#0|) (_ bv2 64))) (_ bv1536 64)))))))
 
 ; find_symbols
 (declare-fun |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::k1!0@12#0| () (_ BitVec 32))
 ; find_symbols
-(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::1::_cbmc_idx60!0@12#0| () (_ BitVec 32))
+(declare-fun |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::1::_cbmc_idx59!0@12#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 316 with expr ID of =>
-(define-fun B316 () Bool (=> (and true B267 B268) (=> (not |goto_symex::&92;guard#2|) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::k1!0@12#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::1::_cbmc_idx60!0@12#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::k1!0@12#0|))) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::1::_cbmc_idx60!0@12#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::k1!0@12#0|))) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::1::_cbmc_idx60!0@12#0|))) (_ bv4096 32))))))))
+(define-fun B316 () Bool (=> (and true B267 B268) (=> (not |goto_symex::&92;guard#2|) (or (bvuge |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::k1!0@12#0| (_ bv3 32)) (bvuge |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::1::_cbmc_idx59!0@12#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::k1!0@12#0|))) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::1::_cbmc_idx59!0@12#0|))) (_ bv0 32)) (not (bvsge ((_ sign_extend 16) (select (struct.0.coeffs (select array.26 ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::k1!0@12#0|))) ((_ zero_extend 32) |mlk_polyvec_basemul_acc_montgomery_cached_c::requires::1::1::_cbmc_idx59!0@12#0|))) (_ bv4096 32))))))))
 
 ; set_to true
 (assert (or (not B290) (not B291) (not B292) (not B293) (not B294) (not B295) (not B296) (not B297) (not B298) (not B299) (not B300) (not B301) (not B302) (not B303) (not B304) (not B305) (not B306) (not B307) (not B308) (not B309) (not B310) (not B311) (not B312) (not B313) (not B314) (not B315) (not B316)))

@@ -2338,14 +2338,14 @@
 (define-fun |symex_dynamic::dynamic_object$9#4..coeffs| () (Array (_ BitVec 64) (_ BitVec 16)) (ite |goto_symex::&92;guard#2| |symex_dynamic::dynamic_object$9#2..coeffs| |symex_dynamic::dynamic_object$9#3..coeffs|))
 
 ; find_symbols
-(declare-fun |mlk_poly_ntt::1::1::_cbmc_idx64!0@1#1| () (_ BitVec 32))
+(declare-fun |mlk_poly_ntt::1::1::_cbmc_idx63!0@1#1| () (_ BitVec 32))
 ; convert
 ; Converting var_no 428 with expr ID of =
-(define-fun B428 () Bool (= |mlk_poly_ntt::1::1::_cbmc_idx64!0@1#1| |mlk_poly_ntt::1::1::_cbmc_idx64!0@1#1|))
+(define-fun B428 () Bool (= |mlk_poly_ntt::1::1::_cbmc_idx63!0@1#1| |mlk_poly_ntt::1::1::_cbmc_idx63!0@1#1|))
 
 ; convert
 ; Converting var_no 429 with expr ID of =
-(define-fun B429 () Bool (= |mlk_poly_ntt::1::1::_cbmc_idx64!0@1#1| |mlk_poly_ntt::1::1::_cbmc_idx64!0@1#1|))
+(define-fun B429 () Bool (= |mlk_poly_ntt::1::1::_cbmc_idx63!0@1#1| |mlk_poly_ntt::1::1::_cbmc_idx63!0@1#1|))
 
 ; find_symbols
 (declare-fun |mlk_ntt_native::requires::1::_cbmc_idx1!0@1#1| () (_ BitVec 32))
@@ -2386,457 +2386,442 @@
 (define-fun B437 () Bool (= |mlk_ntt_native::ensures::1::_cbmc_idx3!0@1#1| |mlk_ntt_native::ensures::1::_cbmc_idx3!0@1#1|))
 
 ; find_symbols
-(declare-fun |mlk_ntt_native::ensures::1::_cbmc_idx4!0@1#1| () (_ BitVec 32))
+(declare-fun |mlk_poly_ntt::1::2::1::_cbmc_idx64!0@1#1| () (_ BitVec 32))
 ; convert
 ; Converting var_no 438 with expr ID of =
-(define-fun B438 () Bool (= |mlk_ntt_native::ensures::1::_cbmc_idx4!0@1#1| |mlk_ntt_native::ensures::1::_cbmc_idx4!0@1#1|))
+(define-fun B438 () Bool (= |mlk_poly_ntt::1::2::1::_cbmc_idx64!0@1#1| |mlk_poly_ntt::1::2::1::_cbmc_idx64!0@1#1|))
 
 ; convert
 ; Converting var_no 439 with expr ID of =
-(define-fun B439 () Bool (= |mlk_ntt_native::ensures::1::_cbmc_idx4!0@1#1| |mlk_ntt_native::ensures::1::_cbmc_idx4!0@1#1|))
+(define-fun B439 () Bool (= |mlk_poly_ntt::1::2::1::_cbmc_idx64!0@1#1| |mlk_poly_ntt::1::2::1::_cbmc_idx64!0@1#1|))
 
-; find_symbols
-(declare-fun |mlk_poly_ntt::1::2::1::_cbmc_idx65!0@1#1| () (_ BitVec 32))
 ; convert
 ; Converting var_no 440 with expr ID of =
-(define-fun B440 () Bool (= |mlk_poly_ntt::1::2::1::_cbmc_idx65!0@1#1| |mlk_poly_ntt::1::2::1::_cbmc_idx65!0@1#1|))
+(define-fun B440 () Bool (= |__CPROVER_contracts_write_set_havoc_slice::$tmp::tmp_nondet_contents!0@2#1| |__CPROVER_contracts_write_set_havoc_slice::$tmp::tmp_nondet_contents!0@2#1|))
 
 ; convert
 ; Converting var_no 441 with expr ID of =
-(define-fun B441 () Bool (= |mlk_poly_ntt::1::2::1::_cbmc_idx65!0@1#1| |mlk_poly_ntt::1::2::1::_cbmc_idx65!0@1#1|))
+(define-fun B441 () Bool (= |__CPROVER_contracts_write_set_havoc_slice::$tmp::tmp_nondet_contents!0@2#1| |__CPROVER_contracts_write_set_havoc_slice::$tmp::tmp_nondet_contents!0@2#1|))
 
 ; convert
-; Converting var_no 442 with expr ID of =
-(define-fun B442 () Bool (= |__CPROVER_contracts_write_set_havoc_slice::$tmp::tmp_nondet_contents!0@2#1| |__CPROVER_contracts_write_set_havoc_slice::$tmp::tmp_nondet_contents!0@2#1|))
+; Converting var_no 442 with expr ID of forall
+(declare-fun B442 () Bool)
+(assert (= B442 (forall ((|mlk_poly_ntt::requires::1::_cbmc_idx23!0@10#0| (_ BitVec 32))) (or (bvuge |mlk_poly_ntt::requires::1::_cbmc_idx23!0@10#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#1..coeffs| ((_ zero_extend 32) |mlk_poly_ntt::requires::1::_cbmc_idx23!0@10#0|))) (_ bv4294963968 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#1..coeffs| ((_ zero_extend 32) |mlk_poly_ntt::requires::1::_cbmc_idx23!0@10#0|))) (_ bv3329 32))))))))
 
 ; convert
-; Converting var_no 443 with expr ID of =
-(define-fun B443 () Bool (= |__CPROVER_contracts_write_set_havoc_slice::$tmp::tmp_nondet_contents!0@2#1| |__CPROVER_contracts_write_set_havoc_slice::$tmp::tmp_nondet_contents!0@2#1|))
+; Converting var_no 443 with expr ID of or
+(define-fun B443 () Bool (or (= |mlk_ntt_native::__contract_return_value!0@1#2| (_ bv4294967295 32)) (= |mlk_ntt_native::__contract_return_value!0@1#2| (_ bv0 32))))
 
 ; convert
-; Converting var_no 444 with expr ID of forall
+; Converting var_no 444 with expr ID of or
 (declare-fun B444 () Bool)
-(assert (= B444 (forall ((|mlk_poly_ntt::requires::1::_cbmc_idx24!0@10#0| (_ BitVec 32))) (or (bvuge |mlk_poly_ntt::requires::1::_cbmc_idx24!0@10#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#1..coeffs| ((_ zero_extend 32) |mlk_poly_ntt::requires::1::_cbmc_idx24!0@10#0|))) (_ bv4294963968 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#1..coeffs| ((_ zero_extend 32) |mlk_poly_ntt::requires::1::_cbmc_idx24!0@10#0|))) (_ bv3329 32))))))))
+(assert (= B444 (or (not (= |mlk_ntt_native::__contract_return_value!0@1#2| (_ bv0 32))) (forall ((|mlk_ntt_native::ensures::1::_cbmc_idx2!0@18#0| (_ BitVec 32))) (or (bvuge |mlk_ntt_native::ensures::1::_cbmc_idx2!0@18#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2..coeffs| ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx2!0@18#0|))) (_ bv4294940665 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2..coeffs| ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx2!0@18#0|))) (_ bv26632 32)))))))))
 
 ; convert
 ; Converting var_no 445 with expr ID of or
-(define-fun B445 () Bool (or (= |mlk_ntt_native::__contract_return_value!0@1#2| (_ bv4294967295 32)) (= |mlk_ntt_native::__contract_return_value!0@1#2| (_ bv0 32))))
+(declare-fun B445 () Bool)
+(assert (= B445 (or (not (= |mlk_ntt_native::__contract_return_value!0@1#2| (_ bv4294967295 32))) (forall ((|mlk_ntt_native::ensures::1::_cbmc_idx3!0@10#0| (_ BitVec 32))) (or (bvuge |mlk_ntt_native::ensures::1::_cbmc_idx3!0@10#0| (_ bv256 32)) (= (select |symex_dynamic::dynamic_object$9#2..coeffs| ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx3!0@10#0|)) (select |mlk_ntt_native::tmp_cc!0@1#2| ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx3!0@10#0|))))))))
 
 ; convert
-; Converting var_no 446 with expr ID of or
+; Converting var_no 446 with expr ID of =>
 (declare-fun B446 () Bool)
-(assert (= B446 (or (not (= |mlk_ntt_native::__contract_return_value!0@1#2| (_ bv0 32))) (forall ((|mlk_ntt_native::ensures::1::_cbmc_idx2!0@18#0| (_ BitVec 32))) (or (bvuge |mlk_ntt_native::ensures::1::_cbmc_idx2!0@18#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2..coeffs| ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx2!0@18#0|))) (_ bv4294940665 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2..coeffs| ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx2!0@18#0|))) (_ bv26632 32)))))))))
+(assert (= B446 (=> (not |goto_symex::&92;guard#2|) (forall ((|mlk_poly_ntt_c::ensures::1::_cbmc_idx59!0@10#0| (_ BitVec 32))) (or (bvuge |mlk_poly_ntt_c::ensures::1::_cbmc_idx59!0@10#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#3..coeffs| ((_ zero_extend 32) |mlk_poly_ntt_c::ensures::1::_cbmc_idx59!0@10#0|))) (_ bv4294940665 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#3..coeffs| ((_ zero_extend 32) |mlk_poly_ntt_c::ensures::1::_cbmc_idx59!0@10#0|))) (_ bv26632 32)))))))))
 
 ; convert
-; Converting var_no 447 with expr ID of or
-(declare-fun B447 () Bool)
-(assert (= B447 (or (not (= |mlk_ntt_native::__contract_return_value!0@1#2| (_ bv4294967295 32))) (forall ((|mlk_ntt_native::ensures::1::_cbmc_idx3!0@18#0| (_ BitVec 32))) (or (bvuge |mlk_ntt_native::ensures::1::_cbmc_idx3!0@18#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2..coeffs| ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx3!0@18#0|))) (_ bv4294963968 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2..coeffs| ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx3!0@18#0|))) (_ bv3329 32)))))))))
-
-; convert
-; Converting var_no 448 with expr ID of or
-(declare-fun B448 () Bool)
-(assert (= B448 (or (not (= |mlk_ntt_native::__contract_return_value!0@1#2| (_ bv4294967295 32))) (forall ((|mlk_ntt_native::ensures::1::_cbmc_idx4!0@10#0| (_ BitVec 32))) (or (bvuge |mlk_ntt_native::ensures::1::_cbmc_idx4!0@10#0| (_ bv256 32)) (= (select |symex_dynamic::dynamic_object$9#2..coeffs| ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx4!0@10#0|)) (select |mlk_ntt_native::tmp_cc!0@1#2| ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx4!0@10#0|))))))))
-
-; convert
-; Converting var_no 449 with expr ID of =>
-(declare-fun B449 () Bool)
-(assert (= B449 (=> (not |goto_symex::&92;guard#2|) (forall ((|mlk_poly_ntt_c::ensures::1::_cbmc_idx60!0@10#0| (_ BitVec 32))) (or (bvuge |mlk_poly_ntt_c::ensures::1::_cbmc_idx60!0@10#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#3..coeffs| ((_ zero_extend 32) |mlk_poly_ntt_c::ensures::1::_cbmc_idx60!0@10#0|))) (_ bv4294940665 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#3..coeffs| ((_ zero_extend 32) |mlk_poly_ntt_c::ensures::1::_cbmc_idx60!0@10#0|))) (_ bv26632 32)))))))))
-
-; convert
-; Converting var_no 450 with expr ID of not
-(define-fun B450 () Bool (not |__CPROVER_contracts_is_fresh::$tmp::return_value___VERIFIER_nondet___CPROVER_bool$1!0@1#2|))
+; Converting var_no 447 with expr ID of not
+(define-fun B447 () Bool (not |__CPROVER_contracts_is_fresh::$tmp::return_value___VERIFIER_nondet___CPROVER_bool$1!0@1#2|))
 
 ; the following is a substitute for an array constructor
-(declare-fun array.49 () (Array (_ BitVec 64) (_ BitVec 64)))
-(assert (= (select array.49 (_ bv0 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv1 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv2 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv3 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv4 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv5 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv6 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv7 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv8 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv9 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv10 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv11 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv12 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv13 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv14 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv15 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv16 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv17 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv18 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv19 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv20 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv21 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv22 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv23 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv24 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv25 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv26 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv27 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv28 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv29 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv30 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv31 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv32 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv33 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv34 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv35 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv36 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv37 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv38 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv39 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv40 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv41 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv42 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv43 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv44 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv45 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv46 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv47 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv48 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv49 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv50 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv51 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv52 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv53 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv54 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv55 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv56 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv57 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv58 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv59 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv60 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv61 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv62 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv63 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv64 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv65 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv66 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv67 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv68 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv69 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv70 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv71 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv72 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv73 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv74 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv75 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv76 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv77 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv78 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv79 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv80 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv81 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv82 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv83 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv84 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv85 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv86 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv87 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv88 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv89 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv90 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv91 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv92 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv93 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv94 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv95 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv96 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv97 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv98 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv99 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv100 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv101 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv102 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv103 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv104 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv105 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv106 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv107 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv108 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv109 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv110 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv111 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv112 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv113 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv114 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv115 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv116 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv117 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv118 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv119 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv120 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv121 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv122 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv123 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv124 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv125 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv126 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv127 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv128 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv129 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv130 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv131 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv132 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv133 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv134 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv135 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv136 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv137 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv138 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv139 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv140 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv141 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv142 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv143 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv144 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv145 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv146 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv147 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv148 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv149 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv150 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv151 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv152 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv153 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv154 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv155 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv156 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv157 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv158 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv159 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv160 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv161 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv162 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv163 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv164 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv165 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv166 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv167 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv168 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv169 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv170 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv171 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv172 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv173 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv174 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv175 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv176 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv177 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv178 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv179 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv180 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv181 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv182 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv183 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv184 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv185 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv186 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv187 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv188 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv189 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv190 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv191 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv192 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv193 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv194 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv195 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv196 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv197 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv198 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv199 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv200 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv201 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv202 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv203 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv204 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv205 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv206 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv207 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv208 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv209 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv210 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv211 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv212 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv213 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv214 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv215 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv216 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv217 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv218 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv219 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv220 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv221 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv222 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv223 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv224 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv225 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv226 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv227 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv228 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv229 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv230 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv231 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv232 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv233 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv234 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv235 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv236 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv237 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv238 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv239 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv240 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv241 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv242 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv243 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv244 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv245 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv246 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv247 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv248 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv249 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv250 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv251 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv252 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv253 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv254 64)) (_ bv0 64)))
-(assert (= (select array.49 (_ bv255 64)) (_ bv0 64)))
+(declare-fun array.48 () (Array (_ BitVec 64) (_ BitVec 64)))
+(assert (= (select array.48 (_ bv0 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv1 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv2 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv3 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv4 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv5 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv6 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv7 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv8 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv9 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv10 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv11 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv12 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv13 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv14 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv15 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv16 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv17 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv18 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv19 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv20 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv21 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv22 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv23 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv24 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv25 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv26 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv27 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv28 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv29 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv30 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv31 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv32 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv33 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv34 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv35 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv36 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv37 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv38 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv39 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv40 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv41 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv42 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv43 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv44 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv45 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv46 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv47 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv48 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv49 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv50 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv51 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv52 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv53 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv54 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv55 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv56 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv57 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv58 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv59 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv60 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv61 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv62 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv63 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv64 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv65 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv66 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv67 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv68 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv69 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv70 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv71 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv72 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv73 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv74 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv75 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv76 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv77 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv78 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv79 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv80 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv81 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv82 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv83 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv84 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv85 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv86 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv87 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv88 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv89 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv90 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv91 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv92 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv93 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv94 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv95 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv96 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv97 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv98 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv99 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv100 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv101 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv102 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv103 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv104 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv105 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv106 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv107 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv108 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv109 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv110 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv111 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv112 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv113 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv114 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv115 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv116 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv117 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv118 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv119 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv120 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv121 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv122 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv123 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv124 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv125 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv126 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv127 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv128 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv129 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv130 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv131 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv132 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv133 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv134 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv135 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv136 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv137 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv138 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv139 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv140 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv141 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv142 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv143 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv144 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv145 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv146 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv147 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv148 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv149 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv150 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv151 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv152 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv153 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv154 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv155 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv156 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv157 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv158 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv159 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv160 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv161 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv162 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv163 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv164 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv165 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv166 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv167 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv168 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv169 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv170 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv171 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv172 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv173 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv174 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv175 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv176 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv177 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv178 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv179 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv180 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv181 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv182 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv183 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv184 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv185 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv186 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv187 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv188 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv189 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv190 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv191 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv192 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv193 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv194 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv195 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv196 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv197 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv198 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv199 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv200 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv201 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv202 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv203 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv204 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv205 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv206 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv207 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv208 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv209 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv210 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv211 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv212 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv213 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv214 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv215 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv216 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv217 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv218 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv219 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv220 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv221 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv222 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv223 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv224 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv225 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv226 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv227 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv228 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv229 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv230 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv231 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv232 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv233 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv234 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv235 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv236 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv237 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv238 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv239 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv240 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv241 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv242 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv243 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv244 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv245 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv246 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv247 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv248 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv249 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv250 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv251 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv252 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv253 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv254 64)) (_ bv0 64)))
+(assert (= (select array.48 (_ bv255 64)) (_ bv0 64)))
 ; find_symbols
 (declare-fun |symex_dynamic::dynamic_object$9| () struct.0)
 ; convert
-; Converting var_no 451 with expr ID of =
-(define-fun B451 () Bool (= (select array.49 ((_ zero_extend 56) ((_ extract 63 56) (concat (_ bv2 8) (_ bv0 56))))) (_ bv0 64)))
+; Converting var_no 448 with expr ID of =
+(define-fun B448 () Bool (= (select array.48 ((_ zero_extend 56) ((_ extract 63 56) (concat (_ bv2 8) (_ bv0 56))))) (_ bv0 64)))
+
+; convert
+; Converting var_no 449 with expr ID of not
+(define-fun B449 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@1#2|))
+
+; convert
+; Converting var_no 450 with expr ID of not
+(define-fun B450 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@2#2|))
+
+; convert
+; Converting var_no 451 with expr ID of not
+(define-fun B451 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@3#2|))
 
 ; convert
 ; Converting var_no 452 with expr ID of not
-(define-fun B452 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@1#2|))
+(define-fun B452 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@4#2|))
 
 ; convert
 ; Converting var_no 453 with expr ID of not
-(define-fun B453 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@2#2|))
+(define-fun B453 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@5#2|))
 
 ; convert
 ; Converting var_no 454 with expr ID of not
-(define-fun B454 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@3#2|))
+(define-fun B454 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@6#2|))
 
 ; convert
 ; Converting var_no 455 with expr ID of not
-(define-fun B455 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@4#2|))
+(define-fun B455 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@7#2|))
 
 ; convert
 ; Converting var_no 456 with expr ID of not
-(define-fun B456 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@5#2|))
+(define-fun B456 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@8#2|))
 
 ; convert
 ; Converting var_no 457 with expr ID of not
-(define-fun B457 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@6#2|))
+(define-fun B457 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@9#2|))
 
 ; convert
 ; Converting var_no 458 with expr ID of not
-(define-fun B458 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@7#2|))
+(define-fun B458 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@10#2|))
 
 ; convert
 ; Converting var_no 459 with expr ID of not
-(define-fun B459 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@8#2|))
+(define-fun B459 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@11#2|))
 
 ; convert
 ; Converting var_no 460 with expr ID of not
-(define-fun B460 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@9#2|))
+(define-fun B460 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@12#2|))
 
 ; convert
 ; Converting var_no 461 with expr ID of not
-(define-fun B461 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@10#2|))
+(define-fun B461 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@13#2|))
 
 ; convert
 ; Converting var_no 462 with expr ID of not
-(define-fun B462 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@11#2|))
+(define-fun B462 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@14#2|))
 
 ; convert
 ; Converting var_no 463 with expr ID of not
-(define-fun B463 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@12#2|))
+(define-fun B463 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@15#2|))
 
 ; convert
 ; Converting var_no 464 with expr ID of not
-(define-fun B464 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@13#2|))
+(define-fun B464 () Bool (not (= |mlk_poly_ntt::1::ret!0@1#2| (_ bv0 32))))
 
 ; convert
-; Converting var_no 465 with expr ID of not
-(define-fun B465 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@14#2|))
+; Converting var_no 465 with expr ID of =
+(define-fun B465 () Bool (= (select array.48 ((_ zero_extend 56) ((_ extract 63 56) (concat (_ bv2 8) (_ bv0 56))))) (_ bv0 64)))
 
 ; convert
 ; Converting var_no 466 with expr ID of not
-(define-fun B466 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@15#2|))
+(define-fun B466 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@16#2|))
 
 ; convert
 ; Converting var_no 467 with expr ID of not
-(define-fun B467 () Bool (not (= |mlk_poly_ntt::1::ret!0@1#2| (_ bv0 32))))
+(define-fun B467 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@17#2|))
 
 ; convert
-; Converting var_no 468 with expr ID of =
-(define-fun B468 () Bool (= (select array.49 ((_ zero_extend 56) ((_ extract 63 56) (concat (_ bv2 8) (_ bv0 56))))) (_ bv0 64)))
+; Converting var_no 468 with expr ID of not
+(define-fun B468 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@18#2|))
 
 ; convert
 ; Converting var_no 469 with expr ID of not
-(define-fun B469 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@16#2|))
+(define-fun B469 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@19#2|))
 
 ; convert
 ; Converting var_no 470 with expr ID of not
-(define-fun B470 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@17#2|))
+(define-fun B470 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@20#2|))
 
 ; convert
 ; Converting var_no 471 with expr ID of not
-(define-fun B471 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@18#2|))
+(define-fun B471 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@21#2|))
 
 ; convert
 ; Converting var_no 472 with expr ID of not
-(define-fun B472 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@19#2|))
+(define-fun B472 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@22#2|))
 
 ; convert
 ; Converting var_no 473 with expr ID of not
-(define-fun B473 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@20#2|))
+(define-fun B473 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@23#2|))
 
 ; convert
 ; Converting var_no 474 with expr ID of not
-(define-fun B474 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@21#2|))
+(define-fun B474 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@24#2|))
 
 ; convert
 ; Converting var_no 475 with expr ID of not
-(define-fun B475 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@22#2|))
+(define-fun B475 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@25#2|))
 
 ; convert
 ; Converting var_no 476 with expr ID of not
-(define-fun B476 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@23#2|))
+(define-fun B476 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@26#2|))
 
 ; convert
 ; Converting var_no 477 with expr ID of not
-(define-fun B477 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@24#2|))
+(define-fun B477 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@27#2|))
 
 ; convert
 ; Converting var_no 478 with expr ID of not
-(define-fun B478 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@25#2|))
+(define-fun B478 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@28#2|))
 
 ; convert
 ; Converting var_no 479 with expr ID of not
-(define-fun B479 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@26#2|))
+(define-fun B479 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@29#2|))
 
 ; convert
 ; Converting var_no 480 with expr ID of not
-(define-fun B480 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@27#2|))
-
-; convert
-; Converting var_no 481 with expr ID of not
-(define-fun B481 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@28#2|))
-
-; convert
-; Converting var_no 482 with expr ID of not
-(define-fun B482 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@29#2|))
-
-; convert
-; Converting var_no 483 with expr ID of not
-(define-fun B483 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@30#2|))
+(define-fun B480 () Bool (not |__CPROVER_deallocate::$tmp::return_value___VERIFIER_nondet___CPROVER_bool!0@30#2|))
 
 ; find_symbols
 (declare-fun |symex::args::0| () (_ BitVec 64))
@@ -3435,285 +3420,287 @@
 (assert (= (concat (_ bv7 8) (_ bv0 56)) |symex::args::104|))
 
 ; find_symbols
-(declare-fun |mlk_poly_ntt::requires::1::_cbmc_idx24!0@4#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_ntt::requires::1::_cbmc_idx23!0@4#0| () (_ BitVec 32))
+; convert
+; Converting var_no 481 with expr ID of =>
+(define-fun B481 () Bool (=> true (or (bvuge |mlk_poly_ntt::requires::1::_cbmc_idx23!0@4#0| (_ bv256 32)) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_poly_ntt::requires::1::_cbmc_idx23!0@4#0|) (_ bv2 64)) (_ bv512 64))))))
+
+; find_symbols
+(declare-fun |mlk_poly_ntt::requires::1::_cbmc_idx23!0@9#0| () (_ BitVec 32))
+; convert
+; Converting var_no 482 with expr ID of =>
+(define-fun B482 () Bool (=> true (or (bvuge |mlk_poly_ntt::requires::1::_cbmc_idx23!0@9#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#1..coeffs| ((_ zero_extend 32) |mlk_poly_ntt::requires::1::_cbmc_idx23!0@9#0|))) (_ bv4294963968 32))) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_poly_ntt::requires::1::_cbmc_idx23!0@9#0|) (_ bv2 64)) (_ bv512 64))))))
+
+; convert
+; Converting var_no 483 with expr ID of =>
+(define-fun B483 () Bool (=> (and true B442) (or (bvuge |mlk_poly_ntt::1::1::_cbmc_idx63!0@1#1| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_ntt::1::1::_cbmc_idx63!0@1#1|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
+
+; find_symbols
+(declare-fun |mlk_poly_ntt::1::1::_cbmc_idx63!0@3#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 484 with expr ID of =>
-(define-fun B484 () Bool (=> true (or (bvuge |mlk_poly_ntt::requires::1::_cbmc_idx24!0@4#0| (_ bv256 32)) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_poly_ntt::requires::1::_cbmc_idx24!0@4#0|) (_ bv2 64)) (_ bv512 64))))))
+(define-fun B484 () Bool (=> (and true B442) (or (bvuge |mlk_poly_ntt::1::1::_cbmc_idx63!0@3#0| (_ bv256 32)) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_ntt::1::1::_cbmc_idx63!0@3#0|) (_ bv2 64))) (_ bv513 65))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_ntt::requires::1::_cbmc_idx24!0@9#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_ntt::1::1::_cbmc_idx63!0@7#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 485 with expr ID of =>
-(define-fun B485 () Bool (=> true (or (bvuge |mlk_poly_ntt::requires::1::_cbmc_idx24!0@9#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#1..coeffs| ((_ zero_extend 32) |mlk_poly_ntt::requires::1::_cbmc_idx24!0@9#0|))) (_ bv4294963968 32))) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_poly_ntt::requires::1::_cbmc_idx24!0@9#0|) (_ bv2 64)) (_ bv512 64))))))
+(define-fun B485 () Bool (=> (and true B442) (or (bvuge |mlk_poly_ntt::1::1::_cbmc_idx63!0@7#0| (_ bv256 32)) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_ntt::1::1::_cbmc_idx63!0@7#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65))))))
 
+; find_symbols
+(declare-fun |mlk_poly_ntt::1::1::_cbmc_idx63!0@9#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 486 with expr ID of =>
-(define-fun B486 () Bool (=> (and true B444) (or (bvuge |mlk_poly_ntt::1::1::_cbmc_idx64!0@1#1| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_ntt::1::1::_cbmc_idx64!0@1#1|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
+(define-fun B486 () Bool (=> (and true B442) (or (bvuge |mlk_poly_ntt::1::1::_cbmc_idx63!0@9#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#1..coeffs| ((_ zero_extend 32) |mlk_poly_ntt::1::1::_cbmc_idx63!0@9#0|))) (_ bv4294963968 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_ntt::1::1::_cbmc_idx63!0@9#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_ntt::1::1::_cbmc_idx64!0@3#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_ntt::1::1::_cbmc_idx63!0@12#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 487 with expr ID of =>
-(define-fun B487 () Bool (=> (and true B444) (or (bvuge |mlk_poly_ntt::1::1::_cbmc_idx64!0@3#0| (_ bv256 32)) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_ntt::1::1::_cbmc_idx64!0@3#0|) (_ bv2 64))) (_ bv513 65))))))
+(define-fun B487 () Bool (=> (and true B442) (or (bvuge |mlk_poly_ntt::1::1::_cbmc_idx63!0@12#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#1..coeffs| ((_ zero_extend 32) |mlk_poly_ntt::1::1::_cbmc_idx63!0@12#0|))) (_ bv4294963968 32))) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_ntt::1::1::_cbmc_idx63!0@12#0|) (_ bv2 64))) (_ bv513 65))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_ntt::1::1::_cbmc_idx64!0@7#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_ntt::1::1::_cbmc_idx63!0@16#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 488 with expr ID of =>
-(define-fun B488 () Bool (=> (and true B444) (or (bvuge |mlk_poly_ntt::1::1::_cbmc_idx64!0@7#0| (_ bv256 32)) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_ntt::1::1::_cbmc_idx64!0@7#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65))))))
+(define-fun B488 () Bool (=> (and true B442) (or (bvuge |mlk_poly_ntt::1::1::_cbmc_idx63!0@16#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#1..coeffs| ((_ zero_extend 32) |mlk_poly_ntt::1::1::_cbmc_idx63!0@16#0|))) (_ bv4294963968 32))) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_ntt::1::1::_cbmc_idx63!0@16#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_ntt::1::1::_cbmc_idx64!0@9#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_ntt::1::1::_cbmc_idx63!0@18#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 489 with expr ID of =>
-(define-fun B489 () Bool (=> (and true B444) (or (bvuge |mlk_poly_ntt::1::1::_cbmc_idx64!0@9#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#1..coeffs| ((_ zero_extend 32) |mlk_poly_ntt::1::1::_cbmc_idx64!0@9#0|))) (_ bv4294963968 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_ntt::1::1::_cbmc_idx64!0@9#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
+(define-fun B489 () Bool (=> (and true B442) (or (bvuge |mlk_poly_ntt::1::1::_cbmc_idx63!0@18#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#1..coeffs| ((_ zero_extend 32) |mlk_poly_ntt::1::1::_cbmc_idx63!0@18#0|))) (_ bv4294963968 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#1..coeffs| ((_ zero_extend 32) |mlk_poly_ntt::1::1::_cbmc_idx63!0@18#0|))) (_ bv3329 32)))))))
 
-; find_symbols
-(declare-fun |mlk_poly_ntt::1::1::_cbmc_idx64!0@12#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 490 with expr ID of =>
-(define-fun B490 () Bool (=> (and true B444) (or (bvuge |mlk_poly_ntt::1::1::_cbmc_idx64!0@12#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#1..coeffs| ((_ zero_extend 32) |mlk_poly_ntt::1::1::_cbmc_idx64!0@12#0|))) (_ bv4294963968 32))) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_ntt::1::1::_cbmc_idx64!0@12#0|) (_ bv2 64))) (_ bv513 65))))))
-
-; find_symbols
-(declare-fun |mlk_poly_ntt::1::1::_cbmc_idx64!0@16#0| () (_ BitVec 32))
-; convert
-; Converting var_no 491 with expr ID of =>
-(define-fun B491 () Bool (=> (and true B444) (or (bvuge |mlk_poly_ntt::1::1::_cbmc_idx64!0@16#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#1..coeffs| ((_ zero_extend 32) |mlk_poly_ntt::1::1::_cbmc_idx64!0@16#0|))) (_ bv4294963968 32))) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_ntt::1::1::_cbmc_idx64!0@16#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65))))))
-
-; find_symbols
-(declare-fun |mlk_poly_ntt::1::1::_cbmc_idx64!0@18#0| () (_ BitVec 32))
-; convert
-; Converting var_no 492 with expr ID of =>
-(define-fun B492 () Bool (=> (and true B444) (or (bvuge |mlk_poly_ntt::1::1::_cbmc_idx64!0@18#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#1..coeffs| ((_ zero_extend 32) |mlk_poly_ntt::1::1::_cbmc_idx64!0@18#0|))) (_ bv4294963968 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#1..coeffs| ((_ zero_extend 32) |mlk_poly_ntt::1::1::_cbmc_idx64!0@18#0|))) (_ bv3329 32)))))))
-
-; convert
-; Converting var_no 493 with expr ID of =>
-(define-fun B493 () Bool (=> (and true B444) (or (bvuge |mlk_ntt_native::requires::1::_cbmc_idx1!0@1#1| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_ntt_native::requires::1::_cbmc_idx1!0@1#1|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
+(define-fun B490 () Bool (=> (and true B442) (or (bvuge |mlk_ntt_native::requires::1::_cbmc_idx1!0@1#1| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_ntt_native::requires::1::_cbmc_idx1!0@1#1|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
 
 ; find_symbols
 (declare-fun |mlk_ntt_native::requires::1::_cbmc_idx1!0@3#0| () (_ BitVec 32))
 ; convert
-; Converting var_no 494 with expr ID of =>
-(define-fun B494 () Bool (=> (and true B444) (or (bvuge |mlk_ntt_native::requires::1::_cbmc_idx1!0@3#0| (_ bv256 32)) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_ntt_native::requires::1::_cbmc_idx1!0@3#0|) (_ bv2 64))) (_ bv513 65))))))
+; Converting var_no 491 with expr ID of =>
+(define-fun B491 () Bool (=> (and true B442) (or (bvuge |mlk_ntt_native::requires::1::_cbmc_idx1!0@3#0| (_ bv256 32)) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_ntt_native::requires::1::_cbmc_idx1!0@3#0|) (_ bv2 64))) (_ bv513 65))))))
 
 ; find_symbols
 (declare-fun |mlk_ntt_native::requires::1::_cbmc_idx1!0@7#0| () (_ BitVec 32))
 ; convert
-; Converting var_no 495 with expr ID of =>
-(define-fun B495 () Bool (=> (and true B444) (or (bvuge |mlk_ntt_native::requires::1::_cbmc_idx1!0@7#0| (_ bv256 32)) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_ntt_native::requires::1::_cbmc_idx1!0@7#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65))))))
+; Converting var_no 492 with expr ID of =>
+(define-fun B492 () Bool (=> (and true B442) (or (bvuge |mlk_ntt_native::requires::1::_cbmc_idx1!0@7#0| (_ bv256 32)) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_ntt_native::requires::1::_cbmc_idx1!0@7#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65))))))
 
 ; find_symbols
 (declare-fun |mlk_ntt_native::requires::1::_cbmc_idx1!0@9#0| () (_ BitVec 32))
 ; convert
-; Converting var_no 496 with expr ID of =>
-(define-fun B496 () Bool (=> (and true B444) (or (bvuge |mlk_ntt_native::requires::1::_cbmc_idx1!0@9#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#1..coeffs| ((_ zero_extend 32) |mlk_ntt_native::requires::1::_cbmc_idx1!0@9#0|))) (_ bv4294963968 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_ntt_native::requires::1::_cbmc_idx1!0@9#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
+; Converting var_no 493 with expr ID of =>
+(define-fun B493 () Bool (=> (and true B442) (or (bvuge |mlk_ntt_native::requires::1::_cbmc_idx1!0@9#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#1..coeffs| ((_ zero_extend 32) |mlk_ntt_native::requires::1::_cbmc_idx1!0@9#0|))) (_ bv4294963968 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_ntt_native::requires::1::_cbmc_idx1!0@9#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
 
 ; find_symbols
 (declare-fun |mlk_ntt_native::requires::1::_cbmc_idx1!0@12#0| () (_ BitVec 32))
 ; convert
-; Converting var_no 497 with expr ID of =>
-(define-fun B497 () Bool (=> (and true B444) (or (bvuge |mlk_ntt_native::requires::1::_cbmc_idx1!0@12#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#1..coeffs| ((_ zero_extend 32) |mlk_ntt_native::requires::1::_cbmc_idx1!0@12#0|))) (_ bv4294963968 32))) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_ntt_native::requires::1::_cbmc_idx1!0@12#0|) (_ bv2 64))) (_ bv513 65))))))
+; Converting var_no 494 with expr ID of =>
+(define-fun B494 () Bool (=> (and true B442) (or (bvuge |mlk_ntt_native::requires::1::_cbmc_idx1!0@12#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#1..coeffs| ((_ zero_extend 32) |mlk_ntt_native::requires::1::_cbmc_idx1!0@12#0|))) (_ bv4294963968 32))) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_ntt_native::requires::1::_cbmc_idx1!0@12#0|) (_ bv2 64))) (_ bv513 65))))))
 
 ; find_symbols
 (declare-fun |mlk_ntt_native::requires::1::_cbmc_idx1!0@16#0| () (_ BitVec 32))
 ; convert
-; Converting var_no 498 with expr ID of =>
-(define-fun B498 () Bool (=> (and true B444) (or (bvuge |mlk_ntt_native::requires::1::_cbmc_idx1!0@16#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#1..coeffs| ((_ zero_extend 32) |mlk_ntt_native::requires::1::_cbmc_idx1!0@16#0|))) (_ bv4294963968 32))) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_ntt_native::requires::1::_cbmc_idx1!0@16#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65))))))
+; Converting var_no 495 with expr ID of =>
+(define-fun B495 () Bool (=> (and true B442) (or (bvuge |mlk_ntt_native::requires::1::_cbmc_idx1!0@16#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#1..coeffs| ((_ zero_extend 32) |mlk_ntt_native::requires::1::_cbmc_idx1!0@16#0|))) (_ bv4294963968 32))) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_ntt_native::requires::1::_cbmc_idx1!0@16#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65))))))
 
 ; find_symbols
 (declare-fun |mlk_ntt_native::requires::1::_cbmc_idx1!0@18#0| () (_ BitVec 32))
 ; convert
-; Converting var_no 499 with expr ID of =>
-(define-fun B499 () Bool (=> (and true B444) (or (bvuge |mlk_ntt_native::requires::1::_cbmc_idx1!0@18#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#1..coeffs| ((_ zero_extend 32) |mlk_ntt_native::requires::1::_cbmc_idx1!0@18#0|))) (_ bv4294963968 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#1..coeffs| ((_ zero_extend 32) |mlk_ntt_native::requires::1::_cbmc_idx1!0@18#0|))) (_ bv3329 32)))))))
+; Converting var_no 496 with expr ID of =>
+(define-fun B496 () Bool (=> (and true B442) (or (bvuge |mlk_ntt_native::requires::1::_cbmc_idx1!0@18#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#1..coeffs| ((_ zero_extend 32) |mlk_ntt_native::requires::1::_cbmc_idx1!0@18#0|))) (_ bv4294963968 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#1..coeffs| ((_ zero_extend 32) |mlk_ntt_native::requires::1::_cbmc_idx1!0@18#0|))) (_ bv3329 32)))))))
 
 ; convert
-; Converting var_no 500 with expr ID of =>
-(define-fun B500 () Bool (=> (and true B444 B445) (or (not (= |mlk_ntt_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_ntt_native::ensures::1::_cbmc_idx2!0@1#1| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx2!0@1#1|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
+; Converting var_no 497 with expr ID of =>
+(define-fun B497 () Bool (=> (and true B442 B443) (or (not (= |mlk_ntt_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_ntt_native::ensures::1::_cbmc_idx2!0@1#1| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx2!0@1#1|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
 
 ; find_symbols
 (declare-fun |mlk_ntt_native::ensures::1::_cbmc_idx2!0@3#0| () (_ BitVec 32))
 ; convert
-; Converting var_no 501 with expr ID of =>
-(define-fun B501 () Bool (=> (and true B444 B445) (or (not (= |mlk_ntt_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_ntt_native::ensures::1::_cbmc_idx2!0@3#0| (_ bv256 32)) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx2!0@3#0|) (_ bv2 64))) (_ bv513 65))))))
+; Converting var_no 498 with expr ID of =>
+(define-fun B498 () Bool (=> (and true B442 B443) (or (not (= |mlk_ntt_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_ntt_native::ensures::1::_cbmc_idx2!0@3#0| (_ bv256 32)) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx2!0@3#0|) (_ bv2 64))) (_ bv513 65))))))
 
 ; find_symbols
 (declare-fun |mlk_ntt_native::ensures::1::_cbmc_idx2!0@7#0| () (_ BitVec 32))
 ; convert
-; Converting var_no 502 with expr ID of =>
-(define-fun B502 () Bool (=> (and true B444 B445) (or (not (= |mlk_ntt_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_ntt_native::ensures::1::_cbmc_idx2!0@7#0| (_ bv256 32)) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx2!0@7#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65))))))
+; Converting var_no 499 with expr ID of =>
+(define-fun B499 () Bool (=> (and true B442 B443) (or (not (= |mlk_ntt_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_ntt_native::ensures::1::_cbmc_idx2!0@7#0| (_ bv256 32)) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx2!0@7#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65))))))
 
 ; find_symbols
 (declare-fun |mlk_ntt_native::ensures::1::_cbmc_idx2!0@9#0| () (_ BitVec 32))
 ; convert
-; Converting var_no 503 with expr ID of =>
-(define-fun B503 () Bool (=> (and true B444 B445) (or (not (= |mlk_ntt_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_ntt_native::ensures::1::_cbmc_idx2!0@9#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2..coeffs| ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx2!0@9#0|))) (_ bv4294940665 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx2!0@9#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
+; Converting var_no 500 with expr ID of =>
+(define-fun B500 () Bool (=> (and true B442 B443) (or (not (= |mlk_ntt_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_ntt_native::ensures::1::_cbmc_idx2!0@9#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2..coeffs| ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx2!0@9#0|))) (_ bv4294940665 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx2!0@9#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
 
 ; find_symbols
 (declare-fun |mlk_ntt_native::ensures::1::_cbmc_idx2!0@12#0| () (_ BitVec 32))
 ; convert
-; Converting var_no 504 with expr ID of =>
-(define-fun B504 () Bool (=> (and true B444 B445) (or (not (= |mlk_ntt_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_ntt_native::ensures::1::_cbmc_idx2!0@12#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2..coeffs| ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx2!0@12#0|))) (_ bv4294940665 32))) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx2!0@12#0|) (_ bv2 64))) (_ bv513 65))))))
+; Converting var_no 501 with expr ID of =>
+(define-fun B501 () Bool (=> (and true B442 B443) (or (not (= |mlk_ntt_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_ntt_native::ensures::1::_cbmc_idx2!0@12#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2..coeffs| ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx2!0@12#0|))) (_ bv4294940665 32))) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx2!0@12#0|) (_ bv2 64))) (_ bv513 65))))))
 
 ; find_symbols
 (declare-fun |mlk_ntt_native::ensures::1::_cbmc_idx2!0@16#0| () (_ BitVec 32))
 ; convert
-; Converting var_no 505 with expr ID of =>
-(define-fun B505 () Bool (=> (and true B444 B445) (or (not (= |mlk_ntt_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_ntt_native::ensures::1::_cbmc_idx2!0@16#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2..coeffs| ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx2!0@16#0|))) (_ bv4294940665 32))) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx2!0@16#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65))))))
+; Converting var_no 502 with expr ID of =>
+(define-fun B502 () Bool (=> (and true B442 B443) (or (not (= |mlk_ntt_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_ntt_native::ensures::1::_cbmc_idx2!0@16#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2..coeffs| ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx2!0@16#0|))) (_ bv4294940665 32))) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx2!0@16#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65))))))
 
 ; convert
-; Converting var_no 506 with expr ID of =>
-(define-fun B506 () Bool (=> (and true B444 B445 B446) (or (not (= |mlk_ntt_native::__contract_return_value!0@1#2| (_ bv4294967295 32))) (bvuge |mlk_ntt_native::ensures::1::_cbmc_idx3!0@1#1| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx3!0@1#1|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
+; Converting var_no 503 with expr ID of =>
+(define-fun B503 () Bool (=> (and true B442 B443 B444) (or (not (= |mlk_ntt_native::__contract_return_value!0@1#2| (_ bv4294967295 32))) (bvuge |mlk_ntt_native::ensures::1::_cbmc_idx3!0@1#1| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx3!0@1#1|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
 
 ; find_symbols
 (declare-fun |mlk_ntt_native::ensures::1::_cbmc_idx3!0@3#0| () (_ BitVec 32))
 ; convert
-; Converting var_no 507 with expr ID of =>
-(define-fun B507 () Bool (=> (and true B444 B445 B446) (or (not (= |mlk_ntt_native::__contract_return_value!0@1#2| (_ bv4294967295 32))) (bvuge |mlk_ntt_native::ensures::1::_cbmc_idx3!0@3#0| (_ bv256 32)) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx3!0@3#0|) (_ bv2 64))) (_ bv513 65))))))
+; Converting var_no 504 with expr ID of =>
+(define-fun B504 () Bool (=> (and true B442 B443 B444) (or (not (= |mlk_ntt_native::__contract_return_value!0@1#2| (_ bv4294967295 32))) (bvuge |mlk_ntt_native::ensures::1::_cbmc_idx3!0@3#0| (_ bv256 32)) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx3!0@3#0|) (_ bv2 64))) (_ bv513 65))))))
 
 ; find_symbols
 (declare-fun |mlk_ntt_native::ensures::1::_cbmc_idx3!0@7#0| () (_ BitVec 32))
 ; convert
-; Converting var_no 508 with expr ID of =>
-(define-fun B508 () Bool (=> (and true B444 B445 B446) (or (not (= |mlk_ntt_native::__contract_return_value!0@1#2| (_ bv4294967295 32))) (bvuge |mlk_ntt_native::ensures::1::_cbmc_idx3!0@7#0| (_ bv256 32)) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx3!0@7#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65))))))
+; Converting var_no 505 with expr ID of =>
+(define-fun B505 () Bool (=> (and true B442 B443 B444) (or (not (= |mlk_ntt_native::__contract_return_value!0@1#2| (_ bv4294967295 32))) (bvuge |mlk_ntt_native::ensures::1::_cbmc_idx3!0@7#0| (_ bv256 32)) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx3!0@7#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65))))))
 
 ; find_symbols
 (declare-fun |mlk_ntt_native::ensures::1::_cbmc_idx3!0@9#0| () (_ BitVec 32))
 ; convert
-; Converting var_no 509 with expr ID of =>
-(define-fun B509 () Bool (=> (and true B444 B445 B446) (or (not (= |mlk_ntt_native::__contract_return_value!0@1#2| (_ bv4294967295 32))) (bvuge |mlk_ntt_native::ensures::1::_cbmc_idx3!0@9#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2..coeffs| ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx3!0@9#0|))) (_ bv4294963968 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx3!0@9#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
+; Converting var_no 506 with expr ID of =>
+(define-fun B506 () Bool (=> (and true B442 B443 B444) (or (not (= |mlk_ntt_native::__contract_return_value!0@1#2| (_ bv4294967295 32))) (bvuge |mlk_ntt_native::ensures::1::_cbmc_idx3!0@9#0| (_ bv256 32)) (not (bvsge ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx3!0@9#0|) (_ bv256 64))))))
+
+; convert
+; Converting var_no 507 with expr ID of =>
+(define-fun B507 () Bool (=> (and true B442 B443 B444 B445) (=> |goto_symex::&92;guard#2| (or (bvuge |mlk_poly_ntt::1::2::1::_cbmc_idx64!0@1#1| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_ntt::1::2::1::_cbmc_idx64!0@1#1|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
 
 ; find_symbols
-(declare-fun |mlk_ntt_native::ensures::1::_cbmc_idx3!0@12#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_ntt::1::2::1::_cbmc_idx64!0@3#0| () (_ BitVec 32))
+; convert
+; Converting var_no 508 with expr ID of =>
+(define-fun B508 () Bool (=> (and true B442 B443 B444 B445) (=> |goto_symex::&92;guard#2| (or (bvuge |mlk_poly_ntt::1::2::1::_cbmc_idx64!0@3#0| (_ bv256 32)) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_ntt::1::2::1::_cbmc_idx64!0@3#0|) (_ bv2 64))) (_ bv513 65)))))))
+
+; find_symbols
+(declare-fun |mlk_poly_ntt::1::2::1::_cbmc_idx64!0@7#0| () (_ BitVec 32))
+; convert
+; Converting var_no 509 with expr ID of =>
+(define-fun B509 () Bool (=> (and true B442 B443 B444 B445) (=> |goto_symex::&92;guard#2| (or (bvuge |mlk_poly_ntt::1::2::1::_cbmc_idx64!0@7#0| (_ bv256 32)) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_ntt::1::2::1::_cbmc_idx64!0@7#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65)))))))
+
+; find_symbols
+(declare-fun |mlk_poly_ntt::1::2::1::_cbmc_idx64!0@9#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 510 with expr ID of =>
-(define-fun B510 () Bool (=> (and true B444 B445 B446) (or (not (= |mlk_ntt_native::__contract_return_value!0@1#2| (_ bv4294967295 32))) (bvuge |mlk_ntt_native::ensures::1::_cbmc_idx3!0@12#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2..coeffs| ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx3!0@12#0|))) (_ bv4294963968 32))) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx3!0@12#0|) (_ bv2 64))) (_ bv513 65))))))
+(define-fun B510 () Bool (=> (and true B442 B443 B444 B445) (=> |goto_symex::&92;guard#2| (or (bvuge |mlk_poly_ntt::1::2::1::_cbmc_idx64!0@9#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2..coeffs| ((_ zero_extend 32) |mlk_poly_ntt::1::2::1::_cbmc_idx64!0@9#0|))) (_ bv4294940665 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_ntt::1::2::1::_cbmc_idx64!0@9#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
 
 ; find_symbols
-(declare-fun |mlk_ntt_native::ensures::1::_cbmc_idx3!0@16#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_ntt::1::2::1::_cbmc_idx64!0@12#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 511 with expr ID of =>
-(define-fun B511 () Bool (=> (and true B444 B445 B446) (or (not (= |mlk_ntt_native::__contract_return_value!0@1#2| (_ bv4294967295 32))) (bvuge |mlk_ntt_native::ensures::1::_cbmc_idx3!0@16#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2..coeffs| ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx3!0@16#0|))) (_ bv4294963968 32))) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx3!0@16#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65))))))
+(define-fun B511 () Bool (=> (and true B442 B443 B444 B445) (=> |goto_symex::&92;guard#2| (or (bvuge |mlk_poly_ntt::1::2::1::_cbmc_idx64!0@12#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2..coeffs| ((_ zero_extend 32) |mlk_poly_ntt::1::2::1::_cbmc_idx64!0@12#0|))) (_ bv4294940665 32))) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_ntt::1::2::1::_cbmc_idx64!0@12#0|) (_ bv2 64))) (_ bv513 65)))))))
 
+; find_symbols
+(declare-fun |mlk_poly_ntt::1::2::1::_cbmc_idx64!0@16#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 512 with expr ID of =>
-(define-fun B512 () Bool (=> (and true B444 B445 B446 B447) (or (not (= |mlk_ntt_native::__contract_return_value!0@1#2| (_ bv4294967295 32))) (bvuge |mlk_ntt_native::ensures::1::_cbmc_idx4!0@1#1| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx4!0@1#1|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
+(define-fun B512 () Bool (=> (and true B442 B443 B444 B445) (=> |goto_symex::&92;guard#2| (or (bvuge |mlk_poly_ntt::1::2::1::_cbmc_idx64!0@16#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2..coeffs| ((_ zero_extend 32) |mlk_poly_ntt::1::2::1::_cbmc_idx64!0@16#0|))) (_ bv4294940665 32))) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_ntt::1::2::1::_cbmc_idx64!0@16#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65)))))))
 
 ; find_symbols
-(declare-fun |mlk_ntt_native::ensures::1::_cbmc_idx4!0@3#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_ntt::1::2::1::_cbmc_idx64!0@18#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 513 with expr ID of =>
-(define-fun B513 () Bool (=> (and true B444 B445 B446 B447) (or (not (= |mlk_ntt_native::__contract_return_value!0@1#2| (_ bv4294967295 32))) (bvuge |mlk_ntt_native::ensures::1::_cbmc_idx4!0@3#0| (_ bv256 32)) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx4!0@3#0|) (_ bv2 64))) (_ bv513 65))))))
+(define-fun B513 () Bool (=> (and true B442 B443 B444 B445) (=> |goto_symex::&92;guard#2| (or (bvuge |mlk_poly_ntt::1::2::1::_cbmc_idx64!0@18#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2..coeffs| ((_ zero_extend 32) |mlk_poly_ntt::1::2::1::_cbmc_idx64!0@18#0|))) (_ bv4294940665 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2..coeffs| ((_ zero_extend 32) |mlk_poly_ntt::1::2::1::_cbmc_idx64!0@18#0|))) (_ bv26632 32))))))))
 
 ; find_symbols
-(declare-fun |mlk_ntt_native::ensures::1::_cbmc_idx4!0@7#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_ntt_c::requires::1::_cbmc_idx58!0@4#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 514 with expr ID of =>
-(define-fun B514 () Bool (=> (and true B444 B445 B446 B447) (or (not (= |mlk_ntt_native::__contract_return_value!0@1#2| (_ bv4294967295 32))) (bvuge |mlk_ntt_native::ensures::1::_cbmc_idx4!0@7#0| (_ bv256 32)) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx4!0@7#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65))))))
+(define-fun B514 () Bool (=> (and true B442 B443 B444 B445) (=> (not |goto_symex::&92;guard#2|) (or (bvuge |mlk_poly_ntt_c::requires::1::_cbmc_idx58!0@4#0| (_ bv256 32)) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_poly_ntt_c::requires::1::_cbmc_idx58!0@4#0|) (_ bv2 64)) (_ bv512 64)))))))
 
 ; find_symbols
-(declare-fun |mlk_ntt_native::ensures::1::_cbmc_idx4!0@9#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_ntt_c::requires::1::_cbmc_idx58!0@9#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 515 with expr ID of =>
-(define-fun B515 () Bool (=> (and true B444 B445 B446 B447) (or (not (= |mlk_ntt_native::__contract_return_value!0@1#2| (_ bv4294967295 32))) (bvuge |mlk_ntt_native::ensures::1::_cbmc_idx4!0@9#0| (_ bv256 32)) (not (bvsge ((_ zero_extend 32) |mlk_ntt_native::ensures::1::_cbmc_idx4!0@9#0|) (_ bv256 64))))))
+(define-fun B515 () Bool (=> (and true B442 B443 B444 B445) (=> (not |goto_symex::&92;guard#2|) (or (bvuge |mlk_poly_ntt_c::requires::1::_cbmc_idx58!0@9#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2..coeffs| ((_ zero_extend 32) |mlk_poly_ntt_c::requires::1::_cbmc_idx58!0@9#0|))) (_ bv4294963968 32))) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_poly_ntt_c::requires::1::_cbmc_idx58!0@9#0|) (_ bv2 64)) (_ bv512 64)))))))
 
+; find_symbols
+(declare-fun |mlk_poly_ntt_c::requires::1::_cbmc_idx58!0@10#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 516 with expr ID of =>
-(define-fun B516 () Bool (=> (and true B444 B445 B446 B447 B448) (=> |goto_symex::&92;guard#2| (or (bvuge |mlk_poly_ntt::1::2::1::_cbmc_idx65!0@1#1| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_ntt::1::2::1::_cbmc_idx65!0@1#1|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
+(define-fun B516 () Bool (=> (and true B442 B443 B444 B445) (=> (not |goto_symex::&92;guard#2|) (or (bvuge |mlk_poly_ntt_c::requires::1::_cbmc_idx58!0@10#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2..coeffs| ((_ zero_extend 32) |mlk_poly_ntt_c::requires::1::_cbmc_idx58!0@10#0|))) (_ bv4294963968 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2..coeffs| ((_ zero_extend 32) |mlk_poly_ntt_c::requires::1::_cbmc_idx58!0@10#0|))) (_ bv3329 32))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_ntt::1::2::1::_cbmc_idx65!0@3#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_ntt_c::ensures::1::_cbmc_idx59!0@4#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 517 with expr ID of =>
-(define-fun B517 () Bool (=> (and true B444 B445 B446 B447 B448) (=> |goto_symex::&92;guard#2| (or (bvuge |mlk_poly_ntt::1::2::1::_cbmc_idx65!0@3#0| (_ bv256 32)) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_ntt::1::2::1::_cbmc_idx65!0@3#0|) (_ bv2 64))) (_ bv513 65)))))))
+(define-fun B517 () Bool (=> (and true B442 B443 B444 B445) (=> (not |goto_symex::&92;guard#2|) (or (bvuge |mlk_poly_ntt_c::ensures::1::_cbmc_idx59!0@4#0| (_ bv256 32)) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_poly_ntt_c::ensures::1::_cbmc_idx59!0@4#0|) (_ bv2 64)) (_ bv512 64)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_ntt::1::2::1::_cbmc_idx65!0@7#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_ntt_c::ensures::1::_cbmc_idx59!0@9#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 518 with expr ID of =>
-(define-fun B518 () Bool (=> (and true B444 B445 B446 B447 B448) (=> |goto_symex::&92;guard#2| (or (bvuge |mlk_poly_ntt::1::2::1::_cbmc_idx65!0@7#0| (_ bv256 32)) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_ntt::1::2::1::_cbmc_idx65!0@7#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65)))))))
+(define-fun B518 () Bool (=> (and true B442 B443 B444 B445) (=> (not |goto_symex::&92;guard#2|) (or (bvuge |mlk_poly_ntt_c::ensures::1::_cbmc_idx59!0@9#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#3..coeffs| ((_ zero_extend 32) |mlk_poly_ntt_c::ensures::1::_cbmc_idx59!0@9#0|))) (_ bv4294940665 32))) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_poly_ntt_c::ensures::1::_cbmc_idx59!0@9#0|) (_ bv2 64)) (_ bv512 64)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_ntt::1::2::1::_cbmc_idx65!0@9#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_ntt::ensures::1::_cbmc_idx24!0@4#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 519 with expr ID of =>
-(define-fun B519 () Bool (=> (and true B444 B445 B446 B447 B448) (=> |goto_symex::&92;guard#2| (or (bvuge |mlk_poly_ntt::1::2::1::_cbmc_idx65!0@9#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2..coeffs| ((_ zero_extend 32) |mlk_poly_ntt::1::2::1::_cbmc_idx65!0@9#0|))) (_ bv4294940665 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_ntt::1::2::1::_cbmc_idx65!0@9#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
+(define-fun B519 () Bool (=> (and true B442 B443 B444 B445 B446) (or (bvuge |mlk_poly_ntt::ensures::1::_cbmc_idx24!0@4#0| (_ bv256 32)) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_poly_ntt::ensures::1::_cbmc_idx24!0@4#0|) (_ bv2 64)) (_ bv512 64))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_ntt::1::2::1::_cbmc_idx65!0@12#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_ntt::ensures::1::_cbmc_idx24!0@9#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 520 with expr ID of =>
-(define-fun B520 () Bool (=> (and true B444 B445 B446 B447 B448) (=> |goto_symex::&92;guard#2| (or (bvuge |mlk_poly_ntt::1::2::1::_cbmc_idx65!0@12#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2..coeffs| ((_ zero_extend 32) |mlk_poly_ntt::1::2::1::_cbmc_idx65!0@12#0|))) (_ bv4294940665 32))) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_ntt::1::2::1::_cbmc_idx65!0@12#0|) (_ bv2 64))) (_ bv513 65)))))))
+(define-fun B520 () Bool (=> (and true B442 B443 B444 B445 B446) (or (bvuge |mlk_poly_ntt::ensures::1::_cbmc_idx24!0@9#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#4..coeffs| ((_ zero_extend 32) |mlk_poly_ntt::ensures::1::_cbmc_idx24!0@9#0|))) (_ bv4294940665 32))) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_poly_ntt::ensures::1::_cbmc_idx24!0@9#0|) (_ bv2 64)) (_ bv512 64))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_ntt::1::2::1::_cbmc_idx65!0@16#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_ntt::ensures::1::_cbmc_idx24!0@10#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 521 with expr ID of =>
-(define-fun B521 () Bool (=> (and true B444 B445 B446 B447 B448) (=> |goto_symex::&92;guard#2| (or (bvuge |mlk_poly_ntt::1::2::1::_cbmc_idx65!0@16#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2..coeffs| ((_ zero_extend 32) |mlk_poly_ntt::1::2::1::_cbmc_idx65!0@16#0|))) (_ bv4294940665 32))) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_ntt::1::2::1::_cbmc_idx65!0@16#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65)))))))
-
-; find_symbols
-(declare-fun |mlk_poly_ntt::1::2::1::_cbmc_idx65!0@18#0| () (_ BitVec 32))
-; convert
-; Converting var_no 522 with expr ID of =>
-(define-fun B522 () Bool (=> (and true B444 B445 B446 B447 B448) (=> |goto_symex::&92;guard#2| (or (bvuge |mlk_poly_ntt::1::2::1::_cbmc_idx65!0@18#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2..coeffs| ((_ zero_extend 32) |mlk_poly_ntt::1::2::1::_cbmc_idx65!0@18#0|))) (_ bv4294940665 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2..coeffs| ((_ zero_extend 32) |mlk_poly_ntt::1::2::1::_cbmc_idx65!0@18#0|))) (_ bv26632 32))))))))
-
-; find_symbols
-(declare-fun |mlk_poly_ntt_c::requires::1::_cbmc_idx59!0@4#0| () (_ BitVec 32))
-; convert
-; Converting var_no 523 with expr ID of =>
-(define-fun B523 () Bool (=> (and true B444 B445 B446 B447 B448) (=> (not |goto_symex::&92;guard#2|) (or (bvuge |mlk_poly_ntt_c::requires::1::_cbmc_idx59!0@4#0| (_ bv256 32)) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_poly_ntt_c::requires::1::_cbmc_idx59!0@4#0|) (_ bv2 64)) (_ bv512 64)))))))
-
-; find_symbols
-(declare-fun |mlk_poly_ntt_c::requires::1::_cbmc_idx59!0@9#0| () (_ BitVec 32))
-; convert
-; Converting var_no 524 with expr ID of =>
-(define-fun B524 () Bool (=> (and true B444 B445 B446 B447 B448) (=> (not |goto_symex::&92;guard#2|) (or (bvuge |mlk_poly_ntt_c::requires::1::_cbmc_idx59!0@9#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2..coeffs| ((_ zero_extend 32) |mlk_poly_ntt_c::requires::1::_cbmc_idx59!0@9#0|))) (_ bv4294963968 32))) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_poly_ntt_c::requires::1::_cbmc_idx59!0@9#0|) (_ bv2 64)) (_ bv512 64)))))))
-
-; find_symbols
-(declare-fun |mlk_poly_ntt_c::requires::1::_cbmc_idx59!0@10#0| () (_ BitVec 32))
-; convert
-; Converting var_no 525 with expr ID of =>
-(define-fun B525 () Bool (=> (and true B444 B445 B446 B447 B448) (=> (not |goto_symex::&92;guard#2|) (or (bvuge |mlk_poly_ntt_c::requires::1::_cbmc_idx59!0@10#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2..coeffs| ((_ zero_extend 32) |mlk_poly_ntt_c::requires::1::_cbmc_idx59!0@10#0|))) (_ bv4294963968 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2..coeffs| ((_ zero_extend 32) |mlk_poly_ntt_c::requires::1::_cbmc_idx59!0@10#0|))) (_ bv3329 32))))))))
-
-; find_symbols
-(declare-fun |mlk_poly_ntt_c::ensures::1::_cbmc_idx60!0@4#0| () (_ BitVec 32))
-; convert
-; Converting var_no 526 with expr ID of =>
-(define-fun B526 () Bool (=> (and true B444 B445 B446 B447 B448) (=> (not |goto_symex::&92;guard#2|) (or (bvuge |mlk_poly_ntt_c::ensures::1::_cbmc_idx60!0@4#0| (_ bv256 32)) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_poly_ntt_c::ensures::1::_cbmc_idx60!0@4#0|) (_ bv2 64)) (_ bv512 64)))))))
-
-; find_symbols
-(declare-fun |mlk_poly_ntt_c::ensures::1::_cbmc_idx60!0@9#0| () (_ BitVec 32))
-; convert
-; Converting var_no 527 with expr ID of =>
-(define-fun B527 () Bool (=> (and true B444 B445 B446 B447 B448) (=> (not |goto_symex::&92;guard#2|) (or (bvuge |mlk_poly_ntt_c::ensures::1::_cbmc_idx60!0@9#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#3..coeffs| ((_ zero_extend 32) |mlk_poly_ntt_c::ensures::1::_cbmc_idx60!0@9#0|))) (_ bv4294940665 32))) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_poly_ntt_c::ensures::1::_cbmc_idx60!0@9#0|) (_ bv2 64)) (_ bv512 64)))))))
-
-; find_symbols
-(declare-fun |mlk_poly_ntt::ensures::1::_cbmc_idx25!0@4#0| () (_ BitVec 32))
-; convert
-; Converting var_no 528 with expr ID of =>
-(define-fun B528 () Bool (=> (and true B444 B445 B446 B447 B448 B449) (or (bvuge |mlk_poly_ntt::ensures::1::_cbmc_idx25!0@4#0| (_ bv256 32)) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_poly_ntt::ensures::1::_cbmc_idx25!0@4#0|) (_ bv2 64)) (_ bv512 64))))))
-
-; find_symbols
-(declare-fun |mlk_poly_ntt::ensures::1::_cbmc_idx25!0@9#0| () (_ BitVec 32))
-; convert
-; Converting var_no 529 with expr ID of =>
-(define-fun B529 () Bool (=> (and true B444 B445 B446 B447 B448 B449) (or (bvuge |mlk_poly_ntt::ensures::1::_cbmc_idx25!0@9#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#4..coeffs| ((_ zero_extend 32) |mlk_poly_ntt::ensures::1::_cbmc_idx25!0@9#0|))) (_ bv4294940665 32))) (not (bvsge (bvmul ((_ zero_extend 32) |mlk_poly_ntt::ensures::1::_cbmc_idx25!0@9#0|) (_ bv2 64)) (_ bv512 64))))))
-
-; find_symbols
-(declare-fun |mlk_poly_ntt::ensures::1::_cbmc_idx25!0@10#0| () (_ BitVec 32))
-; convert
-; Converting var_no 530 with expr ID of =>
-(define-fun B530 () Bool (=> (and true B444 B445 B446 B447 B448 B449) (or (bvuge |mlk_poly_ntt::ensures::1::_cbmc_idx25!0@10#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#4..coeffs| ((_ zero_extend 32) |mlk_poly_ntt::ensures::1::_cbmc_idx25!0@10#0|))) (_ bv4294940665 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#4..coeffs| ((_ zero_extend 32) |mlk_poly_ntt::ensures::1::_cbmc_idx25!0@10#0|))) (_ bv26632 32)))))))
+(define-fun B521 () Bool (=> (and true B442 B443 B444 B445 B446) (or (bvuge |mlk_poly_ntt::ensures::1::_cbmc_idx24!0@10#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#4..coeffs| ((_ zero_extend 32) |mlk_poly_ntt::ensures::1::_cbmc_idx24!0@10#0|))) (_ bv4294940665 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#4..coeffs| ((_ zero_extend 32) |mlk_poly_ntt::ensures::1::_cbmc_idx24!0@10#0|))) (_ bv26632 32)))))))
 
 ; set_to true
-(assert (or (not B484) (not B485) (not B486) (not B487) (not B488) (not B489) (not B490) (not B491) (not B492) (not B493) (not B494) (not B495) (not B496) (not B497) (not B498) (not B499) (not B500) (not B501) (not B502) (not B503) (not B504) (not B505) (not B506) (not B507) (not B508) (not B509) (not B510) (not B511) (not B512) (not B513) (not B514) (not B515) (not B516) (not B517) (not B518) (not B519) (not B520) (not B521) (not B522) (not B523) (not B524) (not B525) (not B526) (not B527) (not B528) (not B529) (not B530)))
+(assert (or (not B481) (not B482) (not B483) (not B484) (not B485) (not B486) (not B487) (not B488) (not B489) (not B490) (not B491) (not B492) (not B493) (not B494) (not B495) (not B496) (not B497) (not B498) (not B499) (not B500) (not B501) (not B502) (not B503) (not B504) (not B505) (not B506) (not B507) (not B508) (not B509) (not B510) (not B511) (not B512) (not B513) (not B514) (not B515) (not B516) (not B517) (not B518) (not B519) (not B520) (not B521)))
+
+; convert
+; Converting var_no 522 with expr ID of not
+(define-fun B522 () Bool (not B506))
+
+; convert
+; Converting var_no 523 with expr ID of not
+(define-fun B523 () Bool (not B490))
+
+; convert
+; Converting var_no 524 with expr ID of not
+(define-fun B524 () Bool (not B493))
+
+; convert
+; Converting var_no 525 with expr ID of not
+(define-fun B525 () Bool (not B497))
+
+; convert
+; Converting var_no 526 with expr ID of not
+(define-fun B526 () Bool (not B500))
+
+; convert
+; Converting var_no 527 with expr ID of not
+(define-fun B527 () Bool (not B503))
+
+; convert
+; Converting var_no 528 with expr ID of not
+(define-fun B528 () Bool (not B495))
+
+; convert
+; Converting var_no 529 with expr ID of not
+(define-fun B529 () Bool (not B499))
+
+; convert
+; Converting var_no 530 with expr ID of not
+(define-fun B530 () Bool (not B502))
 
 ; convert
 ; Converting var_no 531 with expr ID of not
-(define-fun B531 () Bool (not B515))
+(define-fun B531 () Bool (not B505))
 
 ; convert
 ; Converting var_no 532 with expr ID of not
-(define-fun B532 () Bool (not B493))
+(define-fun B532 () Bool (not B492))
 
 ; convert
 ; Converting var_no 533 with expr ID of not
@@ -3721,55 +3708,55 @@
 
 ; convert
 ; Converting var_no 534 with expr ID of not
-(define-fun B534 () Bool (not B500))
+(define-fun B534 () Bool (not B481))
 
 ; convert
 ; Converting var_no 535 with expr ID of not
-(define-fun B535 () Bool (not B503))
+(define-fun B535 () Bool (not B482))
 
 ; convert
 ; Converting var_no 536 with expr ID of not
-(define-fun B536 () Bool (not B506))
+(define-fun B536 () Bool (not B519))
 
 ; convert
 ; Converting var_no 537 with expr ID of not
-(define-fun B537 () Bool (not B509))
+(define-fun B537 () Bool (not B520))
 
 ; convert
 ; Converting var_no 538 with expr ID of not
-(define-fun B538 () Bool (not B512))
+(define-fun B538 () Bool (not B489))
 
 ; convert
 ; Converting var_no 539 with expr ID of not
-(define-fun B539 () Bool (not B498))
+(define-fun B539 () Bool (not B513))
 
 ; convert
 ; Converting var_no 540 with expr ID of not
-(define-fun B540 () Bool (not B502))
+(define-fun B540 () Bool (not B483))
 
 ; convert
 ; Converting var_no 541 with expr ID of not
-(define-fun B541 () Bool (not B505))
+(define-fun B541 () Bool (not B486))
 
 ; convert
 ; Converting var_no 542 with expr ID of not
-(define-fun B542 () Bool (not B508))
+(define-fun B542 () Bool (not B507))
 
 ; convert
 ; Converting var_no 543 with expr ID of not
-(define-fun B543 () Bool (not B511))
+(define-fun B543 () Bool (not B510))
 
 ; convert
 ; Converting var_no 544 with expr ID of not
-(define-fun B544 () Bool (not B514))
+(define-fun B544 () Bool (not B487))
 
 ; convert
 ; Converting var_no 545 with expr ID of not
-(define-fun B545 () Bool (not B495))
+(define-fun B545 () Bool (not B508))
 
 ; convert
 ; Converting var_no 546 with expr ID of not
-(define-fun B546 () Bool (not B499))
+(define-fun B546 () Bool (not B511))
 
 ; convert
 ; Converting var_no 547 with expr ID of not
@@ -3781,122 +3768,62 @@
 
 ; convert
 ; Converting var_no 549 with expr ID of not
-(define-fun B549 () Bool (not B528))
+(define-fun B549 () Bool (not B488))
 
 ; convert
 ; Converting var_no 550 with expr ID of not
-(define-fun B550 () Bool (not B529))
+(define-fun B550 () Bool (not B509))
 
 ; convert
 ; Converting var_no 551 with expr ID of not
-(define-fun B551 () Bool (not B492))
+(define-fun B551 () Bool (not B512))
 
 ; convert
 ; Converting var_no 552 with expr ID of not
-(define-fun B552 () Bool (not B522))
+(define-fun B552 () Bool (not B521))
 
 ; convert
 ; Converting var_no 553 with expr ID of not
-(define-fun B553 () Bool (not B486))
+(define-fun B553 () Bool (not B514))
 
 ; convert
 ; Converting var_no 554 with expr ID of not
-(define-fun B554 () Bool (not B489))
+(define-fun B554 () Bool (not B515))
 
 ; convert
 ; Converting var_no 555 with expr ID of not
-(define-fun B555 () Bool (not B516))
+(define-fun B555 () Bool (not B517))
 
 ; convert
 ; Converting var_no 556 with expr ID of not
-(define-fun B556 () Bool (not B519))
+(define-fun B556 () Bool (not B518))
 
 ; convert
 ; Converting var_no 557 with expr ID of not
-(define-fun B557 () Bool (not B490))
+(define-fun B557 () Bool (not B516))
 
 ; convert
 ; Converting var_no 558 with expr ID of not
-(define-fun B558 () Bool (not B517))
+(define-fun B558 () Bool (not B494))
 
 ; convert
 ; Converting var_no 559 with expr ID of not
-(define-fun B559 () Bool (not B520))
+(define-fun B559 () Bool (not B498))
 
 ; convert
 ; Converting var_no 560 with expr ID of not
-(define-fun B560 () Bool (not B487))
+(define-fun B560 () Bool (not B501))
 
 ; convert
 ; Converting var_no 561 with expr ID of not
-(define-fun B561 () Bool (not B488))
+(define-fun B561 () Bool (not B504))
 
 ; convert
 ; Converting var_no 562 with expr ID of not
 (define-fun B562 () Bool (not B491))
 
-; convert
-; Converting var_no 563 with expr ID of not
-(define-fun B563 () Bool (not B518))
-
-; convert
-; Converting var_no 564 with expr ID of not
-(define-fun B564 () Bool (not B521))
-
-; convert
-; Converting var_no 565 with expr ID of not
-(define-fun B565 () Bool (not B530))
-
-; convert
-; Converting var_no 566 with expr ID of not
-(define-fun B566 () Bool (not B523))
-
-; convert
-; Converting var_no 567 with expr ID of not
-(define-fun B567 () Bool (not B524))
-
-; convert
-; Converting var_no 568 with expr ID of not
-(define-fun B568 () Bool (not B526))
-
-; convert
-; Converting var_no 569 with expr ID of not
-(define-fun B569 () Bool (not B527))
-
-; convert
-; Converting var_no 570 with expr ID of not
-(define-fun B570 () Bool (not B525))
-
-; convert
-; Converting var_no 571 with expr ID of not
-(define-fun B571 () Bool (not B497))
-
-; convert
-; Converting var_no 572 with expr ID of not
-(define-fun B572 () Bool (not B501))
-
-; convert
-; Converting var_no 573 with expr ID of not
-(define-fun B573 () Bool (not B504))
-
-; convert
-; Converting var_no 574 with expr ID of not
-(define-fun B574 () Bool (not B507))
-
-; convert
-; Converting var_no 575 with expr ID of not
-(define-fun B575 () Bool (not B510))
-
-; convert
-; Converting var_no 576 with expr ID of not
-(define-fun B576 () Bool (not B513))
-
-; convert
-; Converting var_no 577 with expr ID of not
-(define-fun B577 () Bool (not B494))
-
 ; set_to true
-(assert (or B531 B532 B533 B534 B535 B536 B537 B538 B539 B540 B541 B542 B543 B544 B545 B546 B547 B548 B549 B550 B551 B552 B553 B554 B555 B556 B557 B558 B559 B560 B561 B562 B563 B564 B565 B566 B567 B568 B569 B570 B571 B572 B573 B574 B575 B576 B577))
+(assert (or B522 B523 B524 B525 B526 B527 B528 B529 B530 B531 B532 B533 B534 B535 B536 B537 B538 B539 B540 B541 B542 B543 B544 B545 B546 B547 B548 B549 B550 B551 B552 B553 B554 B555 B556 B557 B558 B559 B560 B561 B562))
 
 (check-sat)
 

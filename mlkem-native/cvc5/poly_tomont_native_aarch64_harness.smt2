@@ -2302,34 +2302,34 @@
 (define-fun B419 () Bool (= |__CPROVER_contracts_write_set_havoc_slice::$tmp::tmp_nondet_contents!0@1#1| |__CPROVER_contracts_write_set_havoc_slice::$tmp::tmp_nondet_contents!0@1#1|))
 
 ; find_symbols
-(declare-fun |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx19!0@1#1| () (_ BitVec 32))
+(declare-fun |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx18!0@1#1| () (_ BitVec 32))
 ; convert
 ; Converting var_no 420 with expr ID of =
-(define-fun B420 () Bool (= |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx19!0@1#1| |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx19!0@1#1|))
+(define-fun B420 () Bool (= |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx18!0@1#1| |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx18!0@1#1|))
 
 ; convert
 ; Converting var_no 421 with expr ID of =
-(define-fun B421 () Bool (= |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx19!0@1#1| |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx19!0@1#1|))
+(define-fun B421 () Bool (= |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx18!0@1#1| |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx18!0@1#1|))
+
+; find_symbols
+(declare-fun |mlk_poly_tomont_native::ensures::1::_cbmc_idx8!0@1#1| () (_ BitVec 32))
+; convert
+; Converting var_no 422 with expr ID of =
+(define-fun B422 () Bool (= |mlk_poly_tomont_native::ensures::1::_cbmc_idx8!0@1#1| |mlk_poly_tomont_native::ensures::1::_cbmc_idx8!0@1#1|))
+
+; convert
+; Converting var_no 423 with expr ID of =
+(define-fun B423 () Bool (= |mlk_poly_tomont_native::ensures::1::_cbmc_idx8!0@1#1| |mlk_poly_tomont_native::ensures::1::_cbmc_idx8!0@1#1|))
 
 ; find_symbols
 (declare-fun |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@1#1| () (_ BitVec 32))
 ; convert
-; Converting var_no 422 with expr ID of =
-(define-fun B422 () Bool (= |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@1#1| |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@1#1|))
-
-; convert
-; Converting var_no 423 with expr ID of =
-(define-fun B423 () Bool (= |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@1#1| |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@1#1|))
-
-; find_symbols
-(declare-fun |mlk_poly_tomont_native::ensures::1::_cbmc_idx10!0@1#1| () (_ BitVec 32))
-; convert
 ; Converting var_no 424 with expr ID of =
-(define-fun B424 () Bool (= |mlk_poly_tomont_native::ensures::1::_cbmc_idx10!0@1#1| |mlk_poly_tomont_native::ensures::1::_cbmc_idx10!0@1#1|))
+(define-fun B424 () Bool (= |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@1#1| |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@1#1|))
 
 ; convert
 ; Converting var_no 425 with expr ID of =
-(define-fun B425 () Bool (= |mlk_poly_tomont_native::ensures::1::_cbmc_idx10!0@1#1| |mlk_poly_tomont_native::ensures::1::_cbmc_idx10!0@1#1|))
+(define-fun B425 () Bool (= |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@1#1| |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@1#1|))
 
 ; convert
 ; Converting var_no 426 with expr ID of or
@@ -2338,7 +2338,7 @@
 ; convert
 ; Converting var_no 427 with expr ID of =>
 (declare-fun B427 () Bool)
-(assert (= B427 (=> (not |goto_symex::&92;guard#1|) (forall ((|mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx19!0@18#0| (_ BitVec 32))) (or (bvuge |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx19!0@18#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2| ((_ zero_extend 32) |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx19!0@18#0|))) (_ bv4294963968 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2| ((_ zero_extend 32) |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx19!0@18#0|))) (_ bv3329 32)))))))))
+(assert (= B427 (=> (not |goto_symex::&92;guard#1|) (forall ((|mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx18!0@18#0| (_ BitVec 32))) (or (bvuge |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx18!0@18#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2| ((_ zero_extend 32) |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx18!0@18#0|))) (_ bv4294963968 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2| ((_ zero_extend 32) |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx18!0@18#0|))) (_ bv3329 32)))))))))
 
 ; convert
 ; Converting var_no 428 with expr ID of not
@@ -3278,37 +3278,37 @@
 
 ; convert
 ; Converting var_no 461 with expr ID of =>
-(define-fun B461 () Bool (=> (and true B426) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx19!0@1#1| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx19!0@1#1|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
+(define-fun B461 () Bool (=> (and true B426) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx18!0@1#1| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx18!0@1#1|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx19!0@3#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx18!0@3#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 462 with expr ID of =>
-(define-fun B462 () Bool (=> (and true B426) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx19!0@3#0| (_ bv256 32)) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx19!0@3#0|) (_ bv2 64))) (_ bv513 65)))))))
+(define-fun B462 () Bool (=> (and true B426) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx18!0@3#0| (_ bv256 32)) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx18!0@3#0|) (_ bv2 64))) (_ bv513 65)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx19!0@7#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx18!0@7#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 463 with expr ID of =>
-(define-fun B463 () Bool (=> (and true B426) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx19!0@7#0| (_ bv256 32)) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx19!0@7#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65)))))))
+(define-fun B463 () Bool (=> (and true B426) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx18!0@7#0| (_ bv256 32)) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx18!0@7#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx19!0@9#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx18!0@9#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 464 with expr ID of =>
-(define-fun B464 () Bool (=> (and true B426) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx19!0@9#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2| ((_ zero_extend 32) |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx19!0@9#0|))) (_ bv4294963968 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx19!0@9#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
+(define-fun B464 () Bool (=> (and true B426) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx18!0@9#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2| ((_ zero_extend 32) |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx18!0@9#0|))) (_ bv4294963968 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx18!0@9#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128))))))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx19!0@12#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx18!0@12#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 465 with expr ID of =>
-(define-fun B465 () Bool (=> (and true B426) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx19!0@12#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2| ((_ zero_extend 32) |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx19!0@12#0|))) (_ bv4294963968 32))) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx19!0@12#0|) (_ bv2 64))) (_ bv513 65)))))))
+(define-fun B465 () Bool (=> (and true B426) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx18!0@12#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2| ((_ zero_extend 32) |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx18!0@12#0|))) (_ bv4294963968 32))) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx18!0@12#0|) (_ bv2 64))) (_ bv513 65)))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx19!0@16#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx18!0@16#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 466 with expr ID of =>
-(define-fun B466 () Bool (=> (and true B426) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx19!0@16#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2| ((_ zero_extend 32) |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx19!0@16#0|))) (_ bv4294963968 32))) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx19!0@16#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65)))))))
+(define-fun B466 () Bool (=> (and true B426) (=> (not |goto_symex::&92;guard#1|) (or (bvuge |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx18!0@16#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#2| ((_ zero_extend 32) |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx18!0@16#0|))) (_ bv4294963968 32))) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_tomont_aarch64_asm::ensures::1::_cbmc_idx18!0@16#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65)))))))
 
 ; convert
 ; Converting var_no 467 with expr ID of =>
@@ -3316,71 +3316,71 @@
 
 ; convert
 ; Converting var_no 468 with expr ID of =>
-(define-fun B468 () Bool (=> (and true B426 B427) (or (not (= |mlk_poly_tomont_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@1#1| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@1#1|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
+(define-fun B468 () Bool (=> (and true B426 B427) (or (not (= |mlk_poly_tomont_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_poly_tomont_native::ensures::1::_cbmc_idx8!0@1#1| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_tomont_native::ensures::1::_cbmc_idx8!0@1#1|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
+
+; find_symbols
+(declare-fun |mlk_poly_tomont_native::ensures::1::_cbmc_idx8!0@3#0| () (_ BitVec 32))
+; convert
+; Converting var_no 469 with expr ID of =>
+(define-fun B469 () Bool (=> (and true B426 B427) (or (not (= |mlk_poly_tomont_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_poly_tomont_native::ensures::1::_cbmc_idx8!0@3#0| (_ bv256 32)) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_tomont_native::ensures::1::_cbmc_idx8!0@3#0|) (_ bv2 64))) (_ bv513 65))))))
+
+; find_symbols
+(declare-fun |mlk_poly_tomont_native::ensures::1::_cbmc_idx8!0@7#0| () (_ BitVec 32))
+; convert
+; Converting var_no 470 with expr ID of =>
+(define-fun B470 () Bool (=> (and true B426 B427) (or (not (= |mlk_poly_tomont_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_poly_tomont_native::ensures::1::_cbmc_idx8!0@7#0| (_ bv256 32)) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_tomont_native::ensures::1::_cbmc_idx8!0@7#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65))))))
+
+; find_symbols
+(declare-fun |mlk_poly_tomont_native::ensures::1::_cbmc_idx8!0@9#0| () (_ BitVec 32))
+; convert
+; Converting var_no 471 with expr ID of =>
+(define-fun B471 () Bool (=> (and true B426 B427) (or (not (= |mlk_poly_tomont_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_poly_tomont_native::ensures::1::_cbmc_idx8!0@9#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#3| ((_ zero_extend 32) |mlk_poly_tomont_native::ensures::1::_cbmc_idx8!0@9#0|))) (_ bv4294963968 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_tomont_native::ensures::1::_cbmc_idx8!0@9#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
+
+; find_symbols
+(declare-fun |mlk_poly_tomont_native::ensures::1::_cbmc_idx8!0@12#0| () (_ BitVec 32))
+; convert
+; Converting var_no 472 with expr ID of =>
+(define-fun B472 () Bool (=> (and true B426 B427) (or (not (= |mlk_poly_tomont_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_poly_tomont_native::ensures::1::_cbmc_idx8!0@12#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#3| ((_ zero_extend 32) |mlk_poly_tomont_native::ensures::1::_cbmc_idx8!0@12#0|))) (_ bv4294963968 32))) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_tomont_native::ensures::1::_cbmc_idx8!0@12#0|) (_ bv2 64))) (_ bv513 65))))))
+
+; find_symbols
+(declare-fun |mlk_poly_tomont_native::ensures::1::_cbmc_idx8!0@16#0| () (_ BitVec 32))
+; convert
+; Converting var_no 473 with expr ID of =>
+(define-fun B473 () Bool (=> (and true B426 B427) (or (not (= |mlk_poly_tomont_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_poly_tomont_native::ensures::1::_cbmc_idx8!0@16#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#3| ((_ zero_extend 32) |mlk_poly_tomont_native::ensures::1::_cbmc_idx8!0@16#0|))) (_ bv4294963968 32))) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_tomont_native::ensures::1::_cbmc_idx8!0@16#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65))))))
+
+; find_symbols
+(declare-fun |mlk_poly_tomont_native::ensures::1::_cbmc_idx8!0@18#0| () (_ BitVec 32))
+; convert
+; Converting var_no 474 with expr ID of =>
+(define-fun B474 () Bool (=> (and true B426 B427) (or (not (= |mlk_poly_tomont_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_poly_tomont_native::ensures::1::_cbmc_idx8!0@18#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#3| ((_ zero_extend 32) |mlk_poly_tomont_native::ensures::1::_cbmc_idx8!0@18#0|))) (_ bv4294963968 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#3| ((_ zero_extend 32) |mlk_poly_tomont_native::ensures::1::_cbmc_idx8!0@18#0|))) (_ bv3329 32)))))))
+
+; convert
+; Converting var_no 475 with expr ID of =>
+(define-fun B475 () Bool (=> (and true B426 B427) (or (not (= |mlk_poly_tomont_native::__contract_return_value!0@1#2| (_ bv4294967295 32))) (bvuge |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@1#1| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@1#1|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
 
 ; find_symbols
 (declare-fun |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@3#0| () (_ BitVec 32))
 ; convert
-; Converting var_no 469 with expr ID of =>
-(define-fun B469 () Bool (=> (and true B426 B427) (or (not (= |mlk_poly_tomont_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@3#0| (_ bv256 32)) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@3#0|) (_ bv2 64))) (_ bv513 65))))))
+; Converting var_no 476 with expr ID of =>
+(define-fun B476 () Bool (=> (and true B426 B427) (or (not (= |mlk_poly_tomont_native::__contract_return_value!0@1#2| (_ bv4294967295 32))) (bvuge |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@3#0| (_ bv256 32)) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@3#0|) (_ bv2 64))) (_ bv513 65))))))
 
 ; find_symbols
 (declare-fun |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@7#0| () (_ BitVec 32))
 ; convert
-; Converting var_no 470 with expr ID of =>
-(define-fun B470 () Bool (=> (and true B426 B427) (or (not (= |mlk_poly_tomont_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@7#0| (_ bv256 32)) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@7#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65))))))
+; Converting var_no 477 with expr ID of =>
+(define-fun B477 () Bool (=> (and true B426 B427) (or (not (= |mlk_poly_tomont_native::__contract_return_value!0@1#2| (_ bv4294967295 32))) (bvuge |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@7#0| (_ bv256 32)) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@7#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65))))))
 
 ; find_symbols
 (declare-fun |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@9#0| () (_ BitVec 32))
 ; convert
-; Converting var_no 471 with expr ID of =>
-(define-fun B471 () Bool (=> (and true B426 B427) (or (not (= |mlk_poly_tomont_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@9#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#3| ((_ zero_extend 32) |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@9#0|))) (_ bv4294963968 32))) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@9#0|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
-
-; find_symbols
-(declare-fun |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@12#0| () (_ BitVec 32))
-; convert
-; Converting var_no 472 with expr ID of =>
-(define-fun B472 () Bool (=> (and true B426 B427) (or (not (= |mlk_poly_tomont_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@12#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#3| ((_ zero_extend 32) |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@12#0|))) (_ bv4294963968 32))) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@12#0|) (_ bv2 64))) (_ bv513 65))))))
-
-; find_symbols
-(declare-fun |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@16#0| () (_ BitVec 32))
-; convert
-; Converting var_no 473 with expr ID of =>
-(define-fun B473 () Bool (=> (and true B426 B427) (or (not (= |mlk_poly_tomont_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@16#0| (_ bv256 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#3| ((_ zero_extend 32) |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@16#0|))) (_ bv4294963968 32))) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@16#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65))))))
-
-; find_symbols
-(declare-fun |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@18#0| () (_ BitVec 32))
-; convert
-; Converting var_no 474 with expr ID of =>
-(define-fun B474 () Bool (=> (and true B426 B427) (or (not (= |mlk_poly_tomont_native::__contract_return_value!0@1#2| (_ bv0 32))) (bvuge |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@18#0| (_ bv256 32)) (and (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#3| ((_ zero_extend 32) |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@18#0|))) (_ bv4294963968 32)) (not (bvsge ((_ sign_extend 16) (select |symex_dynamic::dynamic_object$9#3| ((_ zero_extend 32) |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@18#0|))) (_ bv3329 32)))))))
-
-; convert
-; Converting var_no 475 with expr ID of =>
-(define-fun B475 () Bool (=> (and true B426 B427) (or (not (= |mlk_poly_tomont_native::__contract_return_value!0@1#2| (_ bv4294967295 32))) (bvuge |mlk_poly_tomont_native::ensures::1::_cbmc_idx10!0@1#1| (_ bv256 32)) (not (let ( (prod (bvmul ((_ sign_extend 64) ((_ zero_extend 32) |mlk_poly_tomont_native::ensures::1::_cbmc_idx10!0@1#1|)) ((_ sign_extend 64) (_ bv2 64))) )) (or (bvsge prod (_ bv9223372036854775808 128)) (bvslt prod (bvneg (_ bv9223372036854775808 128)))))))))
-
-; find_symbols
-(declare-fun |mlk_poly_tomont_native::ensures::1::_cbmc_idx10!0@3#0| () (_ BitVec 32))
-; convert
-; Converting var_no 476 with expr ID of =>
-(define-fun B476 () Bool (=> (and true B426 B427) (or (not (= |mlk_poly_tomont_native::__contract_return_value!0@1#2| (_ bv4294967295 32))) (bvuge |mlk_poly_tomont_native::ensures::1::_cbmc_idx10!0@3#0| (_ bv256 32)) (not (bvuge ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_tomont_native::ensures::1::_cbmc_idx10!0@3#0|) (_ bv2 64))) (_ bv513 65))))))
-
-; find_symbols
-(declare-fun |mlk_poly_tomont_native::ensures::1::_cbmc_idx10!0@7#0| () (_ BitVec 32))
-; convert
-; Converting var_no 477 with expr ID of =>
-(define-fun B477 () Bool (=> (and true B426 B427) (or (not (= |mlk_poly_tomont_native::__contract_return_value!0@1#2| (_ bv4294967295 32))) (bvuge |mlk_poly_tomont_native::ensures::1::_cbmc_idx10!0@7#0| (_ bv256 32)) (not (bvuge (bvadd ((_ zero_extend 1) (bvmul ((_ zero_extend 32) |mlk_poly_tomont_native::ensures::1::_cbmc_idx10!0@7#0|) (_ bv2 64))) (_ bv2 65)) (_ bv513 65))))))
-
-; find_symbols
-(declare-fun |mlk_poly_tomont_native::ensures::1::_cbmc_idx10!0@9#0| () (_ BitVec 32))
-; convert
 ; Converting var_no 478 with expr ID of =>
-(define-fun B478 () Bool (=> (and true B426 B427) (or (not (= |mlk_poly_tomont_native::__contract_return_value!0@1#2| (_ bv4294967295 32))) (bvuge |mlk_poly_tomont_native::ensures::1::_cbmc_idx10!0@9#0| (_ bv256 32)) (not (bvsge ((_ zero_extend 32) |mlk_poly_tomont_native::ensures::1::_cbmc_idx10!0@9#0|) (_ bv256 64))))))
+(define-fun B478 () Bool (=> (and true B426 B427) (or (not (= |mlk_poly_tomont_native::__contract_return_value!0@1#2| (_ bv4294967295 32))) (bvuge |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@9#0| (_ bv256 32)) (not (bvsge ((_ zero_extend 32) |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@9#0|) (_ bv256 64))))))
 
 ; find_symbols
-(declare-fun |mlk_poly_tomont_native::ensures::1::_cbmc_idx10!0@10#0| () (_ BitVec 32))
+(declare-fun |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@10#0| () (_ BitVec 32))
 ; convert
 ; Converting var_no 479 with expr ID of =>
-(define-fun B479 () Bool (=> (and true B426 B427) (or (not (= |mlk_poly_tomont_native::__contract_return_value!0@1#2| (_ bv4294967295 32))) (bvuge |mlk_poly_tomont_native::ensures::1::_cbmc_idx10!0@10#0| (_ bv256 32)) (= (select |symex_dynamic::dynamic_object$9#3| ((_ zero_extend 32) |mlk_poly_tomont_native::ensures::1::_cbmc_idx10!0@10#0|)) (select |mlk_poly_tomont_native::tmp_cc!0@1#2| ((_ zero_extend 32) |mlk_poly_tomont_native::ensures::1::_cbmc_idx10!0@10#0|))))))
+(define-fun B479 () Bool (=> (and true B426 B427) (or (not (= |mlk_poly_tomont_native::__contract_return_value!0@1#2| (_ bv4294967295 32))) (bvuge |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@10#0| (_ bv256 32)) (= (select |symex_dynamic::dynamic_object$9#3| ((_ zero_extend 32) |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@10#0|)) (select |mlk_poly_tomont_native::tmp_cc!0@1#2| ((_ zero_extend 32) |mlk_poly_tomont_native::ensures::1::_cbmc_idx9!0@10#0|))))))
 
 ; set_to true
 (assert (or (not B461) (not B462) (not B463) (not B464) (not B465) (not B466) (not B467) (not B468) (not B469) (not B470) (not B471) (not B472) (not B473) (not B474) (not B475) (not B476) (not B477) (not B478) (not B479)))
